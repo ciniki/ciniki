@@ -1,0 +1,3 @@
+[submodule "ciniki-api/core"]
+	path = ciniki-api/core
+	url = git://github.com/ciniki/api-core.git
