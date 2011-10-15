@@ -1,3 +1,102 @@
 [submodule "ciniki-api/core"]
 	path = ciniki-api/core
 	url = git://github.com/ciniki/api-core.git
+[submodule "ciniki-api/businesses"]
+	path = ciniki-api/businesses
+	url = git://github.com/ciniki/api-businesses.git
+[submodule "ciniki-api/bugs"]
+	path = ciniki-api/bugs
+	url = git://github.com/ciniki/api-bugs.git
+[submodule "ciniki-api/cron"]
+	path = ciniki-api/cron
+	url = git://github.com/ciniki/api-cron.git
+[submodule "ciniki-api/customers"]
+	path = ciniki-api/customers
+	url = git://github.com/ciniki/api-customers.git
+[submodule "ciniki-api/documentation"]
+	path = ciniki-api/documentation
+	url = git://github.com/ciniki/api-documentation.git
+[submodule "ciniki-api/features"]
+	path = ciniki-api/features
+	url = git://github.com/ciniki/api-features.git
+[submodule "ciniki-api/friends"]
+	path = ciniki-api/friends
+	url = git://github.com/ciniki/api-friends.git
+[submodule "ciniki-api/healthcheck"]
+	path = ciniki-api/healthcheck
+	url = git://github.com/ciniki/api-healthcheck.git
+[submodule "ciniki-api/inventory"]
+	path = ciniki-api/inventory
+	url = git://github.com/ciniki/api-inventory.git
+[submodule "ciniki-api/products"]
+	path = ciniki-api/products
+	url = git://github.com/ciniki/api-products.git
+[submodule "ciniki-api/media"]
+	path = ciniki-api/media
+	url = git://github.com/ciniki/api-media.git
+[submodule "ciniki-api/questions"]
+	path = ciniki-api/questions
+	url = git://github.com/ciniki/api-questions.git
+[submodule "ciniki-api/scheduling"]
+	path = ciniki-api/scheduling
+	url = git://github.com/ciniki/api-scheduling.git
+[submodule "ciniki-api/subscriptions"]
+	path = ciniki-api/subscriptions
+	url = git://github.com/ciniki/api-subscriptions.git
+[submodule "ciniki-api/tasks"]
+	path = ciniki-api/tasks
+	url = git://github.com/ciniki/api-tasks.git
+[submodule "ciniki-api/timesheets"]
+	path = ciniki-api/timesheets
+	url = git://github.com/ciniki/api-timesheets.git
+[submodule "ciniki-api/toolbox"]
+	path = ciniki-api/toolbox
+	url = git://github.com/ciniki/api-toolbox.git
+[submodule "ciniki-api/users"]
+	path = ciniki-api/users
+	url = git://github.com/ciniki/api-users.git
+[submodule "ciniki-api/wineproduction"]
+	path = ciniki-api/wineproduction
+	url = git://github.com/ciniki/api-wineproduction.git
+[submodule "ciniki-manage/core"]
+	path = ciniki-manage/core
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/questions"]
+	path = ciniki-manage/questions
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/customers"]
+	path = ciniki-manage/customers
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/products"]
+	path = ciniki-manage/products
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/sysadmin"]
+	path = ciniki-manage/sysadmin
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/wineproduction"]
+	path = ciniki-manage/wineproduction
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/businesses"]
+	path = ciniki-manage/businesses
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/users"]
+	path = ciniki-manage/users
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/friends"]
+	path = ciniki-manage/friends
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/bugs"]
+	path = ciniki-manage/bugs
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/features"]
+	path = ciniki-manage/features
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/toolbox"]
+	path = ciniki-manage/toolbox
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/media"]
+	path = ciniki-manage/media
+	url = git://github.com/ciniki/manage-core.git
+[submodule "ciniki-manage/subscriptions"]
+	path = ciniki-manage/subscriptions
+	url = git://github.com/ciniki/manage-core.git
