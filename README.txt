@@ -5,6 +5,7 @@ Submodules
 Ciniki is released as a set of modules which can be reused individually or as a package.
 To pull down all the code, run the following command:
 
+git clone git@github.com:ciniki/ciniki.git
 git submodule init
 git submodule update
 
