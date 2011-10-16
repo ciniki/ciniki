@@ -97,3 +97,6 @@
 [submodule "site/ciniki-manage/wineproduction"]
 	path = site/ciniki-manage/wineproduction
 	url = git://github.com/ciniki/manage-wineproduction
+[submodule "site/ciniki-manage/questions"]
+	path = site/ciniki-manage/questions
+	url = git://github.com/ciniki/manage-questions
