@@ -1,102 +1,102 @@
-[submodule "ciniki-api/core"]
-	path = ciniki-api/core
+[submodule "site/ciniki-api/core"]
+	path = site/ciniki-api/core
 	url = git://github.com/ciniki/api-core.git
-[submodule "ciniki-api/businesses"]
-	path = ciniki-api/businesses
+[submodule "site/ciniki-api/businesses"]
+	path = site/ciniki-api/businesses
 	url = git://github.com/ciniki/api-businesses.git
-[submodule "ciniki-api/bugs"]
-	path = ciniki-api/bugs
+[submodule "site/ciniki-api/bugs"]
+	path = site/ciniki-api/bugs
 	url = git://github.com/ciniki/api-bugs.git
-[submodule "ciniki-api/cron"]
-	path = ciniki-api/cron
+[submodule "site/ciniki-api/cron"]
+	path = site/ciniki-api/cron
 	url = git://github.com/ciniki/api-cron.git
-[submodule "ciniki-api/customers"]
-	path = ciniki-api/customers
+[submodule "site/ciniki-api/customers"]
+	path = site/ciniki-api/customers
 	url = git://github.com/ciniki/api-customers.git
-[submodule "ciniki-api/documentation"]
-	path = ciniki-api/documentation
+[submodule "site/ciniki-api/documentation"]
+	path = site/ciniki-api/documentation
 	url = git://github.com/ciniki/api-documentation.git
-[submodule "ciniki-api/features"]
-	path = ciniki-api/features
+[submodule "site/ciniki-api/features"]
+	path = site/ciniki-api/features
 	url = git://github.com/ciniki/api-features.git
-[submodule "ciniki-api/friends"]
-	path = ciniki-api/friends
+[submodule "site/ciniki-api/friends"]
+	path = site/ciniki-api/friends
 	url = git://github.com/ciniki/api-friends.git
-[submodule "ciniki-api/healthcheck"]
-	path = ciniki-api/healthcheck
+[submodule "site/ciniki-api/healthcheck"]
+	path = site/ciniki-api/healthcheck
 	url = git://github.com/ciniki/api-healthcheck.git
-[submodule "ciniki-api/inventory"]
-	path = ciniki-api/inventory
+[submodule "site/ciniki-api/inventory"]
+	path = site/ciniki-api/inventory
 	url = git://github.com/ciniki/api-inventory.git
-[submodule "ciniki-api/products"]
-	path = ciniki-api/products
+[submodule "site/ciniki-api/products"]
+	path = site/ciniki-api/products
 	url = git://github.com/ciniki/api-products.git
-[submodule "ciniki-api/media"]
-	path = ciniki-api/media
+[submodule "site/ciniki-api/media"]
+	path = site/ciniki-api/media
 	url = git://github.com/ciniki/api-media.git
-[submodule "ciniki-api/questions"]
-	path = ciniki-api/questions
+[submodule "site/ciniki-api/questions"]
+	path = site/ciniki-api/questions
 	url = git://github.com/ciniki/api-questions.git
-[submodule "ciniki-api/scheduling"]
-	path = ciniki-api/scheduling
+[submodule "site/ciniki-api/scheduling"]
+	path = site/ciniki-api/scheduling
 	url = git://github.com/ciniki/api-scheduling.git
-[submodule "ciniki-api/subscriptions"]
-	path = ciniki-api/subscriptions
+[submodule "site/ciniki-api/subscriptions"]
+	path = site/ciniki-api/subscriptions
 	url = git://github.com/ciniki/api-subscriptions.git
-[submodule "ciniki-api/tasks"]
-	path = ciniki-api/tasks
+[submodule "site/ciniki-api/tasks"]
+	path = site/ciniki-api/tasks
 	url = git://github.com/ciniki/api-tasks.git
-[submodule "ciniki-api/timesheets"]
-	path = ciniki-api/timesheets
+[submodule "site/ciniki-api/timesheets"]
+	path = site/ciniki-api/timesheets
 	url = git://github.com/ciniki/api-timesheets.git
-[submodule "ciniki-api/toolbox"]
-	path = ciniki-api/toolbox
+[submodule "site/ciniki-api/toolbox"]
+	path = site/ciniki-api/toolbox
 	url = git://github.com/ciniki/api-toolbox.git
-[submodule "ciniki-api/users"]
-	path = ciniki-api/users
+[submodule "site/ciniki-api/users"]
+	path = site/ciniki-api/users
 	url = git://github.com/ciniki/api-users.git
-[submodule "ciniki-api/wineproduction"]
-	path = ciniki-api/wineproduction
+[submodule "site/ciniki-api/wineproduction"]
+	path = site/ciniki-api/wineproduction
 	url = git://github.com/ciniki/api-wineproduction.git
-[submodule "ciniki-manage/core"]
-	path = ciniki-manage/core
+[submodule "site/ciniki-manage/core"]
+	path = site/ciniki-manage/core
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/questions"]
-	path = ciniki-manage/questions
+[submodule "site/ciniki-manage/questions"]
+	path = site/ciniki-manage/questions
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/customers"]
-	path = ciniki-manage/customers
+[submodule "site/ciniki-manage/customers"]
+	path = site/ciniki-manage/customers
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/products"]
-	path = ciniki-manage/products
+[submodule "site/ciniki-manage/products"]
+	path = site/ciniki-manage/products
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/sysadmin"]
-	path = ciniki-manage/sysadmin
+[submodule "site/ciniki-manage/sysadmin"]
+	path = site/ciniki-manage/sysadmin
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/wineproduction"]
-	path = ciniki-manage/wineproduction
+[submodule "site/ciniki-manage/wineproduction"]
+	path = site/ciniki-manage/wineproduction
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/businesses"]
-	path = ciniki-manage/businesses
+[submodule "site/ciniki-manage/businesses"]
+	path = site/ciniki-manage/businesses
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/users"]
-	path = ciniki-manage/users
+[submodule "site/ciniki-manage/users"]
+	path = site/ciniki-manage/users
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/friends"]
-	path = ciniki-manage/friends
+[submodule "site/ciniki-manage/friends"]
+	path = site/ciniki-manage/friends
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/bugs"]
-	path = ciniki-manage/bugs
+[submodule "site/ciniki-manage/bugs"]
+	path = site/ciniki-manage/bugs
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/features"]
-	path = ciniki-manage/features
+[submodule "site/ciniki-manage/features"]
+	path = site/ciniki-manage/features
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/toolbox"]
-	path = ciniki-manage/toolbox
+[submodule "site/ciniki-manage/toolbox"]
+	path = site/ciniki-manage/toolbox
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/media"]
-	path = ciniki-manage/media
+[submodule "site/ciniki-manage/media"]
+	path = site/ciniki-manage/media
 	url = git://github.com/ciniki/manage-core.git
-[submodule "ciniki-manage/subscriptions"]
-	path = ciniki-manage/subscriptions
+[submodule "site/ciniki-manage/subscriptions"]
+	path = site/ciniki-manage/subscriptions
 	url = git://github.com/ciniki/manage-core.git
