@@ -7,8 +7,7 @@ To pull down all the code, run the following command:
 
 git clone git@github.com:ciniki/ciniki.git
 cd ciniki
-git submodule init
-git submodule update
+git submodule update --init
 
 Development
 -----------
