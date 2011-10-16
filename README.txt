@@ -6,6 +6,7 @@ Ciniki is released as a set of modules which can be reused individually or as a 
 To pull down all the code, run the following command:
 
 git clone git@github.com:ciniki/ciniki.git
+cd ciniki
 git submodule init
 git submodule update
 
@@ -14,6 +15,16 @@ Development
 If you are doing development run the ./script/dev-init.sh script so the modules can be
 checked out at master and available to push change up.
 
+Commit, Push, Pull
++---------
+To commit all changes in all modules with one commit msg:
+	./scripts/commit.sh 'msg'
+
+To push all changes up to github:
+	./scripts/push.sh
+
+To pull the recent code for all modules:
+	./scripts/pull.sh
 
 License
 -------
