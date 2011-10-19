@@ -20,8 +20,20 @@ ln -s ciniki-api/core/scripts/json.php ciniki-json.php
 
 Setup config file
 
-cp config.ini.default config.ini
+cp ciniki.ini.default ciniki.ini
 
+Setup Robot
+-----------
+The Ciniki Robot will take care of cron jobs, and emails alerts to approriate people.
+The reason to include Robot in the name, is so users understand easily this is coming
+from an automated system and not a human.
+
+1. Make sure the email address you're going to use is available and forwarded to 
+   somebody who will read it.  Any bounced messages etc will be sent this address.
+
+2. Setup the address in the system.email and system.email.name config variables in ciniki.ini
+
+3. Ensure mail services are running for outbound mail.
 
 Development
 -----------
