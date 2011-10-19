@@ -37,3 +37,15 @@ To pull the recent code for all modules:
 
 ./scripts/pull.sh
 
+Workflow
++-------
+The following workflow is recommended while working on the code
+
+Update the code to the latest from the repo.
+./scripts/pull.sh
+
+Make changes to code, then commit and push. It's a good idea to pull
+after the push to update all the submodules.
+./scripts/commit.sh 'commit msg'
+./scripts/push.sh
+./scripts/pull.sh
