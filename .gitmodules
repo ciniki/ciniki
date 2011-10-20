@@ -103,3 +103,6 @@
 [submodule "site/ciniki-manage-themes/default"]
 	path = site/ciniki-manage-themes/default
 	url = git://github.com/ciniki/manage-theme-default.git
+[submodule "site/ciniki-api/images"]
+	path = site/ciniki-api/images
+	url = git://github.com/ciniki/api-images.git
