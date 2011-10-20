@@ -9,6 +9,7 @@ cd site/ciniki-api/documentation; git checkout master; git remote add push git@g
 cd site/ciniki-api/features; git checkout master; git remote add push git@github.com:ciniki/api-features.git; cd ../../..
 cd site/ciniki-api/friends; git checkout master; git remote add push git@github.com:ciniki/api-friends.git; cd ../../..
 cd site/ciniki-api/healthcheck; git checkout master; git remote add push git@github.com:ciniki/api-healthcheck.git; cd ../../..
+cd site/ciniki-api/images; git checkout master; git remote add push git@github.com:ciniki/api-images.git; cd ../../..
 cd site/ciniki-api/inventory; git checkout master; git remote add push git@github.com:ciniki/api-inventory.git; cd ../../..
 cd site/ciniki-api/products; git checkout master; git remote add push git@github.com:ciniki/api-products.git; cd ../../..
 cd site/ciniki-api/media; git checkout master; git remote add push git@github.com:ciniki/api-media.git; cd ../../..
