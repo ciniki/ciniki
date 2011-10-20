@@ -49,3 +49,16 @@ after the push to update all the submodules.
 ./scripts/commit.sh 'commit msg'
 ./scripts/push.sh
 ./scripts/pull.sh
+
+Adding a new submodule
++---------------------
+First, create the repo on github under ciniki.
+
+Then, add submodule to the local ciniki project directory.
+
+cd ciniki/
+git submodule add git://github.com/ciniki/api-<modulename>.git site/ciniki-api/<modulename>
+cd site/ciniki-api/<modulename>
+git remote add push git@github.com:ciniki/api-<modulename>.git 
+
+

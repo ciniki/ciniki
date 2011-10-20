@@ -17,6 +17,8 @@ Link files to php scripts
 cd site
 ln -s ciniki-api/core/scripts/rest.php ciniki-rest.php
 ln -s ciniki-api/core/scripts/json.php ciniki-json.php
+ln -s ciniki-manage/core/scripts/manage.php ciniki-manage.php
+ln -s ciniki-manage/core/scripts/login.php ciniki-login.php
 
 Setup config file
 
