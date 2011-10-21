@@ -106,3 +106,6 @@
 [submodule "site/ciniki-api/images"]
 	path = site/ciniki-api/images
 	url = git://github.com/ciniki/api-images.git
+[submodule "site/ciniki-manage/monitoring"]
+	path = site/ciniki-manage/monitoring
+	url = git://github.com/ciniki/manage-monitoring.git
