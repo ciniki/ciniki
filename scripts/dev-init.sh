@@ -28,6 +28,7 @@ cd site/ciniki-manage/customers; git checkout master; git remote add push git@gi
 cd site/ciniki-manage/features; git checkout master; git remote add push git@github.com:ciniki/manage-features.git; cd ../../..
 cd site/ciniki-manage/friends; git checkout master; git remote add push git@github.com:ciniki/manage-friends.git; cd ../../..
 cd site/ciniki-manage/media; git checkout master; git remote add push git@github.com:ciniki/manage-media.git; cd ../../..
+cd site/ciniki-manage/monitoring; git checkout master; git remote add push git@github.com:ciniki/manage-monitoring.git; cd ../../..
 cd site/ciniki-manage/products; git checkout master; git remote add push git@github.com:ciniki/manage-products.git; cd ../../..
 cd site/ciniki-manage/questions; git checkout master; git remote add push git@github.com:ciniki/manage-questions.git; cd ../../..
 cd site/ciniki-manage/subscriptions; git checkout master; git remote add push git@github.com:ciniki/manage-subscriptions.git; cd ../../..
@@ -35,4 +36,6 @@ cd site/ciniki-manage/sysadmin; git checkout master; git remote add push git@git
 cd site/ciniki-manage/toolbox; git checkout master; git remote add push git@github.com:ciniki/manage-toolbox.git; cd ../../..
 cd site/ciniki-manage/users; git checkout master; git remote add push git@github.com:ciniki/manage-users.git; cd ../../..
 cd site/ciniki-manage/wineproduction; git checkout master; git remote add push git@github.com:ciniki/manage-wineproduction.git; cd ../../..
+
+cd site/ciniki-manage-themes/default; git checkout master; git remote add push git@github.com:ciniki/manage-theme-default.git; cd ../../..
 
