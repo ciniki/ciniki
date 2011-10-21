@@ -20,9 +20,10 @@ ln -s ciniki-api/core/scripts/json.php ciniki-json.php
 ln -s ciniki-manage/core/scripts/manage.php ciniki-manage.php
 ln -s ciniki-manage/core/scripts/login.php ciniki-login.php
 
-Setup config file
+Setup config files
 
-cp ciniki.ini.default ciniki.ini
+cp ciniki-api/core/docs/ciniki.ini.default ciniki-api.ini
+cp ciniki-manage/core/docs/ciniki.ini.default ciniki-manage.ini
 
 Setup Robot
 -----------
