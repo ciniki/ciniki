@@ -1,3 +1,4 @@
+site/.htaccess
 site/ciniki-api.ini
 site/ciniki-manage.ini
 site/ciniki-rest.php
