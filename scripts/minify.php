@@ -14,7 +14,7 @@ $version = strftime("%y%m%d.%H%M", time());
 $ciniki_js = preg_replace("/'version':'[0-9]{6}\.[0-9]{4}',/", "'version':'$version',", $ciniki_js);
 $ciniki_panels_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/ciniki_panels.js");
 $cinikiAPI_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/cinikiAPI.js");
-$all_browser_js = $ciniki_manage_js . "\n" . $ciniki_panels_js . "\n" . $cinikiAPI_js;
+$all_browser_js = $ciniki_js . "\n" . $ciniki_panels_js . "\n" . $cinikiAPI_js;
 
 $e_webkit_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-webkit.js");
 $e_gecko_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-gecko.js");
@@ -24,19 +24,19 @@ $s_compact_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/s-compac
 $s_normal_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/s-normal.js");
 
 
-$style_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/style.css");
-$d_ipad_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/d-ipad.css");
-$d_generic_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/d-generic.css");
+$style_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/style.css");
+$d_ipad_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/d-ipad.css");
+$d_generic_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/d-generic.css");
 
-$e_webkit_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/e-webkit.css");
-$e_gecko_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/e-gecko.css");
-$e_presto_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/e-presto.css");
-$e_trident_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/e-trident.css");
+$e_webkit_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/e-webkit.css");
+$e_gecko_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/e-gecko.css");
+$e_presto_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/e-presto.css");
+$e_trident_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/e-trident.css");
 
-$s_compact_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/s-compact.css");
-$s_normal_css = load_minify_css("$ciniki_root/site/ciniki-manage/themes/default/s-normal.css");
-$s_normal_webkit_css = load_minify_js("$ciniki_root/site/ciniki-manage/themes/default/s-normal-webkit.css");
-$s_normal_gecko_css = load_minify_js("$ciniki_root/site/ciniki-manage/themes/default/s-normal-gecko.css");
+$s_compact_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/s-compact.css");
+$s_normal_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/s-normal.css");
+$s_normal_webkit_css = load_minify_js("$ciniki_root/site/ciniki-manage-themes/default/s-normal-webkit.css");
+$s_normal_gecko_css = load_minify_js("$ciniki_root/site/ciniki-manage-themes/default/s-normal-gecko.css");
 $s_normal_presto_css = '';
 $s_normal_trident_css = '';
 
@@ -181,11 +181,11 @@ function file_put_manifest($filename, $cache, $network) {
 		. "CACHE:\n"
 		. $cache
 		. "index.php\n"
-		. "themes/default/img/arrow.png\n"
-		. "themes/default/img/expand.png\n"
-		. "themes/default/img/history.png\n"
-		. "themes/default/img/help_button.png\n"
-		. "themes/default/img/home_button.png\n"
+		. "ciniki-manage-themes/default/img/arrow.png\n"
+		. "ciniki-manage-themes/default/img/expand.png\n"
+		. "ciniki-manage-themes/default/img/history.png\n"
+		. "ciniki-manage-themes/default/img/help_button.png\n"
+		. "ciniki-manage-themes/default/img/home_button.png\n"
 		. "\n"
 		. "NETWORK:\n"
 		. "*\n"
@@ -211,7 +211,7 @@ function file_put_min_cssjs($device, $engine, $size) {
 //		file_put_contents("$ciniki_root/site/cinikii/themes/default/$device-$engine.min.css",
 //			${"e_${engine}_css"} . ${"d_${device}_css"} . ${"s_${size}_css"} . $style_css);
 //	} else {
-		file_put_contents("$ciniki_root/site/ciniki-manage/themes/default/$device-$engine.min.css",
+		file_put_contents("$ciniki_root/site/ciniki-manage-themes/default/$device-$engine.min.css",
 			$style_css . ${"e_${engine}_css"} . ${"s_${size}_css"} . ${"d_${device}_css"} . ${"s_${size}_${engine}_css"});
 //	}
 }
