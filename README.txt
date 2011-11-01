@@ -34,7 +34,7 @@ from an automated system and not a human.
 1. Make sure the email address you're going to use is available and forwarded to 
    somebody who will read it.  Any bounced messages etc will be sent this address.
 
-2. Setup the address in the system.email and system.email.name config variables in ciniki.ini
+2. Setup the address in the system.email and system.email.name config variables in ciniki-api.ini
 
 3. Ensure mail services are running for outbound mail.
 
