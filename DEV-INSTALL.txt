@@ -61,4 +61,8 @@ git submodule add git://github.com/ciniki/api-<modulename>.git site/ciniki-api/<
 cd site/ciniki-api/<modulename>
 git remote add push git@github.com:ciniki/api-<modulename>.git 
 
+Documentation
++------------
+If you want to see API documentation, you'll need to setup the documentation module.
 
+FIXME: Add info here
