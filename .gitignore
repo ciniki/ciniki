@@ -5,3 +5,5 @@ site/ciniki-rest.php
 site/ciniki-json.php
 site/ciniki-manage.php
 site/ciniki-login.php
+dev-tools
+run.sh
