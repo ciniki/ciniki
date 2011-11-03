@@ -21,34 +21,42 @@ Initialize all the submodules to have the master checked out and available for e
 adds in the remote push of git@github.com:ciniki/api-<module>.git so the changes can be commited
 and pushed back to github.
 
-./scripts/dev-init.sh
+Checkout the dev-tools module from the github to aid in managing the development.
+
+git clone git@github.com:ciniki/dev-tools.git
+
+If you want to update the tool set:
+cd dev-tools
+git remote add push git@github.com:ciniki/dev-tools.git 
+
+./dev-tools/dev-init.sh
 
 Commit, Push, Pull
 +-----------------
 To commit all changes in all modules with one commit msg:
 
-./scripts/commit.sh 'msg'
+./dev-tools/commit.sh 'msg'
 
 To push all changes up to github:
 
-./scripts/push.sh
+./dev-tools/push.sh
 
 To pull the recent code for all modules:
 
-./scripts/pull.sh
+./dev-tools/pull.sh
 
 Workflow
 +-------
 The following workflow is recommended while working on the code
 
 Update the code to the latest from the repo.
-./scripts/pull.sh
+./dev-tools/pull.sh
 
 Make changes to code, then commit and push. It's a good idea to pull
 after the push to update all the submodules.
-./scripts/commit.sh 'commit msg'
-./scripts/push.sh
-./scripts/pull.sh
+./dev-tools/commit.sh 'commit msg'
+./dev-tools/push.sh
+./dev-tools/pull.sh
 
 Adding a new submodule
 +---------------------
@@ -63,6 +71,9 @@ git remote add push git@github.com:ciniki/api-<modulename>.git
 
 Documentation
 +------------
-If you want to see API documentation, you'll need to setup the documentation module.
+The documentation is all stored inline in the code, or in the docs directory for each module.
 
-FIXME: Add info here
+To access the documentation, it is available from the API in XML format currently.  In the
+future it will be generated to a website for easy viewing online.
+
+
