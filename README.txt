@@ -38,9 +38,24 @@ from an automated system and not a human.
 
 3. Ensure mail services are running for outbound mail.
 
+
+
+MAC OS X
+--------
+When running this on mac with the native PHP5, the follow macports need to be installed:
+
+1. php5-imagick
+	sudo port install php5-imagick
+
+2. Setup /etc/php.ini file to include the line:
+	extension=/opt/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so
+
+
 Development
 -----------
 Instructions for Developers to install are located in DEV-INSTALL.txt
+
+
 
 License
 -------
