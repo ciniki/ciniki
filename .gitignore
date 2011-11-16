@@ -1,9 +1,5 @@
 site/.htaccess
 site/ciniki-api.ini
 site/ciniki-manage.ini
-site/ciniki-rest.php
-site/ciniki-json.php
-site/ciniki-manage.php
-site/ciniki-login.php
 dev-tools
 run.sh

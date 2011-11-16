@@ -1,0 +1,1 @@
+ciniki-api/core/scripts/install.php
