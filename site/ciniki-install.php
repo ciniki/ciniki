@@ -61,9 +61,9 @@ function print_page($display_form, $err_code, $err_msg) {
 <div id='m_container' class="s-normal">
 	<table id="mc_header" class="headerbar" cellpadding="0" cellspacing="0">
 		<tr>
-		<td id="mc_home_button" style="display:none;"><img src="ciniki-manage-themes/default/img/home_button.png" onClick="mossi_showMenu('home');"/></td>
+		<td id="mc_home_button" style="display:none;"><img src="ciniki-manage-themes/default/img/home_button.png"/></td>
 		<td id="mc_title" class="title" >Ciniki Installer</td>
-		<td id="mc_help_button" style="display:none;"><img src="ciniki-manage-themes/default/img/help_button.png" onClick="mossi_toggleHelp();"/></td>
+		<td id="mc_help_button" style="display:none;"><img src="ciniki-manage-themes/default/img/help_button.png"/></td>
 		</tr>
 	</table>
 	<div id="mc_content">
@@ -74,7 +74,7 @@ function print_page($display_form, $err_code, $err_msg) {
 				<div class="medium">
 				<?php
 					if( $err_code == 'installed' ) {
-						print "<h2 class=''>Installed</h2><div class='bordered error'><p>Ciniki installed and configured, you can now login and finished installing the database.  </p><p><a href='/mossi/'>Login</a></p></div>";
+						print "<h2 class=''>Installed</h2><div class='bordered error'><p>Ciniki installed and configured, you can now login and finished installing the database.  </p><p><a href='/manage'>Login</a></p></div>";
 
 					}
 					elseif( $err_code != '' ) {
@@ -194,7 +194,7 @@ function install($ciniki_root, $modules_dir) {
 
 	// Configure users module settings for password recovery
 	$config['users']['password.forgot.notify'] = $admin_email;
-	$config['users']['password.forgot.url'] = "http://" . $_SERVER['SERVER_NAME'] . "/" . dirname($_SERVER['REQUEST_URI']);
+	$config['users']['password.forgot.url'] = "http://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']));
 
 
 	//
@@ -220,7 +220,7 @@ function install($ciniki_root, $modules_dir) {
 	// so we don't have to check first if they exist.
 	// 
 	require_once($modules_dir . '/core/private/dbUpgradeTables.php');
-	$rc = ciniki_core_dbInit($ciniki);
+	$rc = ciniki_core_dbUpgradeTables($ciniki);
 	if( $rc['stat'] != 'ok' ) {
 		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to connect to the database '$database_name', please check your database connection settings and try again.<br/><br/>" . $rc['err']['msg']);
 		exit();
@@ -259,7 +259,7 @@ function install($ciniki_root, $modules_dir) {
 	// Start a new database transaction
 	//
 	require_once($modules_dir . '/core/private/dbTransactionStart.php');
-	require_once($modules_dir . '/core/private/dbTransactionEnd.php');
+	require_once($modules_dir . '/core/private/dbTransactionCommit.php');
 	require_once($modules_dir . '/core/private/dbTransactionRollback.php');
 	require_once($modules_dir . '/core/private/dbInsert.php');
 	$rc = ciniki_core_dbTransactionStart($ciniki, 'core');
@@ -406,8 +406,8 @@ function install($ciniki_root, $modules_dir) {
 	$manage_config = ""
 		. "[core]\n"
 		. "manage_root_url = /ciniki-manage\n"
-		. "themes_root_url = " . dirname($_SERVER['REQUEST_URI']) . "/ciniki-manage-themes\n"
-		. "json_url = " . dirname($_SERVER['REQUEST_URI']) . "/ciniki-json.php\n"
+		. "themes_root_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-manage-themes\n"
+		. "json_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-json.php\n"
 		. "api_key = $manage_api_key\n"
 		. "site_title = 'Ciniki'\n"
 		. "";
@@ -445,12 +445,11 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteBase /\n"
 		. "\n"
 		. "AddType text/cache-manifest .manifest\n"
-		. "RewriteRule ^mossi$ manage/ [R,L]                                                        # add the trailing slash so img references work\n"
 		. "\n"
 		. "RewriteCond %{REQUEST_FILENAME} -f [OR]\n"
 		. "RewriteCond %{REQUEST_FILENAME} -d\n"
-		. "RewriteRule ^(manage/)$ ciniki-manage.php [L]                                            # allow all moss-admin\n"
-		. "RewriteRule ^(manage)$ ciniki-manage.php [L]                                             # allow all moss-admin\n"
+		. "RewriteRule ^(manage/)$ ciniki-manage.php [L]                                            # allow all ciniki-manage\n"
+		. "RewriteRule ^(manage)$ ciniki-manage.php [L]                                             # allow all ciniki-manage\n"
 		. "RewriteRule ^(ciniki-manage/.*)$ $1 [L]                                                  # Allow manage content\n"
 		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-login|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
@@ -465,6 +464,28 @@ function install($ciniki_root, $modules_dir) {
 		unlink($ciniki_root . '/.htaccess');
 		ciniki_core_dbTransactionRollback($ciniki, 'core');
 		print_page('yes', 'ciniki.installer.97', "Unable to write configuration, please check your website settings.");
+		exit();
+	}
+
+	//
+	// Create symlinks into scripts
+	//
+	symlink($ciniki_root . '/ciniki-api/core/scripts/rest.php', $ciniki_root . '/ciniki-rest.php');
+	symlink($ciniki_root . '/ciniki-api/core/scripts/json.php', $ciniki_root . '/ciniki-json.php');
+	symlink($ciniki_root . '/ciniki-manage/core/scripts/manage.php', $ciniki_root . '/ciniki-manage.php');
+	symlink($ciniki_root . '/ciniki-manage/core/scripts/login.php', $ciniki_root . '/ciniki-login.php');
+
+	$rc = ciniki_core_dbTransactionCommit($ciniki, 'core');
+	if( $rc['stat'] != 'ok' ) {
+		ciniki_core_dbTransactionRollback($ciniki, 'core');
+		unlink($ciniki_root . '/ciniki-api.ini');
+		unlink($ciniki_root . '/ciniki-manage.ini');
+		unlink($ciniki_root . '/.htaccess');
+		unlink($ciniki_root . '/ciniki-rest.php');		
+		unlink($ciniki_root . '/ciniki-json.php');		
+		unlink($ciniki_root . '/ciniki-manage.php');		
+		unlink($ciniki_root . '/ciniki-login.php');		
+		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
 		exit();
 	}
 
