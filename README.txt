@@ -12,11 +12,36 @@ git clone git://github.com/ciniki/ciniki.git
 cd ciniki
 git submodule update --init
 
+If this is running locally, then the ssl and logs directories should be created.
+mkdir logs
+mkdir ssl
+
 
 Setup Web Server
 ================
 Setup your web server with a new site, which has the root of the site folder inside ciniki.
 
+Ubuntu with Apache2
+-------------------
+cd /etc/apache2/sites-available
+
+Copy the default site conf from site/ciniki-api/core/docs/apache2.virtualhost.ssl
+
+Edit the file for the settings on your server.
+
+No link the file into sites-enabled
+cd /etc/apache2/sites-enabled
+sudo ln -s ../sites-available/instance.mydomain.com
+
+Setup SSL
+---------
+FIXME: Add instructions for SSL cert generation
+
+Restart Apache
+--------------
+Before restarting apache, makes sure to run configtest and validate the site config.
+sudo apache2ctl configtest
+sudo apache2ctl restart
 
 Setup database
 ==============
