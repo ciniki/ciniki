@@ -12,9 +12,11 @@ git clone git://github.com/ciniki/ciniki.git
 cd ciniki
 git submodule update --init
 
-If this is running locally, then the ssl and logs directories should be created.
+If this is running locally, then the ssl and logs directories should be created, and
+the site directory needs to be writable by www-data to enable the install script.
 mkdir logs
 mkdir ssl
+chown www-data site
 
 
 Setup Web Server
