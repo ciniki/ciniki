@@ -1,26 +1,20 @@
 Development Install
--------------------
+===================
 These instructions are only for those allowed commit privileges to checkin changes to the core code.
 
 Create SSH Key 
-+-------------
+--------------
 In order to do development work, you must download the code as a registered github user to the ciniki project. 
 
 Follow the instructions at http://help.github.com/mac-set-up-git/ to setup you ssh key and github token.  These
 will allow you to download and contribute back to the code.
- 
-Clone the ciniki repository
-+--------------------------
-Checkout all the code from github.
 
-git clone git@github.com:ciniki/ciniki.git
-cd ciniki
-git submodule update --init
+Setup Ciniki
+------------
+Follow the instruction in README.txt to setup Ciniki, with webserver and mail server.
 
-Initialize all the submodules to have the master checked out and available for editing.  This also
-adds in the remote push of git@github.com:ciniki/api-<module>.git so the changes can be commited
-and pushed back to github.
-
+Clone dev-tools helper scripts
+------------------------------
 Checkout the dev-tools module from the github to aid in managing the development.
 
 git clone git@github.com:ciniki/dev-tools.git
@@ -29,24 +23,26 @@ If you want to update the tool set:
 cd dev-tools
 git remote add push git@github.com:ciniki/dev-tools.git 
 
+All the submodules need to have the master branch checked out and available for editing, as well,
+the remote push of git@github.com:ciniki/api-<module>.git needs to be added.  This will allow 
+changes to be pushed back to the repo.
 ./dev-tools/dev-init.sh
 
-Commit, Push, Pull
-+-----------------
-To commit all changes in all modules with one commit msg:
 
+Commit, Push, Pull
+==================
+To commit all changes in all modules with one commit msg:
 ./dev-tools/commit.sh 'msg'
 
 To push all changes up to github:
-
 ./dev-tools/push.sh
 
 To pull the recent code for all modules:
-
 ./dev-tools/pull.sh
 
+
 Workflow
-+-------
+========
 The following workflow is recommended while working on the code
 
 Update the code to the latest from the repo.
@@ -58,8 +54,9 @@ after the push to update all the submodules.
 ./dev-tools/push.sh
 ./dev-tools/pull.sh
 
+
 Adding a new submodule
-+---------------------
+======================
 First, create the repo on github under ciniki.
 
 Then, add submodule to the local ciniki project directory.
@@ -69,8 +66,9 @@ git submodule add git://github.com/ciniki/api-<modulename>.git site/ciniki-api/<
 cd site/ciniki-api/<modulename>
 git remote add push git@github.com:ciniki/api-<modulename>.git 
 
+
 Documentation
-+------------
+=============
 The documentation is all stored inline in the code, or in the docs directory for each module.
 
 To access the documentation, it is available from the API in XML format currently.  In the

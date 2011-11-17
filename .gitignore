@@ -1,4 +1,8 @@
 site/.htaccess
+site/ciniki-rest.php
+site/ciniki-json.php
+site/ciniki-manage.php
+site/ciniki-login.php
 site/ciniki-api.ini
 site/ciniki-manage.ini
 dev-tools
