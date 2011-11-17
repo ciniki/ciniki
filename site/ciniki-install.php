@@ -294,12 +294,13 @@ function install($ciniki_root, $modules_dir) {
 			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
 			exit();
 		}
+		$config['core']['master_business_id'] = 1;
 
 		//
 		// Add sysadmin as the owner of the master business
 		//
 		$strsql = "INSERT INTO business_users (business_id, user_id, groups, type, status, date_added, last_updated) VALUES ("
-			. "'1', '3', '1', '1', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+			. "'1', '1', '1', '1', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
