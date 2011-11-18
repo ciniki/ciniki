@@ -290,7 +290,7 @@ function install($ciniki_root, $modules_dir) {
 		// Add the master business, if it doesn't already exist
 		//
 		$strsql = "INSERT INTO ciniki_businesses (id, uuid, modules, name, tagline, description, status, date_added, last_updated) VALUES ("
-			. "'1', UUID(), 0x3800, '$master_name', '', '', 1, UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+			. "'1', UUID(), 0, '$master_name', '', '', 1, UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
