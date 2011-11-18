@@ -16,7 +16,7 @@ If this is running locally, then the ssl and logs directories should be created,
 the site directory needs to be writable by www-data to enable the install script.
 mkdir logs
 mkdir ssl
-chown www-data site
+sudo chown www-data site
 
 
 Setup Web Server
@@ -34,6 +34,10 @@ Edit the file for the settings on your server.
 No link the file into sites-enabled
 cd /etc/apache2/sites-enabled
 sudo ln -s ../sites-available/instance.mydomain.com
+
+Setup the rewrite module
+cd /etc/apache2/mods-enabled
+sudo ln -s ../mods-available/rewrite.load
 
 Setup SSL
 ---------

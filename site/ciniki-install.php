@@ -192,6 +192,9 @@ function install($ciniki_root, $modules_dir) {
 	$config['core']['system.email'] = $system_email;
 	$config['core']['system.email.name'] = $system_email_name;
 
+	// Configure packages and modules 
+	$config['core']['packages'] = 'ciniki';
+
 	// Configure users module settings for password recovery
 	$config['users']['password.forgot.notify'] = $admin_email;
 	$config['users']['password.forgot.url'] = "http://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']));
