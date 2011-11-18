@@ -275,7 +275,7 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add the user
 		//
-		$strsql = "INSERT INTO users (id, email, username, password, avatar_id, perms, status, timeout, "
+		$strsql = "INSERT INTO ciniki_users (id, email, username, password, avatar_id, perms, status, timeout, "
 			. "firstname, lastname, display_name, date_added, last_updated) VALUES ( "
 			. "'1', '$admin_email', '$admin_username', SHA1('$admin_password'), 0, 1, 1, 0, "
 			. "'$admin_firstname', '$admin_lastname', '$admin_display_name', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
@@ -289,7 +289,7 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add the master business, if it doesn't already exist
 		//
-		$strsql = "INSERT INTO businesses (id, uuid, modules, name, tagline, description, status, date_added, last_updated) VALUES ("
+		$strsql = "INSERT INTO ciniki_businesses (id, uuid, modules, name, tagline, description, status, date_added, last_updated) VALUES ("
 			. "'1', UUID(), 0x3800, '$master_name', '', '', 1, UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
@@ -302,7 +302,7 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add sysadmin as the owner of the master business
 		//
-		$strsql = "INSERT INTO business_users (business_id, user_id, groups, type, status, date_added, last_updated) VALUES ("
+		$strsql = "INSERT INTO ciniki_business_users (business_id, user_id, groups, type, status, date_added, last_updated) VALUES ("
 			. "'1', '1', '1', '1', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
@@ -314,7 +314,7 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Enable modules: bugs, features, questions for master business
 		//
-		$strsql = "INSERT INTO business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
+		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
 			. "VALUES ('1', 'ciniki', 'bugs', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
@@ -323,7 +323,7 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 
-		$strsql = "INSERT INTO business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
+		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
 			. "VALUES ('1', 'ciniki', 'features', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
@@ -332,7 +332,7 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 
-		$strsql = "INSERT INTO business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
+		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
 			. "VALUES ('1', 'ciniki', 'questions', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
@@ -344,7 +344,7 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Setup notification settings
 		//
-		$strsql = "INSERT INTO bug_settings (business_id, detail_key, detail_value, date_added, last_updated) "
+		$strsql = "INSERT INTO ciniki_bug_settings (business_id, detail_key, detail_value, date_added, last_updated) "
 			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'bugs');
 		if( $rc['stat'] != 'ok' ) {
@@ -353,7 +353,7 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 
-		$strsql = "INSERT INTO feature_settings (business_id, detail_key, detail_value, date_added, last_updated) "
+		$strsql = "INSERT INTO ciniki_feature_settings (business_id, detail_key, detail_value, date_added, last_updated) "
 			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'features');
 		if( $rc['stat'] != 'ok' ) {
@@ -362,7 +362,7 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 
-		$strsql = "INSERT INTO question_settings (business_id, detail_key, detail_value, date_added, last_updated) "
+		$strsql = "INSERT INTO ciniki_question_settings (business_id, detail_key, detail_value, date_added, last_updated) "
 			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'questions');
 		if( $rc['stat'] != 'ok' ) {
@@ -374,7 +374,7 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add the api key for the UI
 		//
-		$strsql = "INSERT INTO core_api_keys (api_key, status, perms, user_id, appname, notes, "
+		$strsql = "INSERT INTO ciniki_core_api_keys (api_key, status, perms, user_id, appname, notes, "
 			. "last_access, expiry_date, date_added, last_updated) VALUES ("
 			. "'$manage_api_key', 1, 0, 2, 'ciniki-manage', '', 0, 0, UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'core');
