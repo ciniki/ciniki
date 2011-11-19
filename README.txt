@@ -75,8 +75,8 @@ http://<hostname>/ciniki-install.php
 
 
 
-
-
+Manual Configuration
+====================
 cd site
 ln -s ciniki-api/core/scripts/rest.php ciniki-rest.php
 ln -s ciniki-api/core/scripts/json.php ciniki-json.php
@@ -84,13 +84,10 @@ ln -s ciniki-manage/core/scripts/manage.php ciniki-manage.php
 ln -s ciniki-manage/core/scripts/login.php ciniki-login.php
 
 Setup config files
-
 cp ciniki-api/core/docs/ciniki.ini.default ciniki-api.ini
 cp ciniki-manage/core/docs/ciniki.ini.default ciniki-manage.ini
 
-2. Setup the address in the system.email and system.email.name config variables in ciniki-api.ini
-
-
+Don't forget to setup the address in the system.email and system.email.name config variables in ciniki-api.ini
 
 
 
