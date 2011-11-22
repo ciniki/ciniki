@@ -211,7 +211,8 @@ function install($ciniki_root, $modules_dir) {
 	//
 	// Initialize the database connection
 	//
-	require_once($modules_dir . '/core/private/dbInit.php');
+	require_once($modules_dir . '/core/private/loadMethod.php');
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbInit');
 	$rc = ciniki_core_dbInit($ciniki);
 	if( $rc['stat'] != 'ok' ) {
 		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to connect to the database '$database_name', please check your database connection settings and try again.<br/><br/>" . $rc['err']['msg']);
@@ -222,7 +223,7 @@ function install($ciniki_root, $modules_dir) {
 	// Run the upgrade script, which will upgrade any existing tables,
 	// so we don't have to check first if they exist.
 	// 
-	require_once($modules_dir . '/core/private/dbUpgradeTables.php');
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbUpgradeTables');
 	$rc = ciniki_core_dbUpgradeTables($ciniki);
 	if( $rc['stat'] != 'ok' ) {
 		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to connect to the database '$database_name', please check your database connection settings and try again.<br/><br/>" . $rc['err']['msg']);
@@ -235,8 +236,8 @@ function install($ciniki_root, $modules_dir) {
 	//
 	// Check if any data exists in the database
 	//
-	$strsql = "SELECT 'num_rows', COUNT(*) FROM core_api_keys, users";
-	require_once($modules_dir . '/core/private/dbCount.php');
+	$strsql = "SELECT 'num_rows', COUNT(*) FROM ciniki_core_api_keys, ciniki_users";
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbCount');
 	$rc = ciniki_core_dbCount($ciniki, $strsql, 'core', 'count');
 	if( $rc['stat'] != 'ok' ) {
 		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to check for existing data<br/><br/>" . $rc['err']['msg']);
@@ -261,10 +262,10 @@ function install($ciniki_root, $modules_dir) {
 	//
 	// Start a new database transaction
 	//
-	require_once($modules_dir . '/core/private/dbTransactionStart.php');
-	require_once($modules_dir . '/core/private/dbTransactionCommit.php');
-	require_once($modules_dir . '/core/private/dbTransactionRollback.php');
-	require_once($modules_dir . '/core/private/dbInsert.php');
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbTransactionStart');
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbTransactionRollback');
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbTransactionCommit');
+	ciniki_core_loadMethod($ciniki, 'ciniki', 'core', 'private', 'dbInsert');
 	$rc = ciniki_core_dbTransactionStart($ciniki, 'core');
 	if( $rc['stat'] != 'ok' ) {
 		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
