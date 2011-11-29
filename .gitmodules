@@ -118,3 +118,6 @@
 [submodule "site/ciniki-manage/alerts"]
 	path = site/ciniki-manage/alerts
 	url = git://github.com/ciniki/manage-alerts.git
+[submodule "site/ciniki-api/healthchecks"]
+	path = site/ciniki-api/healthchecks
+	url = git://github.com/ciniki/api-healthchecks.git
