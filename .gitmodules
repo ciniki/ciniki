@@ -121,3 +121,6 @@
 [submodule "site/ciniki-api/healthchecks"]
 	path = site/ciniki-api/healthchecks
 	url = git://github.com/ciniki/api-healthchecks.git
+[submodule "site/ciniki-manage/calendar"]
+	path = site/ciniki-manage/calendar
+	url = git://github.com/ciniki/manage-calendar.git
