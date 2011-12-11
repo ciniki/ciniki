@@ -124,3 +124,6 @@
 [submodule "site/ciniki-manage/calendar"]
 	path = site/ciniki-manage/calendar
 	url = git://github.com/ciniki/manage-calendar.git
+[submodule "site/ciniki-api/appointments"]
+	path = site/ciniki-api/appointments
+	url = git://github.com/ciniki/api-appointments.git
