@@ -14,7 +14,9 @@ $version = strftime("%y%m%d.%H%M", time());
 $ciniki_js = preg_replace("/'version':'[0-9]{6}\.[0-9]{4}',/", "'version':'$version',", $ciniki_js);
 $ciniki_panels_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/ciniki_panels.js");
 $cinikiAPI_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/cinikiAPI.js");
-$all_browser_js = $ciniki_js . "\n" . $ciniki_panels_js . "\n" . $cinikiAPI_js;
+$colorPicker_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/colorPicker.js");
+
+$all_browser_js = $ciniki_js . "\n" . $ciniki_panels_js . "\n" . $cinikiAPI_js . "\n" . $colorPicker_js;
 
 $e_webkit_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-webkit.js");
 $e_gecko_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-gecko.js");
