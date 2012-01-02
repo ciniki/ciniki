@@ -196,7 +196,7 @@ function install($ciniki_root, $modules_dir) {
 	$config['core']['packages'] = 'ciniki';
 
 	$config['core']['sync.name'] = $master_name;
-	$config['core']['sync.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']) . "ciniki-sync.php");
+	$config['core']['sync.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\//', '', dirname($_SERVER['REQUEST_URI']) . "ciniki-sync.php");
 
 	// Configure users module settings for password recovery
 	$config['users']['password.forgot.notify'] = $admin_email;
