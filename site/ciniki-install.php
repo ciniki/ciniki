@@ -62,7 +62,7 @@ function print_page($display_form, $err_code, $err_msg) {
 	<table id="mc_header" class="headerbar" cellpadding="0" cellspacing="0">
 		<tr>
 		<td id="mc_home_button" style="display:none;"><img src="ciniki-manage-themes/default/img/home_button.png"/></td>
-		<td id="mc_title" class="title" >Ciniki Installer</td>
+		<td id="mc_title" class="title">Ciniki Installer</td>
 		<td id="mc_help_button" style="display:none;"><img src="ciniki-manage-themes/default/img/help_button.png"/></td>
 		</tr>
 	</table>
@@ -195,9 +195,12 @@ function install($ciniki_root, $modules_dir) {
 	// Configure packages and modules 
 	$config['core']['packages'] = 'ciniki';
 
+	$config['core']['sync.name'] = $master_name;
+	$config['core']['sync.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']) . "ciniki-sync.php");
+
 	// Configure users module settings for password recovery
 	$config['users']['password.forgot.notify'] = $admin_email;
-	$config['users']['password.forgot.url'] = "http://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']));
+	$config['users']['password.forgot.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']));
 
 
 	//
@@ -303,8 +306,8 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add sysadmin as the owner of the master business
 		//
-		$strsql = "INSERT INTO ciniki_business_users (business_id, user_id, groups, type, status, date_added, last_updated) VALUES ("
-			. "'1', '1', '1', '1', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+		$strsql = "INSERT INTO ciniki_business_users (business_id, user_id, package, permission_group, status, date_added, last_updated) VALUES ("
+			. "'1', '1', 'ciniki', 'owners', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
@@ -414,7 +417,7 @@ function install($ciniki_root, $modules_dir) {
 		. "themes_root_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-manage-themes\n"
 		. "json_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-json.php\n"
 		. "api_key = $manage_api_key\n"
-		. "site_title = 'Ciniki'\n"
+		. "site_title = '" . $master_name . "'\n"
 		. "";
 
 	$num_bytes = file_put_contents($ciniki_root . '/ciniki-manage.ini', $manage_config);
