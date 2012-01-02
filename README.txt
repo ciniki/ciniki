@@ -54,6 +54,10 @@ Setup database
 Create the database for Ciniki.  It is recommended to create a username and password
 specific to this database.  
 
+Here is a sample grant statement for the required privileges in MySQL.
+
+GRANT alter, create, create temporary tables, delete, index, insert, lock tables, select, update ON <instancename>.* to 'ciniki'@'localhost' IDENTIFIED BY '<min32randomcharacterpassword>';
+
 
 
 Setup Email Robot

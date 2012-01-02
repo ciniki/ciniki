@@ -13,6 +13,20 @@ Setup Ciniki
 ------------
 Follow the instruction in README.txt to setup Ciniki, with webserver and mail server.
 
+SSL for dev/test
+----------------
+The following command can be used to generate a SSL key for apache, but is not
+signed and should not be used in production.
+	cd /ciniki/<instance>/
+	mkdir ssl
+	cd ssl/
+	sudo openssl genrsa -out server.key 4096
+	sudo chmod 400 server.key
+	sudo openssl req -new -key server.key -out server.csr
+		-- Common name MUST be <instance>.ciniki.ca
+		-- Blank for password and company name
+	sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+
 Clone dev-tools helper scripts
 ------------------------------
 Checkout the dev-tools module from the github to aid in managing the development.
