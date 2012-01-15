@@ -1,4 +1,5 @@
 site/.htaccess
+site/ciniki-sync.php
 site/ciniki-rest.php
 site/ciniki-json.php
 site/ciniki-manage.php
