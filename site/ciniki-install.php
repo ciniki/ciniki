@@ -460,7 +460,7 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^(manage)$ ciniki-manage.php [L]                                             # allow all ciniki-manage\n"
 		. "RewriteRule ^(ciniki-manage/.*)$ $1 [L]                                                  # Allow manage content\n"
 		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
-		. "RewriteRule ^(ciniki-login|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
+		. "RewriteRule ^(ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
 		. "RewriteRule  ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
 		. "RewriteRule . index.php [L]                                                              # Redirect all other requests to index\n"
 		. "";
@@ -478,6 +478,7 @@ function install($ciniki_root, $modules_dir) {
 	//
 	// Create symlinks into scripts
 	//
+	symlink($ciniki_root . '/ciniki-api/core/scripts/sync.php', $ciniki_root . '/ciniki-sync.php');
 	symlink($ciniki_root . '/ciniki-api/core/scripts/rest.php', $ciniki_root . '/ciniki-rest.php');
 	symlink($ciniki_root . '/ciniki-api/core/scripts/json.php', $ciniki_root . '/ciniki-json.php');
 	symlink($ciniki_root . '/ciniki-manage/core/scripts/manage.php', $ciniki_root . '/ciniki-manage.php');
