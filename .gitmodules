@@ -133,3 +133,6 @@
 [submodule "sit/ciniki-api/calendars"]
 	path = sit/ciniki-api/calendars
 	url = git://github.com/ciniki/api-calendars.git
+[submodule "site/ciniki-manage/tasks"]
+	path = site/ciniki-manage/tasks
+	url = git://github.com/ciniki/manage-tasks.git
