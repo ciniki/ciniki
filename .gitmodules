@@ -136,3 +136,9 @@
 [submodule "site/ciniki-manage/tasks"]
 	path = site/ciniki-manage/tasks
 	url = git://github.com/ciniki/manage-tasks.git
+[submodule "site/ciniki-api/journal"]
+	path = site/ciniki-api/journal
+	url = git://github.com/ciniki/api-journal.git
+[submodule "site/ciniki-manage/journal"]
+	path = site/ciniki-manage/journal
+	url = git://github.com/ciniki/manage-journal.git
