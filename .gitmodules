@@ -148,3 +148,9 @@
 [submodule "site/ciniki-manage/documentation"]
 	path = site/ciniki-manage/documentation
 	url = git://github.com/ciniki/manage-documentation.git
+[submodule "site/ciniki-api/atdo"]
+	path = site/ciniki-api/atdo
+	url = git://github.com/ciniki/api-atdo.git
+[submodule "site/ciniki-manage/atdo"]
+	path = site/ciniki-manage/atdo
+	url = git://github.com/ciniki/manage-atdo.git
