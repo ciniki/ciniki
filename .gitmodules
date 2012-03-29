@@ -43,9 +43,6 @@
 [submodule "site/ciniki-api/subscriptions"]
 	path = site/ciniki-api/subscriptions
 	url = git://github.com/ciniki/api-subscriptions
-[submodule "site/ciniki-api/tasks"]
-	path = site/ciniki-api/tasks
-	url = git://github.com/ciniki/api-tasks
 [submodule "site/ciniki-api/timesheets"]
 	path = site/ciniki-api/timesheets
 	url = git://github.com/ciniki/api-timesheets
@@ -124,18 +121,12 @@
 [submodule "site/ciniki-manage/calendars"]
 	path = site/ciniki-manage/calendars
 	url = git://github.com/ciniki/manage-calendars.git
-[submodule "site/ciniki-api/appointments"]
-	path = site/ciniki-api/appointments
-	url = git://github.com/ciniki/api-appointments.git
 [submodule "site/ciniki-api/calendars"]
 	path = site/ciniki-api/calendars
 	url = git://github.com/ciniki/api-calendars.git
 [submodule "sit/ciniki-api/calendars"]
 	path = sit/ciniki-api/calendars
 	url = git://github.com/ciniki/api-calendars.git
-[submodule "site/ciniki-manage/tasks"]
-	path = site/ciniki-manage/tasks
-	url = git://github.com/ciniki/manage-tasks.git
 [submodule "site/ciniki-api/journal"]
 	path = site/ciniki-api/journal
 	url = git://github.com/ciniki/api-journal.git
