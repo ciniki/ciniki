@@ -145,3 +145,6 @@
 [submodule "site/ciniki-manage/atdo"]
 	path = site/ciniki-manage/atdo
 	url = git://github.com/ciniki/manage-atdo.git
+[submodule "site/ciniki-api/clicktracker"]
+	path = site/ciniki-api/clicktracker
+	url = git://github.com/ciniki/api-clicktracker.git
