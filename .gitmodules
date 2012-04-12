@@ -151,3 +151,9 @@
 [submodule "site/ciniki-manage/clicktracker"]
 	path = site/ciniki-manage/clicktracker
 	url = git://github.com/ciniki/manage-clicktracker.git
+[submodule "site/ciniki-api/artcatalog"]
+	path = site/ciniki-api/artcatalog
+	url = git://github.com/ciniki/api-artcatalog.git
+[submodule "site/ciniki-manage/artcatalog"]
+	path = site/ciniki-manage/artcatalog
+	url = git://github.com/ciniki/manage-artcatalog.git
