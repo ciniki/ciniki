@@ -157,3 +157,9 @@
 [submodule "site/ciniki-manage/artcatalog"]
 	path = site/ciniki-manage/artcatalog
 	url = git://github.com/ciniki/manage-artcatalog.git
+[submodule "site/ciniki-api/web"]
+	path = site/ciniki-api/web
+	url = git://github.com/ciniki/api-web.git
+[submodule "site/ciniki-manage/web"]
+	path = site/ciniki-manage/web
+	url = git://github.com/ciniki/manage-web.git
