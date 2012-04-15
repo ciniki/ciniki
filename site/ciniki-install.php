@@ -463,6 +463,13 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^(ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
 		. "RewriteRule  ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
 		. "RewriteRule . index.php [L]                                                              # Redirect all other requests to index\n"
+		. "\n"
+		. "php_value post_max_size 20M\n"
+		. "php_value upload_max_filesize 20M\n"
+		. "php_value magic_quotes 0\n"
+		. "php_flag magic_quotes off\n"
+		. "php_value magic_quotes_gpc 0\n"
+		. "php_flag magic_quotes_gpc off\n"
 		. "";
 
 	$num_bytes = file_put_contents($ciniki_root . '/.htaccess', $htaccess);
