@@ -302,6 +302,7 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 		$config['core']['master_business_id'] = 1;
+		$config['web']['master.domain'] = $_SERVER['HTTP_HOST'];
 
 		//
 		// Add sysadmin as the owner of the master business
