@@ -451,6 +451,10 @@ function install($ciniki_root, $modules_dir) {
 		. "\n"
 		. "Options All -Indexes\n"
 		. "RewriteEngine On\n"
+		. '# Allow access to artweb themes and cache, everything is considered public\n'
+		. 'RewriteRule ^ciniki-web-layouts/(.*\.)(css|js)$ ciniki-api/web/layouts/$1$2 [L]\n'
+		. 'RewriteRule ^ciniki-web-themes/(.*\.)(css|js|html)$ ciniki-api/web/themes/$1$2 [L]\n'
+		. 'RewriteRule ^ciniki-web-cache/(.*\.)(jpg)$ ciniki-api/web/cache/$1$2 [L]\n'
 		. "RewriteBase /\n"
 		. "\n"
 		. "AddType text/cache-manifest .manifest\n"
