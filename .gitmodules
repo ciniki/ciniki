@@ -169,3 +169,9 @@
 [submodule "site/ciniki-manage/events"]
 	path = site/ciniki-manage/events
 	url = git://github.com/ciniki/manage-events.git
+[submodule "site/ciniki-api/links"]
+	path = site/ciniki-api/links
+	url = git://github.com/ciniki/api-links.git
+[submodule "site/ciniki-manage/links"]
+	path = site/ciniki-manage/links
+	url = git://github.com/ciniki/manage-links.git
