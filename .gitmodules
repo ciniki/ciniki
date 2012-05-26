@@ -16,9 +16,6 @@
 [submodule "site/ciniki-api/documentation"]
 	path = site/ciniki-api/documentation
 	url = git://github.com/ciniki/api-documentation
-[submodule "site/ciniki-api/friends"]
-	path = site/ciniki-api/friends
-	url = git://github.com/ciniki/api-friends
 [submodule "site/ciniki-api/healthcheck"]
 	path = site/ciniki-api/healthcheck
 	url = git://github.com/ciniki/api-healthcheck
@@ -64,9 +61,6 @@
 [submodule "site/ciniki-manage/customers"]
 	path = site/ciniki-manage/customers
 	url = git://github.com/ciniki/manage-customers
-[submodule "site/ciniki-manage/friends"]
-	path = site/ciniki-manage/friends
-	url = git://github.com/ciniki/manage-friends
 [submodule "site/ciniki-manage/media"]
 	path = site/ciniki-manage/media
 	url = git://github.com/ciniki/manage-media
