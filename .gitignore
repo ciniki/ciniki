@@ -7,6 +7,7 @@ site/ciniki-login.php
 site/paypal-ipn.php
 site/ciniki-api.ini
 site/ciniki-manage.ini
+site/index.php
 dev-tools
 run.sh
 marketing
