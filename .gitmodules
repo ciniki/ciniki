@@ -163,3 +163,9 @@
 [submodule "site/ciniki-manage/links"]
 	path = site/ciniki-manage/links
 	url = git://github.com/ciniki/manage-links.git
+[submodule "site/ciniki-api/filedepot"]
+	path = site/ciniki-api/filedepot
+	url = git://github.com/ciniki/api-filedepot.git
+[submodule "site/ciniki-manage/filedepot"]
+	path = site/ciniki-manage/filedepot
+	url = git://github.com/ciniki/manage-filedepot.git
