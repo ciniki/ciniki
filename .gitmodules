@@ -13,9 +13,6 @@
 [submodule "site/ciniki-api/customers"]
 	path = site/ciniki-api/customers
 	url = git://github.com/ciniki/api-customers
-[submodule "site/ciniki-api/documentation"]
-	path = site/ciniki-api/documentation
-	url = git://github.com/ciniki/api-documentation
 [submodule "site/ciniki-api/healthcheck"]
 	path = site/ciniki-api/healthcheck
 	url = git://github.com/ciniki/api-healthcheck
@@ -124,9 +121,6 @@
 [submodule "site/ciniki-api/systemdocs"]
 	path = site/ciniki-api/systemdocs
 	url = git://github.com/ciniki/api-systemdocs.git
-[submodule "site/ciniki-manage/documentation"]
-	path = site/ciniki-manage/documentation
-	url = git://github.com/ciniki/manage-documentation.git
 [submodule "site/ciniki-api/atdo"]
 	path = site/ciniki-api/atdo
 	url = git://github.com/ciniki/api-atdo.git
