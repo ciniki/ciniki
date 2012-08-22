@@ -197,6 +197,7 @@ function install($ciniki_root, $modules_dir) {
 
 	$config['core']['sync.name'] = $master_name;
 	$config['core']['sync.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\//', '', dirname($_SERVER['REQUEST_URI']) . "ciniki-sync.php");
+	$config['core']['manage.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\//', '', dirname($_SERVER['REQUEST_URI']) . "manage");
 
 	// Configure users module settings for password recovery
 	$config['users']['password.forgot.notify'] = $admin_email;
@@ -293,8 +294,8 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add the master business, if it doesn't already exist
 		//
-		$strsql = "INSERT INTO ciniki_businesses (id, uuid, modules, name, tagline, description, status, date_added, last_updated) VALUES ("
-			. "'1', UUID(), 0, '$master_name', '', '', 1, UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+		$strsql = "INSERT INTO ciniki_businesses (id, uuid, name, tagline, description, status, date_added, last_updated) VALUES ("
+			. "'1', UUID(), '$master_name', '', '', 1, UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
@@ -317,19 +318,10 @@ function install($ciniki_root, $modules_dir) {
 		}
 
 		//
-		// Enable modules: bugs, features, questions for master business
+		// Enable modules: bugs, questions for master business
 		//
 		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
 			. "VALUES ('1', 'ciniki', 'bugs', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
-		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
-		if( $rc['stat'] != 'ok' ) {
-			ciniki_core_dbTransactionRollback($ciniki, 'core');
-			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
-			exit();
-		}
-
-		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
-			. "VALUES ('1', 'ciniki', 'features', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
@@ -352,15 +344,6 @@ function install($ciniki_root, $modules_dir) {
 		$strsql = "INSERT INTO ciniki_bug_settings (business_id, detail_key, detail_value, date_added, last_updated) "
 			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'bugs');
-		if( $rc['stat'] != 'ok' ) {
-			ciniki_core_dbTransactionRollback($ciniki, 'core');
-			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
-			exit();
-		}
-
-		$strsql = "INSERT INTO ciniki_feature_settings (business_id, detail_key, detail_value, date_added, last_updated) "
-			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
-		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'features');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
 			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
@@ -465,10 +448,11 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^(manage)$ ciniki-manage.php [L]                                             # allow all ciniki-manage\n"
 		. "RewriteRule ^(ciniki-manage/.*)$ $1 [L]                                                  # Allow manage content\n"
 		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
+		. "RewriteRule ^(ciniki-web-themes/.*)$ $1 [L]                                              # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-api/web/layouts/.*\.css)$ $1 [L]                                    # Allow web-layouts content\n"
 		. "RewriteRule ^(ciniki-api/web/themes/.*\.css)$ $1 [L]                                     # Allow web-themes content\n"
 		. "RewriteRule ^(ciniki-api/web/cache/.*\.jpg)$ $1 [L]                                      # Allow web-cache content\n"
-		. "RewriteRule ^(ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
+		. "RewriteRule ^(paypal-ipn|ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
 		. "RewriteRule  ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
 		. "RewriteRule . index.php [L]                                                              # Redirect all other requests to index\n"
 		. "\n"
@@ -496,6 +480,8 @@ function install($ciniki_root, $modules_dir) {
 	symlink($ciniki_root . '/ciniki-api/core/scripts/sync.php', $ciniki_root . '/ciniki-sync.php');
 	symlink($ciniki_root . '/ciniki-api/core/scripts/rest.php', $ciniki_root . '/ciniki-rest.php');
 	symlink($ciniki_root . '/ciniki-api/core/scripts/json.php', $ciniki_root . '/ciniki-json.php');
+	symlink($ciniki_root . '/ciniki-api/core/scripts/paypal-ipn.php', $ciniki_root . '/paypal-ipn.php');
+	symlink($ciniki_root . '/ciniki-api/web/scripts/index.php', $ciniki_root . '/index.php');
 	symlink($ciniki_root . '/ciniki-manage/core/scripts/manage.php', $ciniki_root . '/ciniki-manage.php');
 	symlink($ciniki_root . '/ciniki-manage/core/scripts/login.php', $ciniki_root . '/ciniki-login.php');
 
@@ -509,6 +495,8 @@ function install($ciniki_root, $modules_dir) {
 		unlink($ciniki_root . '/ciniki-json.php');		
 		unlink($ciniki_root . '/ciniki-manage.php');		
 		unlink($ciniki_root . '/ciniki-login.php');		
+		unlink($ciniki_root . '/index.php');		
+		unlink($ciniki_root . '/paypal-ipn.php');		
 		print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
 		exit();
 	}
