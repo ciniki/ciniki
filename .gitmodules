@@ -166,3 +166,9 @@
 [submodule "site/ciniki-manage/systemdocs"]
 	path = site/ciniki-manage/systemdocs
 	url = git://github.com/ciniki/manage-systemdocs.git
+[submodule "site/ciniki-api/projects"]
+	path = site/ciniki-api/projects
+	url = git://github.com/ciniki/api-projects.git
+[submodule "site/ciniki-manage/projects"]
+	path = site/ciniki-manage/projects
+	url = git://github.com/ciniki/manage-projects.git
