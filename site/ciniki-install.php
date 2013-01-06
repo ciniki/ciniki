@@ -280,9 +280,9 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add the user
 		//
-		$strsql = "INSERT INTO ciniki_users (id, email, username, password, avatar_id, perms, status, timeout, "
+		$strsql = "INSERT INTO ciniki_users (id, uuid, email, username, password, avatar_id, perms, status, timeout, "
 			. "firstname, lastname, display_name, date_added, last_updated) VALUES ( "
-			. "'1', '$admin_email', '$admin_username', SHA1('$admin_password'), 0, 1, 1, 0, "
+			. "'1', UUID(), '$admin_email', '$admin_username', SHA1('$admin_password'), 0, 1, 1, 0, "
 			. "'$admin_firstname', '$admin_lastname', '$admin_display_name', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'users');
 		if( $rc['stat'] != 'ok' ) {
