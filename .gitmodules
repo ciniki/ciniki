@@ -175,3 +175,6 @@
 [submodule "site/ciniki-api/services"]
 	path = site/ciniki-api/services
 	url = git://github.com/ciniki/api-services.git
+[submodule "site/ciniki-manage/services"]
+	path = site/ciniki-manage/services
+	url = git://github.com/ciniki/manage-services.git
