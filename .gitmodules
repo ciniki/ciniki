@@ -163,3 +163,9 @@
 [submodule "site/ciniki-manage/exhibitions"]
 	path = site/ciniki-manage/exhibitions
 	url = git://github.com/ciniki/manage-exhibitions.git
+[submodule "site/ciniki-api/gallery"]
+	path = site/ciniki-api/gallery
+	url = git://github.com/ciniki/api-gallery.git
+[submodule "site/ciniki-manage/gallery"]
+	path = site/ciniki-manage/gallery
+	url = git://github.com/ciniki/manage-gallery.git
