@@ -8,6 +8,10 @@ site/paypal-ipn.php
 site/ciniki-api.ini
 site/ciniki-manage.ini
 site/index.php
+site/ciniki-code
+logs/
 dev-tools
 run.sh
 marketing
+_version.ini
+site/_versions.ini
