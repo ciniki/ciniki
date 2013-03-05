@@ -89,7 +89,6 @@ closedir($dir);
 close($vini);
 close($cini);
 
-`rm site/_version.ini`;
 `rm site/ciniki-api/*/_version.ini`;
 `rm site/ciniki-manage/*/_version.ini`;
 `rm site/ciniki-manage-themes/*/_version.ini`;
