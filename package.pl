@@ -7,6 +7,7 @@ use FindBin qw($Bin);
 $zipcmd = '/usr/bin/zip';
 
 open(my $vini, ">", "site/_versions.ini");
+open(my $cini, ">", "site/ciniki-code/_versions.ini");
 
 $package = `git show --format='%cn:::%ct:::%H' |grep :::`;
 if( $package =~ /(.*):::(.*):::(.*)/ ) {
@@ -26,6 +27,7 @@ if( $package =~ /(.*):::(.*):::(.*)/ ) {
 	print $vini "version = " . strftime("%Y%m%d.%H%M", localtime($2)) . "\n";
 	print $vini "author = $1\n";
 	print $vini "hash = $3\n\n";
+	# Don't add master package to code versions.ini
 }
 
 $mods = `git submodule foreach 'git show --format='%cn:::%ct:::%H' |grep :::'`;
@@ -51,6 +53,10 @@ foreach $mod (@modules) {
 		print $vini "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
 		print $vini "author = $4\n";
 		print $vini "hash = $6\n\n";
+		print $cini "[$1.$2.$3]\n";
+		print $cini "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
+		print $cini "author = $4\n";
+		print $cini "hash = $6\n\n";
 	}
 }
 
@@ -81,3 +87,9 @@ while(readdir $dir) {
 closedir($dir);
 
 close($vini);
+close($cini);
+
+`rm site/_version.ini`;
+`rm site/ciniki-api/*/_version.ini`;
+`rm site/ciniki-manage/*/_version.ini`;
+`rm site/ciniki-manage-themes/*/_version.ini`;
