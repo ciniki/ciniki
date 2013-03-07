@@ -1793,6 +1793,9 @@ function install($ciniki_root, $modules_dir) {
 		if( !file_exists($ciniki_root . "/ciniki-api") ) {
 			mkdir($ciniki_root . "/ciniki-api");
 		}
+		if( !file_exists($ciniki_root . "/ciniki-storage") ) {
+			mkdir($ciniki_root . "/ciniki-storage");
+		}
 		if( !file_exists($ciniki_root . "/ciniki-code") ) {
 			mkdir($ciniki_root . "/ciniki-code");
 		}
@@ -1931,6 +1934,8 @@ function install($ciniki_root, $modules_dir) {
 		}
 		$config['ciniki.core']['master_business_id'] = 1;
 		$config['ciniki.web']['master.domain'] = $_SERVER['HTTP_HOST'];
+		$config['ciniki.web']['poweredby.url'] = "http://ciniki.com/";
+		$config['ciniki.web']['poweredby.name'] = "Ciniki";
 
 		//
 		// Add sysadmin as the owner of the master business
@@ -2061,8 +2066,11 @@ function install($ciniki_root, $modules_dir) {
 		. "\n"
 		. "Options All -Indexes\n"
 		. "RewriteEngine On\n"
+		. "# Force redirect to strip www from front of domain names\n"
+		. "RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]\n"
+		. "RewriteRule ^(.*)$ http://%1/$1 [R=301,L]\n"
 		. "# Allow access to artweb themes and cache, everything is considered public\n"
-		. "RewriteRule ^ciniki-web-layouts/(.*\.)(css|js)$ ciniki-api/web/layouts/$1$2 [L]\n"
+		. "RewriteRule ^ciniki-web-layouts/(.*\.)(css|js|png)$ ciniki-api/web/layouts/$1$2 [L]\n"
 		. "RewriteRule ^ciniki-web-themes/(.*\.)(css|js|html)$ ciniki-api/web/themes/$1$2 [L]\n"
 		. "RewriteRule ^ciniki-web-cache/(.*\.)(jpg)$ ciniki-api/web/cache/$1$2 [L]\n"
 		. "RewriteRule ^ciniki-code/(.*\.)(zip|ini)$ ciniki-code/$1$2 [L]\n"
@@ -2077,11 +2085,11 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^(ciniki-manage/.*)$ $1 [L]                                                  # Allow manage content\n"
 		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-web-themes/.*)$ $1 [L]                                              # Allow manage-theme content\n"
-		. "RewriteRule ^(ciniki-api/web/layouts/.*\.css)$ $1 [L]                                    # Allow web-layouts content\n"
-		. "RewriteRule ^(ciniki-api/web/themes/.*\.css)$ $1 [L]                                     # Allow web-themes content\n"
+		. "RewriteRule ^(ciniki-api/web/layouts/.*)$ $1 [L]                                    # Allow web-layouts content\n"
+		. "RewriteRule ^(ciniki-api/web/themes/.*)$ $1 [L]                                     # Allow web-themes content\n"
 		. "RewriteRule ^(ciniki-api/web/cache/.*\.jpg)$ $1 [L]                                      # Allow web-cache content\n"
 		. "RewriteRule ^(paypal-ipn|ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
-		. "RewriteRule  ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
+		. "RewriteRule ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
 		. "RewriteRule . index.php [L]                                                              # Redirect all other requests to index\n"
 		. "\n"
 		. "php_value post_max_size 20M\n"

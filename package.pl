@@ -6,8 +6,6 @@ use FindBin qw($Bin);
 
 $zipcmd = '/usr/bin/zip';
 
-open(my $vini, ">", "site/_versions.ini");
-open(my $cini, ">", "site/ciniki-code/_versions.ini");
 
 $package = `git show --format='%cn:::%ct:::%H' |grep :::`;
 if( $package =~ /(.*):::(.*):::(.*)/ ) {
@@ -22,11 +20,11 @@ if( $package =~ /(.*):::(.*):::(.*)/ ) {
 	close($ini);
 
 	# Update master version file
-	print $vini "[package]\n";
-	print $vini "name = $package_name\n";
-	print $vini "version = " . strftime("%Y%m%d.%H%M", localtime($2)) . "\n";
-	print $vini "author = $1\n";
-	print $vini "hash = $3\n\n";
+	$vini .= "[package]\n";
+	$vini .= "name = $package_name\n";
+	$vini .= "version = " . strftime("%Y%m%d.%H%M", localtime($2)) . "\n";
+	$vini .= "author = $1\n";
+	$vini .= "hash = $3\n\n";
 	# Don't add master package to code versions.ini
 }
 
@@ -45,18 +43,18 @@ foreach $mod (@modules) {
 		close($ini);
 		unlink("site/ciniki-code/$1.$2.$3.zip");
 		chdir("site/$1-$2/$3");
-		`$zipcmd -x .git -r ../../ciniki-code/$1.$2.$3.zip *`;
+		`$zipcmd -x cache/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip *`;
 		chdir("../../..");
 
 		# Update master version file
-		print $vini "[$1.$2.$3]\n";
-		print $vini "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
-		print $vini "author = $4\n";
-		print $vini "hash = $6\n\n";
-		print $cini "[$1.$2.$3]\n";
-		print $cini "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
-		print $cini "author = $4\n";
-		print $cini "hash = $6\n\n";
+		$vini .= "[$1.$2.$3]\n";
+		$vini .= "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
+		$vini .= "author = $4\n";
+		$vini .= "hash = $6\n\n";
+		$cini .= "[$1.$2.$3]\n";
+		$cini .= "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
+		$cini .= "author = $4\n";
+		$cini .= "hash = $6\n\n";
 	}
 }
 
@@ -77,17 +75,21 @@ while(readdir $dir) {
 	`$zipcmd -x .git -r ../../ciniki-code/ciniki.lib.$lib.zip *`;
 	chdir("../../..");
 
-	print $vini "[ciniki.lib.$lib]\n";
+	$vini .= "[ciniki.lib.$lib]\n";
 	open(my $in, "site/ciniki-lib/$lib/_version.ini");
 	$contents = join("", <$in>);
-	print $vini $contents;
+	$vini .= $contents;
 	close($in);
-	print $vini "\n";
+	$vini .= "\n";
 }
 closedir($dir);
 
-close($vini);
-close($cini);
+open(my $outfile, ">", "site/_versions.ini");
+print $outfile $vini;
+close($outfile);
+open(my $outfile, ">", "site/ciniki-code/_versions.ini");
+print $outfile $cini;
+close($outfile);
 
 `rm site/ciniki-api/*/_version.ini`;
 `rm site/ciniki-manage/*/_version.ini`;
