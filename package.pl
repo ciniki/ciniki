@@ -34,6 +34,7 @@ $mods =~ s/Entering \'site\/(ciniki)-(api|manage|manage-themes)\/([a-z]+)\'\n(.*
 
 @modules = split("\n", $mods);
 foreach $mod (@modules) {
+	print "packaging $mod\n";
 	if( $mod =~ /(.*):::(.*):::(.*):::(.*):::(.*):::(.*)/ ) {
 		open(my $ini, ">", "site/$1-$2/$3/_version.ini");
 		print $ini "mod_name = $1.$3\n";
@@ -43,7 +44,7 @@ foreach $mod (@modules) {
 		close($ini);
 		unlink("site/ciniki-code/$1.$2.$3.zip");
 		chdir("site/$1-$2/$3");
-		`$zipcmd -x cache/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip *`;
+		`$zipcmd -x cache/\\*/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip *`;
 		chdir("../../..");
 
 		# Update master version file

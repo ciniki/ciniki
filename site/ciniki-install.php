@@ -51,7 +51,7 @@ function print_page($display_form, $err_code, $err_msg) {
 <head>
 <title>Ciniki Installer</title>
 <style>
-body { background: #f6f6dc; }
+body { background: #e3d0b1; }
 /******* The top bar across the window ******/
 .headerbar {
 	width: 100%;
