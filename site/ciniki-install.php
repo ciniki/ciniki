@@ -1725,6 +1725,7 @@ function install($ciniki_root, $modules_dir) {
 	// Build the config file
 	//
 	$config = array('ciniki.core'=>array(), 'ciniki.users'=>array());
+	$config['ciniki.core']['php'] = '/usr/bin/php';
 	$config['ciniki.core']['root_dir'] = $ciniki_root;
 	$config['ciniki.core']['modules_dir'] = $ciniki_root . '/ciniki-api';
 	$config['ciniki.core']['lib_dir'] = $ciniki_root . '/ciniki-lib';
