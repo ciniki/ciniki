@@ -175,3 +175,9 @@
 [submodule "site/ciniki-manage/newsaggregator"]
 	path = site/ciniki-manage/newsaggregator
 	url = git://github.com/ciniki/manage-newsaggregator.git
+[submodule "site/ciniki-api/artclub"]
+	path = site/ciniki-api/artclub
+	url = git://github.com/ciniki/api-artclub.git
+[submodule "site/ciniki-manage/artclub"]
+	path = site/ciniki-manage/artclub
+	url = git://github.com/ciniki/manage-artclub.git
