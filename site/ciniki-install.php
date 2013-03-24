@@ -1941,8 +1941,8 @@ function install($ciniki_root, $modules_dir) {
 		//
 		// Add sysadmin as the owner of the master business
 		//
-		$strsql = "INSERT INTO ciniki_business_users (business_id, user_id, package, permission_group, status, date_added, last_updated) VALUES ("
-			. "'1', '1', 'ciniki', 'owners', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+		$strsql = "INSERT INTO ciniki_business_users (uuid, business_id, user_id, package, permission_group, status, date_added, last_updated) VALUES ("
+			. "UUID(), '1', '1', 'ciniki', 'owners', '1', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
 		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
 		if( $rc['stat'] != 'ok' ) {
 			ciniki_core_dbTransactionRollback($ciniki, 'core');
