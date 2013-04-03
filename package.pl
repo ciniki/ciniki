@@ -14,7 +14,7 @@ if( $package =~ /(.*):::(.*):::(.*)/ ) {
 
 	open(my $ini, ">", "_version.ini");
 	print $ini "name = $package_name\n";
-	print $ini "version = " . strftime("%Y%m%d.%H%M", localtime($2)) . "\n";
+	print $ini "version = " . strftime("%Y%m%d.%H%M", gmtime($2)) . "\n";
 	print $ini "author = $1\n";
 	print $ini "hash = $3\n\n";
 	close($ini);
@@ -22,7 +22,7 @@ if( $package =~ /(.*):::(.*):::(.*)/ ) {
 	# Update master version file
 	$vini .= "[package]\n";
 	$vini .= "name = $package_name\n";
-	$vini .= "version = " . strftime("%Y%m%d.%H%M", localtime($2)) . "\n";
+	$vini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($2)) . "\n";
 	$vini .= "author = $1\n";
 	$vini .= "hash = $3\n\n";
 	# Don't add master package to code versions.ini
@@ -38,7 +38,7 @@ foreach $mod (@modules) {
 	if( $mod =~ /(.*):::(.*):::(.*):::(.*):::(.*):::(.*)/ ) {
 		open(my $ini, ">", "site/$1-$2/$3/_version.ini");
 		print $ini "mod_name = $1.$3\n";
-		print $ini "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
+		print $ini "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
 		print $ini "author = $4\n";
 		print $ini "hash = $6\n\n";
 		close($ini);
@@ -49,11 +49,11 @@ foreach $mod (@modules) {
 
 		# Update master version file
 		$vini .= "[$1.$2.$3]\n";
-		$vini .= "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
+		$vini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
 		$vini .= "author = $4\n";
 		$vini .= "hash = $6\n\n";
 		$cini .= "[$1.$2.$3]\n";
-		$cini .= "version = " . strftime("%Y%m%d.%H%M", localtime($5)) . "\n";
+		$cini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
 		$cini .= "author = $4\n";
 		$cini .= "hash = $6\n\n";
 	}
