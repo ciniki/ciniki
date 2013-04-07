@@ -181,3 +181,9 @@
 [submodule "site/ciniki-manage/artclub"]
 	path = site/ciniki-manage/artclub
 	url = git://github.com/ciniki/manage-artclub.git
+[submodule "site/ciniki-api/surveys"]
+	path = site/ciniki-api/surveys
+	url = git://github.com/ciniki/api-surveys.git
+[submodule "site/ciniki-manage/surveys"]
+	path = site/ciniki-manage/surveys
+	url = git://github.com/ciniki/manage-surveys.git
