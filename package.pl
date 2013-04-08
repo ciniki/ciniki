@@ -92,6 +92,8 @@ while(readdir $dir) {
 }
 closedir($dir);
 
+unlink("site/ciniki-lib/PHPMailer/_version.ini");
+
 open(my $outfile, ">", "site/_versions.ini");
 print $outfile $vini;
 close($outfile);
