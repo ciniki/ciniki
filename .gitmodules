@@ -187,3 +187,6 @@
 [submodule "site/ciniki-manage/surveys"]
 	path = site/ciniki-manage/surveys
 	url = git://github.com/ciniki/manage-surveys.git
+[submodule "site/ciniki-lib/PHPMailer"]
+	path = site/ciniki-lib/PHPMailer
+	url = https://github.com/Synchro/PHPMailer.git
