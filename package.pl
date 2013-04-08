@@ -30,7 +30,7 @@ if( $package =~ /(.*):::(.*):::(.*)/ ) {
 
 $mods = `git submodule foreach 'git show --format='%cn:::%ct:::%H' |grep :::'`;
 
-$mods =~ s/Entering \'site\/(ciniki)-(api|manage|manage-themes)\/([a-z]+)\'\n(.*):::(.*):::(.*)/$1:::$2:::$3:::$4:::$5:::$6/g;
+$mods =~ s/Entering \'site\/(ciniki)-(api|lib|manage|manage-themes)\/([A-Za-z]+)\'\n(.*):::(.*):::(.*)/$1:::$2:::$3:::$4:::$5:::$6/g;
 
 @modules = split("\n", $mods);
 foreach $mod (@modules) {
@@ -44,7 +44,7 @@ foreach $mod (@modules) {
 		close($ini);
 		unlink("site/ciniki-code/$1.$2.$3.zip");
 		chdir("site/$1-$2/$3");
-		`$zipcmd -x cache/\\*/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip *`;
+		`$zipcmd -x .git -x cache/\\*/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip *`;
 		chdir("../../..");
 
 		# Update master version file
@@ -68,6 +68,10 @@ while(readdir $dir) {
 		next;
 	}
 	$lib = $_;
+	if( -e "site/ciniki-lib/$lib/.git" ) {
+		# skip any lib's that are pulled through git
+		next;
+	}
 	if( ! -d "site/ciniki-lib/$lib" ) {
 		next;
 	}
@@ -77,11 +81,14 @@ while(readdir $dir) {
 	chdir("../../..");
 
 	$vini .= "[ciniki.lib.$lib]\n";
+	$cini .= "[ciniki.lib.$lib]\n";
 	open(my $in, "site/ciniki-lib/$lib/_version.ini");
 	$contents = join("", <$in>);
 	$vini .= $contents;
+	$cini .= $contents;
 	close($in);
 	$vini .= "\n";
+	$cini .= "\n";
 }
 closedir($dir);
 
