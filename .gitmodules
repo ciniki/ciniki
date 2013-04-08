@@ -190,3 +190,9 @@
 [submodule "site/ciniki-lib/PHPMailer"]
 	path = site/ciniki-lib/PHPMailer
 	url = https://github.com/Synchro/PHPMailer.git
+[submodule "site/ciniki-api/mail"]
+	path = site/ciniki-api/mail
+	url = git://github.com/ciniki/api-mail.git
+[submodule "site/ciniki-manage/mail"]
+	path = site/ciniki-manage/mail
+	url = git://github.com/ciniki/manage-mail.git
