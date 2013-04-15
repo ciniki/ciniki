@@ -1766,6 +1766,8 @@ function install($ciniki_root, $modules_dir) {
 	$config['ciniki.users']['password.forgot.notify'] = $admin_email;
 	$config['ciniki.users']['password.forgot.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI']));
 
+	$config['ciniki.web'] = array();
+	$config['ciniki.mail'] = array();
 
 	//
 	// Setup ciniki variable, just like ciniki-api/core/private/init.php script, but we
@@ -1937,6 +1939,8 @@ function install($ciniki_root, $modules_dir) {
 		$config['ciniki.web']['master.domain'] = $_SERVER['HTTP_HOST'];
 		$config['ciniki.web']['poweredby.url'] = "http://ciniki.com/";
 		$config['ciniki.web']['poweredby.name'] = "Ciniki";
+		$config['ciniki.mail']['poweredby.url'] = "http://ciniki.com/";
+		$config['ciniki.mail']['poweredby.name'] = "Ciniki";
 
 		//
 		// Add sysadmin as the owner of the master business
