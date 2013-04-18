@@ -196,3 +196,9 @@
 [submodule "site/ciniki-manage/mail"]
 	path = site/ciniki-manage/mail
 	url = git://github.com/ciniki/manage-mail.git
+[submodule "site/ciniki-api/artgallery"]
+	path = site/ciniki-api/artgallery
+	url = git://github.com/ciniki/api-artgallery.git
+[submodule "site/ciniki-manage/artgallery"]
+	path = site/ciniki-manage/artgallery
+	url = git://github.com/ciniki/manage-artgallery.git
