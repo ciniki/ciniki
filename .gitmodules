@@ -202,3 +202,15 @@
 [submodule "site/ciniki-manage/artgallery"]
 	path = site/ciniki-manage/artgallery
 	url = git://github.com/ciniki/manage-artgallery.git
+[submodule "site/ciniki-api/classes"]
+	path = site/ciniki-api/classes
+	url = git://github.com/ciniki/api-classes.git
+[submodule "site/ciniki-manage/classes"]
+	path = site/ciniki-manage/classes
+	url = git://github.com/ciniki/manage-classes.git
+[submodule "site/ciniki-api/newsletters"]
+	path = site/ciniki-api/newsletters
+	url = git://github.com/ciniki/api-newsletters.git
+[submodule "site/ciniki-manage/newsletters"]
+	path = site/ciniki-manage/newsletters
+	url = git://github.com/ciniki/manage-newsletters.git
