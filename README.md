@@ -101,6 +101,8 @@ MAC OS X
 When running this on mac with the native PHP5, the follow macports need to be installed:
 
 1. php5-imagick
+	sudo port install php5-mysql (don't know if needed???)
+		- this will install apache2 in /opt/local/
 	sudo port install php5-imagick
 
 2. Setup /etc/php.ini file to include the line:
