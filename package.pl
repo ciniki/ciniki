@@ -5,6 +5,7 @@ use File::Basename;
 use FindBin qw($Bin);
 
 $zipcmd = '/usr/bin/zip';
+$zipinfo = '/usr/bin/zipinfo';
 
 
 $package = `git show --format='%cn:::%ct:::%H' |grep :::`;
@@ -33,31 +34,65 @@ $mods = `git submodule foreach 'git show --format='%cn:::%ct:::%H' |grep :::'`;
 $mods =~ s/Entering \'site\/(ciniki)-(api|lib|manage|manage-themes)\/([A-Za-z]+)\'\n(.*):::(.*):::(.*)/$1:::$2:::$3:::$4:::$5:::$6/g;
 
 @modules = split("\n", $mods);
+$updates = "";
 foreach $mod (@modules) {
-	print "packaging $mod\n";
+	printf("%-50s", "packaging $pkg.$sec.$md...");
 	if( $mod =~ /(.*):::(.*):::(.*):::(.*):::(.*):::(.*)/ ) {
+		$pkg = $1;
+		$sec = $2;
+		$md = $3;
+		$author = $4;
+		$modtime = $5;
+		$modhash = $6;
 		open(my $ini, ">", "site/$1-$2/$3/_version.ini");
 		print $ini "mod_name = $1.$3\n";
 		print $ini "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
 		print $ini "author = $4\n";
 		print $ini "hash = $6\n\n";
 		close($ini);
-		unlink("site/ciniki-code/$1.$2.$3.zip");
 		chdir("site/$1-$2/$3");
-		`$zipcmd -x .git -x cache/\\*/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip *`;
+		`$zipcmd -x .git -x cache/\\*/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip.tmp *`;
 		chdir("../../..");
+	
+		# Check if the file has changed at all
+		if( ! -e "site/ciniki-code/$1.$2.$3.zip" ) {
+			rename("site/ciniki-code/$1.$2.$3.zip.tmp", "site/ciniki-code/$1.$2.$3.zip");
+			print "added\n";
+			$updates .= "$pkg.$sec.$md\n";
+		} else {
+			$old = `$zipinfo site/ciniki-code/$1.$2.$3.zip`;
+			$new = `$zipinfo site/ciniki-code/$1.$2.$3.zip.tmp`;
+			$old =~ s/^.*\n//m;
+			$old =~ s/^.*_version.ini\n//m;
+			$new =~ s/^.*\n//m;
+			$new =~ s/^.*_version.ini\n//m;
+			if( $old ne $new ) {
+				unlink("site/ciniki-code/$pkg.$sec.$md.zip");
+				rename("site/ciniki-code/$pkg.$sec.$md.zip.tmp", "site/ciniki-code/$pkg.$sec.$md.zip");
+				print "*UPDATED\n";
+				$updates .= "$pkg.$sec.$md\n";
+			} else {
+				print "skipped\n";
+				unlink("site/ciniki-code/$pkg.$sec.$md.zip.tmp");
+			}
+		}
 
 		# Update master version file
-		$vini .= "[$1.$2.$3]\n";
-		$vini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
-		$vini .= "author = $4\n";
-		$vini .= "hash = $6\n\n";
-		$cini .= "[$1.$2.$3]\n";
-		$cini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
-		$cini .= "author = $4\n";
-		$cini .= "hash = $6\n\n";
+		$vini .= "[$pkg.$sec.$md]\n";
+		$vini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($modtime)) . "\n";
+		$vini .= "author = $author\n";
+		$vini .= "hash = $modhash\n\n";
+		$cini .= "[$pkg.$sec.$md]\n";
+		$cini .= "version = " . strftime("%Y%m%d.%H%M", gmtime($modtime)) . "\n";
+		$cini .= "author = $author\n";
+		$cini .= "hash = $modhash\n\n";
 	}
 }
+
+#if( $updates ne '' ) {
+#	print "Updated packages:\n";
+#	print $updates;
+#}
 
 # 
 # Check ciniki-lib files for versions
@@ -75,10 +110,37 @@ while(readdir $dir) {
 	if( ! -d "site/ciniki-lib/$lib" ) {
 		next;
 	}
-	unlink("site/ciniki-code/ciniki.lib.$lib.zip");
+	$pkg = 'ciniki';
+	$sec = 'lib';
+	$md = $lib;
+	printf("%-50s", "packaging $pkg.$sec.$md...");
 	chdir("site/ciniki-lib/$lib");
-	`$zipcmd -x .git -r ../../ciniki-code/ciniki.lib.$lib.zip *`;
+	`$zipcmd -x .git -r ../../ciniki-code/ciniki.lib.$lib.zip.tmp *`;
 	chdir("../../..");
+
+#	unlink("site/ciniki-code/ciniki.lib.$lib.zip");
+	# Check if the file has changed at all
+	if( ! -e "site/ciniki-code/$pkg.$sec.$md.zip" ) {
+		rename("site/ciniki-code/$pkg.$sec.$md.zip.tmp", "site/ciniki-code/$pkg.$sec.$md.zip");
+		print "added\n";
+		$updates .= "$pkg.$sec.$md\n";
+	} else {
+		$old = `$zipinfo site/ciniki-code/$pkg.$sec.$md.zip`;
+		$new = `$zipinfo site/ciniki-code/$pkg.$sec.$md.zip.tmp`;
+		$old =~ s/^.*\n//m;
+		$old =~ s/^.*_version.ini\n//m;
+		$new =~ s/^.*\n//m;
+		$new =~ s/^.*_version.ini\n//m;
+		if( $old ne $new ) {
+			unlink("site/ciniki-code/$pkg.$sec.$md.zip");
+			rename("site/ciniki-code/$pkg.$sec.$md.zip.tmp", "site/ciniki-code/$pkg.$sec.$md.zip");
+			print "*UPDATED\n";
+			$updates .= "$pkg.$sec.$md\n";
+		} else {
+			print "skipped\n";
+			unlink("site/ciniki-code/$pkg.$sec.$md.zip.tmp");
+		}
+	}
 
 	$vini .= "[ciniki.lib.$lib]\n";
 	$cini .= "[ciniki.lib.$lib]\n";
