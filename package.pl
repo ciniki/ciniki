@@ -36,7 +36,6 @@ $mods =~ s/Entering \'site\/(ciniki)-(api|lib|manage|manage-themes)\/([A-Za-z]+)
 @modules = split("\n", $mods);
 $updates = "";
 foreach $mod (@modules) {
-	printf("%-50s", "packaging $pkg.$sec.$md...");
 	if( $mod =~ /(.*):::(.*):::(.*):::(.*):::(.*):::(.*)/ ) {
 		$pkg = $1;
 		$sec = $2;
@@ -44,6 +43,7 @@ foreach $mod (@modules) {
 		$author = $4;
 		$modtime = $5;
 		$modhash = $6;
+		printf("%-50s", "packaging $pkg.$sec.$md...");
 		open(my $ini, ">", "site/$1-$2/$3/_version.ini");
 		print $ini "mod_name = $1.$3\n";
 		print $ini "version = " . strftime("%Y%m%d.%H%M", gmtime($5)) . "\n";
@@ -51,7 +51,7 @@ foreach $mod (@modules) {
 		print $ini "hash = $6\n\n";
 		close($ini);
 		chdir("site/$1-$2/$3");
-		`$zipcmd -x .git -x cache/\\*/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip.tmp *`;
+		`$zipcmd -x .git -x cache/\\*/\\* -x uploads/\\* -x uploads/\\*/\\* -r ../../ciniki-code/$1.$2.$3.zip.tmp *`;
 		chdir("../../..");
 	
 		# Check if the file has changed at all
