@@ -19,9 +19,6 @@
 [submodule "site/ciniki-api/media"]
 	path = site/ciniki-api/media
 	url = git://github.com/ciniki/api-media
-[submodule "site/ciniki-api/questions"]
-	path = site/ciniki-api/questions
-	url = git://github.com/ciniki/api-questions
 [submodule "site/ciniki-api/subscriptions"]
 	path = site/ciniki-api/subscriptions
 	url = git://github.com/ciniki/api-subscriptions
@@ -67,9 +64,6 @@
 [submodule "site/ciniki-manage/wineproduction"]
 	path = site/ciniki-manage/wineproduction
 	url = git://github.com/ciniki/manage-wineproduction
-[submodule "site/ciniki-manage/questions"]
-	path = site/ciniki-manage/questions
-	url = git://github.com/ciniki/manage-questions.git
 [submodule "site/ciniki-manage-themes/default"]
 	path = site/ciniki-manage-themes/default
 	url = git://github.com/ciniki/manage-theme-default.git
