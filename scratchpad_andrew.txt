@@ -1,16 +1,4 @@
-
-
 TODO:
-
-Art Gallery
-	- Add the ability to have multiple headings in the menu bar, and decide
-	  which galleries belong in each Major Category.  This will be done in the 
-	  website manage section.
-	- examples from jordashinc.com: Garden, Sculpture, Paintings, etc.
-	- paintings, photographs, sculpture, jewellry, etc.
-	- This would allow users to create their own organization structure, while keeping
-	  the artgallery module simple.
-	- Each Major Category could pull from multiple sources, artgallery, artclub, gallery, etc.
 
 - share buttons for artgallery
 - additional photos for artgallery module
@@ -28,7 +16,19 @@ Meeting with Lisa in Barrie:
 	- Talk to her about this next time, get samples
 - need to have social media integration
 - Product/Inventory manager
-- Add description of Ciniki to about page.
 
 
+Art Gallery
+	- Add the ability to have multiple headings in the menu bar, and decide
+	  which galleries belong in each Major Category.  This will be done in the 
+	  website manage section.
+	- examples from jordashinc.com: Garden, Sculpture, Paintings, etc.
+	- paintings, photographs, sculpture, jewellry, etc.
+	- This would allow users to create their own organization structure, while keeping
+	  the artgallery module simple.
+	- Each Major Category could pull from multiple sources, artgallery, artclub, gallery, etc.
+
+
+Done:
 - remove Questions module from ciniki, no longer needed
+
