@@ -7,6 +7,8 @@ TODO:
 	- example http://bnguffey.com/other1
 - event payment through paypal for niagara pumphouse
 - gallery descriptions, setup in artgallery module, or gallery module
+- gallery needs multiple drag-drop for images
+- gallery needs Uncategorized feature working when no album names given.
 
 - Add pricing/plans page to website
 
