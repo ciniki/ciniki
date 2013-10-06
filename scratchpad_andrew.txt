@@ -1,0 +1,34 @@
+
+
+TODO:
+
+Art Gallery
+	- Add the ability to have multiple headings in the menu bar, and decide
+	  which galleries belong in each Major Category.  This will be done in the 
+	  website manage section.
+	- examples from jordashinc.com: Garden, Sculpture, Paintings, etc.
+	- paintings, photographs, sculpture, jewellry, etc.
+	- This would allow users to create their own organization structure, while keeping
+	  the artgallery module simple.
+	- Each Major Category could pull from multiple sources, artgallery, artclub, gallery, etc.
+
+- share buttons for artgallery
+- additional photos for artgallery module
+- when send test mail for mailing list, have it prompt for email address
+- press tracker module, used to track mentions in the media/press, needs to also have a link checker.
+	- example http://bnguffey.com/other1
+- event payment through paypal for niagara pumphouse
+- gallery descriptions, setup in artgallery module, or gallery module
+
+- Add pricing/plans page to website
+
+Meeting with Lisa in Barrie:
+- Need way to track sales at shows
+- need way to track media (where has my work been mentioned)
+	- Talk to her about this next time, get samples
+- need to have social media integration
+- Product/Inventory manager
+- Add description of Ciniki to about page.
+
+
+- remove Questions module from ciniki, no longer needed
