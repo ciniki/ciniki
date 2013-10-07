@@ -9,6 +9,7 @@ TODO:
 - artgallery/gallery descriptions, setup in artgallery module, or gallery module
 - Email social icon in header/footer
 - Deviant art social icon
+- gallery drag-drop rearrangement/album management, same as what media was.
 
 - Add pricing/plans page to website
 
