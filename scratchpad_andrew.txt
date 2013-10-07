@@ -7,7 +7,6 @@ TODO:
 	- example http://bnguffey.com/other1
 - event payment through paypal for niagara pumphouse
 - artgallery/gallery descriptions, setup in artgallery module, or gallery module
-- gallery needs multiple drag-drop for images
 - Email social icon in header/footer
 - Deviant art social icon
 
@@ -33,5 +32,6 @@ Art Gallery
 
 
 Done:
+- gallery needs multiple drag-drop for images
 - remove Questions module from ciniki, no longer needed
 - gallery needs Uncategorized feature working when no album names given.
