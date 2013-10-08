@@ -5,7 +5,7 @@ TODO:
 - when send test mail for mailing list, have it prompt for email address
 - press tracker module, used to track mentions in the media/press, needs to also have a link checker.
 	- example http://bnguffey.com/other1
-- event payment through paypal for niagara pumphouse
+- event payment through paypal for niagara pumphouse for events/courses (events first)
 - artgallery/gallery descriptions, setup in artgallery module, or gallery module
 - Email social icon in header/footer
 - Deviant art social icon
