@@ -1,3 +1,13 @@
+Finish artcatalog extra images:
+- get edit/add form working
+- display on website
+	- under existing description, show thumbnails
+	- have thumbnail clickable with javascript to change image/resize
+	- don't change url, so url will always start at main image
+	- display main image as first in list of extra images
+	- change description/name if necessary/provided for each additional image, otherwise revert to original
+
+
 TODO:
 
 - share buttons for artgallery
