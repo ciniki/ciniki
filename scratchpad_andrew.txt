@@ -1,17 +1,6 @@
-Finish artcatalog extra images:
-- get edit/add form working
-- display on website
-	- under existing description, show thumbnails
-	- have thumbnail clickable with javascript to change image/resize
-	- don't change url, so url will always start at main image
-	- display main image as first in list of extra images
-	- change description/name if necessary/provided for each additional image, otherwise revert to original
-
-
 TODO:
 
 - share buttons for artgallery
-- additional photos for artgallery module
 - when send test mail for mailing list, have it prompt for email address
 - press tracker module, used to track mentions in the media/press, needs to also have a link checker.
 	- example http://bnguffey.com/other1
@@ -46,3 +35,4 @@ Done:
 - gallery needs multiple drag-drop for images
 - remove Questions module from ciniki, no longer needed
 - gallery needs Uncategorized feature working when no album names given.
+- additional photos for artgallery module
