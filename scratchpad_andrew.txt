@@ -30,9 +30,34 @@ Art Gallery
 	  the artgallery module simple.
 	- Each Major Category could pull from multiple sources, artgallery, artclub, gallery, etc.
 
+Registration/Payment for Events/Courses
+ciniki_course_registrations (
+ciniki_event_registrations (
+	id
+	uuid
+	business_id
+	event_id
+	customer_id
+	parent_customer_id (if registering multiple people)
+	num_tickets (how many tickets did they want, buying multiple people)
+	
+	paid (yes/no)
+	discount??
+	paid_date
+	paid_type (paypal/visa/mastercard/etc)
+	amount
+	taxes
+	total
+	referred_by ??
+
+	date_added
+	last_updated
+)
+
 
 Done:
 - gallery needs multiple drag-drop for images
 - remove Questions module from ciniki, no longer needed
 - gallery needs Uncategorized feature working when no album names given.
 - additional photos for artgallery module
+
