@@ -208,3 +208,9 @@
 [submodule "site/ciniki-manage/courses"]
 	path = site/ciniki-manage/courses
 	url = git://github.com/ciniki/manage-courses.git
+[submodule "site/ciniki-api/recipes"]
+	path = site/ciniki-api/recipes
+	url = git://github.com/ciniki/api-recipes.git
+[submodule "site/ciniki-manage/recipes"]
+	path = site/ciniki-manage/recipes
+	url = git://github.com/ciniki/manage-recipes.git
