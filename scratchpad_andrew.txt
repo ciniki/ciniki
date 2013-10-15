@@ -1,5 +1,6 @@
 Quick Tasks:
 - Merge eventimags.js add/edit forms
+- Check all modules with permalink have unique index like artcatalog
 
 TODO:
 - share buttons for artgallery
