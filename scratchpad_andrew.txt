@@ -1,8 +1,8 @@
 Quick Tasks:
-- Merge eventimags.js add/edit forms
 - Check all modules with permalink have unique index like artcatalog
 
 TODO:
+- Marketing 4x6 index card
 - share buttons for artgallery
 - when send test mail for mailing list, have it prompt for email address
 - press tracker module, used to track mentions in the media/press, needs to also have a link checker.
@@ -12,9 +12,18 @@ TODO:
 - Deviant art social icon
 - gallery drag-drop rearrangement/album management, same as what media was.
 - Add pricing/plans page to website
+- API documentation page on website
+- Convert modules to objectAdd/Update/Delete
+	- Remove ciniki.images.refClear/refAdd/etc when no longer used
+
+Maintence:
+- Database Documentation
+- Method descriptions/args documentation
+- Update prepareArgs from errmsg to name
+- Update prepareArgs to add validlist
+- Check checkAccess function calls for proper method names
 
 Events:
-- event gallery drag/drop like gallery/artcatalog additional images
 - event payment through paypal for niagara pumphouse for events/courses (events first)
 	- When listing events, display sold/num_tickets
 	- have section for registration information
@@ -38,7 +47,26 @@ Art Gallery
 	  the artgallery module simple.
 	- Each Major Category could pull from multiple sources, artgallery, artclub, gallery, etc.
 
+Marketing:
+- 4x6 Index cards
+	- UI screenshots
+	- Website screenshots
+	- screenshots on iPad/iPhone/Laptop/Desktop
+	- Features:
+		- automatically prepares images for website, no cropping/resizing necessary
+		- add an new piece of art, automatically added to your website
+		- track where your art has been displayed
+		- websites scales automatically for smartphones and tablets
+		- no html or coding experience required
+		- add to your inventory from your phone or tablet, no computer required
+		- free trial
+		- manage your event listings
+		- track your customers and purchases
+
+
 Done:
+- Merge eventimages.js add/edit forms
+- event gallery drag/drop like gallery/artcatalog additional images
 - gallery needs multiple drag-drop for images
 - remove Questions module from ciniki, no longer needed
 - gallery needs Uncategorized feature working when no album names given.
