@@ -16,6 +16,42 @@ TODO:
 - Convert modules to objectAdd/Update/Delete
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 
+UI Cleanup
+- artclub
+- artgallery
+- atdo
+- bugs
+- businesses
+- calendars
+- clicktracker
+- core
+- courses
+- customers
+- exhibitions
+- filedepot
+- gallery
+- help
+- journal
+- links
+- mail
+- media
+- monitoring
+- newsaggregator
+- newsletters
+- products
+- projects
+- recipes
+- services
+- subscriptions
+- surveys
+- sysadmin
+- systemdocs
+- toolbox
+- users
+- web
+- wineproduction
+
+
 Maintence:
 - Database Documentation
 - Method descriptions/args documentation
