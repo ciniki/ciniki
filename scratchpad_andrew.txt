@@ -32,7 +32,6 @@ UI Cleanup
 - gallery
 - help
 - journal
-- links
 - mail
 - media
 - monitoring
@@ -40,7 +39,6 @@ UI Cleanup
 - newsletters
 - products
 - projects
-- recipes
 - services
 - subscriptions
 - surveys
