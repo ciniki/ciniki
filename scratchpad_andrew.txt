@@ -17,7 +17,6 @@ TODO:
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 
 UI Cleanup
-- artgallery
 - atdo
 - bugs
 - businesses
@@ -28,7 +27,6 @@ UI Cleanup
 - customers
 - exhibitions
 - filedepot
-- gallery
 - help
 - journal
 - mail
