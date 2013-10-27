@@ -19,10 +19,7 @@ TODO:
 
 UI Cleanup
 - atdo
-- bugs
 - businesses
-- calendars
-- clicktracker
 - core
 - courses
 - customers
