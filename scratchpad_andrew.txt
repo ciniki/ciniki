@@ -18,7 +18,6 @@ TODO:
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 
 UI Cleanup
-- atdo
 - businesses
 - core
 - courses
