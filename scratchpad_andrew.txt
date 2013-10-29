@@ -23,7 +23,6 @@ UI Cleanup
 - core
 - courses
 - customers
-- exhibitions
 - filedepot
 - help
 - journal
