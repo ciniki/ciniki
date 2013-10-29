@@ -16,6 +16,7 @@ TODO:
 - API documentation page on website
 - Convert modules to objectAdd/Update/Delete
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
+- setup sequence for sorting gallery images (requested by Lucina).
 
 UI Cleanup
 - businesses
