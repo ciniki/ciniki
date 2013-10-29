@@ -30,7 +30,6 @@ UI Cleanup
 - media
 - monitoring
 - newsaggregator
-- newsletters
 - products
 - projects
 - services
@@ -41,7 +40,6 @@ UI Cleanup
 - toolbox
 - users
 - web
-- wineproduction
 
 
 Maintence:
