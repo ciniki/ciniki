@@ -21,7 +21,6 @@ TODO:
 UI Cleanup
 - businesses
 - core
-- courses
 - customers
 - filedepot
 - help
