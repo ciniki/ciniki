@@ -28,7 +28,6 @@ UI Cleanup
 - journal
 - mail
 - media
-- monitoring
 - newsaggregator
 - products
 - projects
