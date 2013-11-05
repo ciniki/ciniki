@@ -25,18 +25,16 @@ UI Cleanup
 - newsaggregator
 - products
 - services
-- subscriptions
+- subscriptions (JSON done, API generic object conversion needed)
 - surveys
 - toolbox
-- web
-
 
 Maintence:
 - Database Documentation
 - Method descriptions/args documentation
-- Update prepareArgs from errmsg to name
+- Update prepareArgs from errmsg to name (done)
 - Update prepareArgs to add validlist
-- Check checkAccess function calls for proper method names
+- Check checkAccess function calls for proper method names (done)
 
 Events:
 - event payment through paypal for niagara pumphouse for events/courses (events first)
