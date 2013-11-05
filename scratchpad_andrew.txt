@@ -19,20 +19,15 @@ TODO:
 - setup sequence for sorting gallery images (requested by Lucina).
 
 UI Cleanup
-- businesses
 - core
 - customers
-- help
-- journal
 - mail
-- media
 - newsaggregator
 - products
 - services
 - subscriptions
 - surveys
 - toolbox
-- users
 - web
 
 
