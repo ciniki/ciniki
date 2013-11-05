@@ -16,9 +16,6 @@
 [submodule "site/ciniki-api/products"]
 	path = site/ciniki-api/products
 	url = git://github.com/ciniki/api-products
-[submodule "site/ciniki-api/media"]
-	path = site/ciniki-api/media
-	url = git://github.com/ciniki/api-media
 [submodule "site/ciniki-api/subscriptions"]
 	path = site/ciniki-api/subscriptions
 	url = git://github.com/ciniki/api-subscriptions
@@ -43,9 +40,6 @@
 [submodule "site/ciniki-manage/customers"]
 	path = site/ciniki-manage/customers
 	url = git://github.com/ciniki/manage-customers
-[submodule "site/ciniki-manage/media"]
-	path = site/ciniki-manage/media
-	url = git://github.com/ciniki/manage-media
 [submodule "site/ciniki-manage/products"]
 	path = site/ciniki-manage/products
 	url = git://github.com/ciniki/manage-products
@@ -85,12 +79,6 @@
 [submodule "sit/ciniki-api/calendars"]
 	path = sit/ciniki-api/calendars
 	url = git://github.com/ciniki/api-calendars.git
-[submodule "site/ciniki-api/journal"]
-	path = site/ciniki-api/journal
-	url = git://github.com/ciniki/api-journal.git
-[submodule "site/ciniki-manage/journal"]
-	path = site/ciniki-manage/journal
-	url = git://github.com/ciniki/manage-journal.git
 [submodule "site/ciniki-api/systemdocs"]
 	path = site/ciniki-api/systemdocs
 	url = git://github.com/ciniki/api-systemdocs.git
