@@ -22,12 +22,9 @@ UI Cleanup
 - core
 - customers
 - mail
-- newsaggregator
 - products
 - services
 - subscriptions (JSON done, API generic object conversion needed)
-- surveys
-- toolbox
 
 Maintence:
 - Database Documentation
