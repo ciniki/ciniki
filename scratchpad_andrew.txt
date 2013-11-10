@@ -18,14 +18,6 @@ TODO:
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 - setup sequence for sorting gallery images (requested by Lucina).
 
-UI Cleanup
-- core
-- customers
-- mail
-- products
-- services
-- subscriptions (JSON done, API generic object conversion needed)
-
 Maintence:
 - Database Documentation
 - Method descriptions/args documentation
