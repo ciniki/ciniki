@@ -202,3 +202,9 @@
 [submodule "site/ciniki-manage/recipes"]
 	path = site/ciniki-manage/recipes
 	url = git://github.com/ciniki/manage-recipes.git
+[submodule "site/ciniki-api/pos"]
+	path = site/ciniki-api/pos
+	url = git://github.com/ciniki/api-pos.git
+[submodule "site/ciniki-manage/pos"]
+	path = site/ciniki-manage/pos
+	url = git://github.com/ciniki/manage-pos.git
