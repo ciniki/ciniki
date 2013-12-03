@@ -208,3 +208,9 @@
 [submodule "site/ciniki-manage/sapos"]
 	path = site/ciniki-manage/sapos
 	url = git://github.com/ciniki/manage-sapos.git
+[submodule "site/ciniki-api/taxes"]
+	path = site/ciniki-api/taxes
+	url = git://github.com/ciniki/api-taxes.git
+[submodule "site/ciniki-manage/taxes"]
+	path = site/ciniki-manage/taxes
+	url = git://github.com/ciniki/manage-taxes.git

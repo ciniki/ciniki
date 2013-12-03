@@ -1,6 +1,20 @@
+Paypal integration:
+- Step 1: Create App in paypal
+- Step 2: Copy credentials into Ciniki
+	(should copy both test and live credentials so both can be used)
+	(this information should be captured automatically in the future)
+	- veggiefrog-facilitator@gmail.com
+	- api.sandbox.paypal.com
+	- client-id: ARlpBBDNQEJG3CdY-iqNXmEdAKVaSDlHMJ8wwDE7Gs2mwCCPX0tHpsL512Lg
+	- secret: EFBwSBC03shWszeD_jWRT30RZH1WSoIRtySoqCkDAXXP3gjBXnLA8uI3kLdC
+
+
 Quick Tasks:
 - Check all modules with permalink have unique index like artcatalog
 - Date format for excel report of surveys
+- convert if/else for visible sections to ? conditional 
+	p.sections.taxes.visible=(M.curBusiness.modules['ciniki.taxes']!=null)?'yes':'no';
+- convert timezoneOffset to be business timezone instead of user timezone
 
 TODO:
 - Marketing 4x6 index card
@@ -17,6 +31,7 @@ TODO:
 - Convert modules to objectAdd/Update/Delete
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 - setup sequence for sorting gallery images (requested by Lucina).
+
 
 Maintence:
 - Database Documentation
