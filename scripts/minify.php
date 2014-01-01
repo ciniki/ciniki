@@ -9,21 +9,21 @@
 $ciniki_root = dirname(dirname(__FILE__));
 
 // All browsers
-$ciniki_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/ciniki.js");
+$ciniki_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/ciniki.js");
 $version = strftime("%y%m%d.%H%M", time());
 $ciniki_js = preg_replace("/'version':'[0-9]{6}\.[0-9]{4}',/", "'version':'$version',", $ciniki_js);
-$ciniki_panels_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/ciniki_panels.js");
-$cinikiAPI_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/cinikiAPI.js");
-$colorPicker_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/colorPicker.js");
+$ciniki_panels_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/ciniki_panels.js");
+$cinikiAPI_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/cinikiAPI.js");
+$colorPicker_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/colorPicker.js");
 
 $all_browser_js = $ciniki_js . "\n" . $ciniki_panels_js . "\n" . $cinikiAPI_js . "\n" . $colorPicker_js;
 
-$e_webkit_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-webkit.js");
-$e_gecko_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-gecko.js");
-$e_presto_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/e-presto.js");
+$e_webkit_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/e-webkit.js");
+$e_gecko_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/e-gecko.js");
+$e_presto_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/e-presto.js");
 
-$s_compact_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/s-compact.js");
-$s_normal_js = load_minify_js("$ciniki_root/site/ciniki-manage/core/js/s-normal.js");
+$s_compact_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/s-compact.js");
+$s_normal_js = load_minify_js("$ciniki_root/site/ciniki-mods/core/ui/s-normal.js");
 
 
 $style_css = load_minify_css("$ciniki_root/site/ciniki-manage-themes/default/style.css");
@@ -206,7 +206,7 @@ function file_put_min_cssjs($device, $engine, $size) {
 	global $all_browser_js;
 	global $style_css;
 
-	file_put_contents("$ciniki_root/site/ciniki-manage/core/js/$device-$engine.min.js",
+	file_put_contents("$ciniki_root/site/ciniki-mods/core/ui/$device-$engine.min.js",
 		$all_browser_js . "\n" . ${"s_${size}_js"} . "\n" . ${"e_${engine}_js"});
 
 //	if( $engine == 'trident' ) {
