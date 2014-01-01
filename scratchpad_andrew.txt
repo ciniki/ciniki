@@ -4,6 +4,79 @@ Combining UI into API
 - monitoring
 - sysadmin
 
+api:
+drwxr-xr-x  15 andrew  staff   510  1 Jan 12:41 artcatalog
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:44 artclub
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:45 artgallery
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:45 atdo
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:46 bugs
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:46 businesses
+drwxr-xr-x  10 andrew  staff   340  1 Jan 12:46 calendars
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:47 clicktracker
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:55 core
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:47 courses
+drwxr-xr-x  10 andrew  staff   340 24 Sep 16:41 cron
+drwxr-xr-x  15 andrew  staff   510  1 Jan 12:48 customers
+drwxr-xr-x  13 andrew  staff   442  1 Jan 12:48 events
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:48 exhibitions
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:48 filedepot
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:49 gallery
+drwxr-xr-x  13 andrew  staff   442 24 Sep 16:41 images
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:50 links
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:50 mail
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:50 newsaggregator
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:51 newsletters
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:51 products
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:51 projects
+drwxr-xr-x  10 andrew  staff   340  1 Jan 12:51 recipes
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:52 sapos
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:52 services
+drwxr-xr-x  13 andrew  staff   442  1 Jan 12:52 subscriptions
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:53 surveys
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:53 systemdocs
+drwxr-xr-x  11 andrew  staff   374  1 Jan 12:53 taxes
+drwxr-xr-x  13 andrew  staff   442  1 Jan 12:54 toolbox
+drwxr-xr-x  12 andrew  staff   408  1 Jan 12:54 users
+drwxr-xr-x  17 andrew  staff   578  1 Jan 12:54 web
+drwxr-xr-x  13 andrew  staff   442  1 Jan 12:54 wineproduction
+
+manage:
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 artcatalog
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 artclub
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 artgallery
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 atdo
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 bugs
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 businesses
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 calendars
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 clicktracker
+drwxr-xr-x   8 andrew  staff   272 24 Sep 16:41 core
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 courses
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 customers
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 events
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 exhibitions
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 filedepot
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 gallery
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 help
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 links
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 mail
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 monitoring
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 newsaggregator
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 newsletters
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 products
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 projects
+drwxr-xr-x   6 andrew  staff   204 20 Oct 16:47 recipes
+drwxr-xr-x   5 andrew  staff   170 15 Nov 11:48 sapos
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 services
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 subscriptions
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 surveys
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 sysadmin
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 systemdocs
+drwxr-xr-x   6 andrew  staff   204 22 Nov 13:14 taxes
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 toolbox
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 users
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 web
+drwxr-xr-x   6 andrew  staff   204 24 Sep 16:41 wineproduction
+
 
 Paypal integration:
 - Step 1: Create App in paypal
