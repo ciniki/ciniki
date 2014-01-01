@@ -97,6 +97,10 @@ Quick Tasks:
 - convert timezoneOffset to be business timezone instead of user timezone
 
 TODO:
+- Convert images/cache to ciniki-cache
+- add artcatalog add/update/change photo to process cached versions after finished.
+- cron job to create cached image versions on disk prepared for PDF
+
 - Marketing 4x6 index card
 - share buttons for artgallery
 - when send test mail for mailing list, have it prompt for email address

@@ -11,7 +11,7 @@
 // Figure out where the root directory is.  This file may be symlinked
 //
 $ciniki_root = dirname(__FILE__);
-$modules_dir = $ciniki_root . '/ciniki-api';
+$modules_dir = $ciniki_root . '/ciniki-mods';
 
 //
 // Verify no ciniki-api.ini file
@@ -1727,7 +1727,7 @@ function install($ciniki_root, $modules_dir) {
 	$config = array('ciniki.core'=>array(), 'ciniki.users'=>array());
 	$config['ciniki.core']['php'] = '/usr/bin/php';
 	$config['ciniki.core']['root_dir'] = $ciniki_root;
-	$config['ciniki.core']['modules_dir'] = $ciniki_root . '/ciniki-api';
+	$config['ciniki.core']['modules_dir'] = $ciniki_root . '/ciniki-mods';
 	$config['ciniki.core']['lib_dir'] = $ciniki_root . '/ciniki-lib';
 
 	// Default session timeout to 30 minutes
@@ -1770,7 +1770,7 @@ function install($ciniki_root, $modules_dir) {
 	$config['ciniki.mail'] = array();
 
 	//
-	// Setup ciniki variable, just like ciniki-api/core/private/init.php script, but we
+	// Setup ciniki variable, just like ciniki-mods/core/private/init.php script, but we
 	// can't load that script as the config file isn't on disk, and the user is not 
 	// in the database
 	//
@@ -1780,7 +1780,7 @@ function install($ciniki_root, $modules_dir) {
 	//
 	// Check to see if the code already exists on server, if not grab the code and install
 	//
-	if( !file_exists($ciniki_root . "/ciniki-api/core") ) {
+	if( !file_exists($ciniki_root . "/ciniki-mods/core") ) {
 		if( $sync_code_url == '' ) {
 			print_page('yes', 'ciniki.installer.200', "Ciniki has not been downloaded, please specify a Code URL.");
 			exit();
@@ -1793,8 +1793,11 @@ function install($ciniki_root, $modules_dir) {
 		$remote_modules = parse_ini_string($remote_versions, true);
 		
 		# Create directory structure
-		if( !file_exists($ciniki_root . "/ciniki-api") ) {
-			mkdir($ciniki_root . "/ciniki-api");
+		if( !file_exists($ciniki_root . "/ciniki-mods") ) {
+			mkdir($ciniki_root . "/ciniki-mods");
+		}
+		if( !file_exists($ciniki_root . "/ciniki-cache") ) {
+			mkdir($ciniki_root . "/ciniki-cache");
 		}
 		if( !file_exists($ciniki_root . "/ciniki-storage") ) {
 			mkdir($ciniki_root . "/ciniki-storage");
@@ -1805,14 +1808,11 @@ function install($ciniki_root, $modules_dir) {
 		if( !file_exists($ciniki_root . "/ciniki-lib") ) {
 			mkdir($ciniki_root . "/ciniki-lib");
 		}
-		if( !file_exists($ciniki_root . "/ciniki-manage") ) {
-			mkdir($ciniki_root . "/ciniki-manage");
-		}
 		if( !file_exists($ciniki_root . "/ciniki-manage-themes") ) {
 			mkdir($ciniki_root . "/ciniki-manage-themes");
 		}
 
-		# This code also exists in ciniki-api/core/private/syncUpgradeSystem
+		# This code also exists in ciniki-mods/core/private/syncUpgradeSystem
 		foreach($remote_modules as $mod_name => $module) {
 			$remote_zip = file_get_contents($sync_code_url . "/$mod_name.zip");
 			if( $remote_zip === false ) {
@@ -2075,9 +2075,9 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]\n"
 		. "RewriteRule ^(.*)$ http://%1/$1 [R=301,L]\n"
 		. "# Allow access to artweb themes and cache, everything is considered public\n"
-		. "RewriteRule ^ciniki-web-layouts/(.*\.)(css|js|png)$ ciniki-api/web/layouts/$1$2 [L]\n"
-		. "RewriteRule ^ciniki-web-themes/(.*\.)(css|js|html)$ ciniki-api/web/themes/$1$2 [L]\n"
-		. "RewriteRule ^ciniki-web-cache/(.*\.)(jpg)$ ciniki-api/web/cache/$1$2 [L]\n"
+		. "RewriteRule ^ciniki-web-layouts/(.*\.)(css|js|png)$ ciniki-mods/web/layouts/$1$2 [L]\n"
+		. "RewriteRule ^ciniki-web-themes/(.*\.)(css|js|html)$ ciniki-mods/web/themes/$1$2 [L]\n"
+		. "RewriteRule ^ciniki-web-cache/(.*\.)(jpg)$ ciniki-mods/web/cache/$1$2 [L]\n"
 		. "RewriteRule ^ciniki-code/(.*\.)(zip|ini)$ ciniki-code/$1$2 [L]\n"
 		. "RewriteBase /\n"
 		. "\n"
@@ -2087,12 +2087,12 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteCond %{REQUEST_FILENAME} -d\n"
 		. "RewriteRule ^(manage/)$ ciniki-manage.php [L]                                            # allow all ciniki-manage\n"
 		. "RewriteRule ^(manage)$ ciniki-manage.php [L]                                             # allow all ciniki-manage\n"
-		. "RewriteRule ^(ciniki-manage/.*)$ $1 [L]                                                  # Allow manage content\n"
+		. "RewriteRule ^(ciniki-mods/ui/.*)$ $1 [L]                                                  # Allow manage content\n"
 		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-web-themes/.*)$ $1 [L]                                              # Allow manage-theme content\n"
-		. "RewriteRule ^(ciniki-api/web/layouts/.*)$ $1 [L]                                    # Allow web-layouts content\n"
-		. "RewriteRule ^(ciniki-api/web/themes/.*)$ $1 [L]                                     # Allow web-themes content\n"
-		. "RewriteRule ^(ciniki-api/web/cache/.*\.jpg)$ $1 [L]                                      # Allow web-cache content\n"
+		. "RewriteRule ^(ciniki-mods/web/layouts/.*)$ $1 [L]                                    # Allow web-layouts content\n"
+		. "RewriteRule ^(ciniki-mods/web/themes/.*)$ $1 [L]                                     # Allow web-themes content\n"
+		. "RewriteRule ^(ciniki-mods/web/cache/.*\.jpg)$ $1 [L]                                      # Allow web-cache content\n"
 		. "RewriteRule ^(paypal-ipn|ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
 		. "RewriteRule ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
 		. "RewriteRule . index.php [L]                                                              # Redirect all other requests to index\n"
@@ -2118,13 +2118,13 @@ function install($ciniki_root, $modules_dir) {
 	//
 	// Create symlinks into scripts
 	//
-	symlink($ciniki_root . '/ciniki-api/core/scripts/sync.php', $ciniki_root . '/ciniki-sync.php');
-	symlink($ciniki_root . '/ciniki-api/core/scripts/rest.php', $ciniki_root . '/ciniki-rest.php');
-	symlink($ciniki_root . '/ciniki-api/core/scripts/json.php', $ciniki_root . '/ciniki-json.php');
-	symlink($ciniki_root . '/ciniki-api/core/scripts/paypal-ipn.php', $ciniki_root . '/paypal-ipn.php');
-	symlink($ciniki_root . '/ciniki-api/web/scripts/index.php', $ciniki_root . '/index.php');
-	symlink($ciniki_root . '/ciniki-manage/core/scripts/manage.php', $ciniki_root . '/ciniki-manage.php');
-	symlink($ciniki_root . '/ciniki-manage/core/scripts/login.php', $ciniki_root . '/ciniki-login.php');
+	symlink($ciniki_root . '/ciniki-mods/core/scripts/sync.php', $ciniki_root . '/ciniki-sync.php');
+	symlink($ciniki_root . '/ciniki-mods/core/scripts/rest.php', $ciniki_root . '/ciniki-rest.php');
+	symlink($ciniki_root . '/ciniki-mods/core/scripts/json.php', $ciniki_root . '/ciniki-json.php');
+	symlink($ciniki_root . '/ciniki-mods/core/scripts/paypal-ipn.php', $ciniki_root . '/paypal-ipn.php');
+	symlink($ciniki_root . '/ciniki-mods/web/scripts/index.php', $ciniki_root . '/index.php');
+	symlink($ciniki_root . '/ciniki-mods/core/scripts/manage.php', $ciniki_root . '/ciniki-manage.php');
+	symlink($ciniki_root . '/ciniki-mods/core/scripts/login.php', $ciniki_root . '/ciniki-login.php');
 
 	$rc = ciniki_core_dbTransactionCommit($ciniki, 'core');
 	if( $rc['stat'] != 'ok' ) {

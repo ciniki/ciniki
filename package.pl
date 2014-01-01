@@ -31,7 +31,7 @@ if( $package =~ /(.*):::(.*):::(.*)/ ) {
 
 $mods = `git submodule foreach 'git show --format='%cn:::%ct:::%H' |grep :::'`;
 
-$mods =~ s/Entering \'site\/(ciniki)-(api|lib|manage|manage-themes)\/([A-Za-z]+)\'\n(.*):::(.*):::(.*)/$1:::$2:::$3:::$4:::$5:::$6/g;
+$mods =~ s/Entering \'site\/(ciniki)-(mods|lib|manage-themes)\/([A-Za-z]+)\'\n(.*):::(.*):::(.*)/$1:::$2:::$3:::$4:::$5:::$6/g;
 
 @modules = split("\n", $mods);
 $updates = "";
@@ -163,6 +163,5 @@ open(my $outfile, ">", "site/ciniki-code/_versions.ini");
 print $outfile $cini;
 close($outfile);
 
-`rm site/ciniki-api/*/_version.ini`;
-`rm site/ciniki-manage/*/_version.ini`;
+`rm site/ciniki-mods/*/_version.ini`;
 `rm site/ciniki-manage-themes/*/_version.ini`;
