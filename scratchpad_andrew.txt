@@ -1,3 +1,10 @@
+Combining UI into API
+- core (done)
+- help (done)
+- monitoring
+- sysadmin
+
+
 Paypal integration:
 - Step 1: Create App in paypal
 - Step 2: Copy credentials into Ciniki
