@@ -106,3 +106,6 @@
 [submodule "site/ciniki-mods/sysadmin"]
 	path = site/ciniki-mods/sysadmin
 	url = git://github.com/ciniki/sysadmin
+[submodule "site/ciniki-mods/systemdocs"]
+	path = site/ciniki-mods/systemdocs
+	url = git://github.com/ciniki/systemdocs
