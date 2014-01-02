@@ -100,6 +100,8 @@ TODO:
 - Convert images/cache to ciniki-cache
 - add artcatalog add/update/change photo to process cached versions after finished.
 - cron job to create cached image versions on disk prepared for PDF
+- pdf 1/page, remove page numbers (option)
+- Red dot on sold items in PDF (option)
 
 - Marketing 4x6 index card
 - share buttons for artgallery
