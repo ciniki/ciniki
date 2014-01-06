@@ -17,10 +17,9 @@ Quick Tasks:
 - convert timezoneOffset to be business timezone instead of user timezone
 
 TODO:
-- Convert images/cache to ciniki-cache
+- Download excel spreadsheet of expenses/invoices
+- Event/Course online registration
 - add artcatalog add/update/change photo to process cached versions after finished.
-- cron job to create cached image versions on disk prepared for PDF
-- pdf 1/page, remove page numbers (option)
 - Red dot on sold items in PDF (option)
 
 - Marketing 4x6 index card
@@ -83,13 +82,3 @@ Marketing:
 		- free trial
 		- manage your event listings
 		- track your customers and purchases
-
-
-Done:
-- Merge eventimages.js add/edit forms
-- event gallery drag/drop like gallery/artcatalog additional images
-- gallery needs multiple drag-drop for images
-- remove Questions module from ciniki, no longer needed
-- gallery needs Uncategorized feature working when no album names given.
-- additional photos for artgallery module
-
