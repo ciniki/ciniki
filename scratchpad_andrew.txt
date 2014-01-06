@@ -2,6 +2,9 @@ Top Priority:
 - Excel export of invoice list
 - Event/Course registration/invoicing
 - Sync
+- customer automerge
+- product images
+- product website listing
 
 
 TODO:
