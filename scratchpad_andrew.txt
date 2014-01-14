@@ -14,11 +14,11 @@ Presentation:
 	- Ciniki Artists, Ciniki Artists Plus, Workpress, Custom ($$)
 
 TODO:
-- Download excel spreadsheet of expenses/invoices
 - Event/Course online registration
 - add artcatalog add/update/change photo to process cached versions after finished.
 - Red dot on sold items in PDF (option)
 
+- Artcatalog, certificate of authenticity (http://www.gallerywebfineart.com/portal/policie/certificate-of-authenticity/)
 - Marketing 4x6 index card
 - share buttons for artgallery
 - when send test mail for mailing list, have it prompt for email address
