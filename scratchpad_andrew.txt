@@ -9,6 +9,8 @@ Top Priority:
 
 
 Presentation:
+- business cards
+- screen shots of websites/UI
 - comparision chart for club website options
 - comparision chart for features of artist websites
 	- Ciniki Artists, Ciniki Artists Plus, Workpress, Custom ($$)
