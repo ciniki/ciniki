@@ -7,6 +7,15 @@ Top Priority:
 - product images
 - product website listing
 
+- Oak, Body, Sweetness
+- HE, unit is 2 kits, niagara mist and OB as well.
+- Cost
+- item_number
+- weight ?
+- minimum order, and multiples (2), used when have to order 2 at a time.
+- related products
+- recipes
+
 
 Presentation:
 - business cards
