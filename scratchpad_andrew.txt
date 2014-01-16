@@ -16,6 +16,14 @@ Top Priority:
 - related products
 - recipes
 
+Sara Kennedy:
+- quick invoice feature
+	- defaults for quick invoicing
+	- contain an item
+	- what taxes should be applied
+	- auto record transaction
+	- 
+
 
 Presentation:
 - business cards
