@@ -17,13 +17,7 @@ Top Priority:
 - recipes
 
 Sara Kennedy:
-- quick invoice feature
-	- defaults for quick invoicing
-	- contain an item
-	- what taxes should be applied
-	- auto record transaction
-	- 
-
+- FIXME: fix problems with edit quick invoice item
 
 Presentation:
 - business cards
