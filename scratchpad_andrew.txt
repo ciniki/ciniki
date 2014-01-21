@@ -1,30 +1,16 @@
 Top Priority:
 - Event/Course registration/invoicing
-- PAG Talk prep
 - Transactions report
 - Sync
 - customer automerge
-- product images
-- product website listing
 
-- Oak, Body, Sweetness
-- HE, unit is 2 kits, niagara mist and OB as well.
-- Cost
-- item_number
-- weight ?
-- minimum order, and multiples (2), used when have to order 2 at a time.
+Products:
 - related products
 - recipes
 
-Sara Kennedy:
-- FIXME: fix problems with edit quick invoice item
-
-Presentation:
+Next Presentation:
+- quick start guide
 - business cards
-- screen shots of websites/UI
-- comparision chart for club website options
-- comparision chart for features of artist websites
-	- Ciniki Artists, Ciniki Artists Plus, Workpress, Custom ($$)
 
 TODO:
 - Event/Course online registration
