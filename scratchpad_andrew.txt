@@ -8,6 +8,10 @@ Products:
 - related products
 - recipes
 
+Winemaker:
+- extend past 10 wines for customer to full UI panel, also make sortable
+- history of customer names for wine order when edit existing order
+
 Next Presentation:
 - quick start guide
 - business cards
