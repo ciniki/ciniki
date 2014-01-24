@@ -98,3 +98,19 @@ Marketing:
 		- free trial
 		- manage your event listings
 		- track your customers and purchases
+
+Blog:
+- Similar to events
+- database blog entry has a format specified 
+	- simple 
+		- paragraphs
+		- 1 main image
+		- files at end of post
+		- additional images at end of post
+		- similar to events, and other modules
+		- publish_date, for future publishing
+	- complex **future**
+		- paragraphs each with option image
+		- include markup in entry to define sections
+		- additional images at bottom
+		- gallery option to view each image in post
