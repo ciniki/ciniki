@@ -109,6 +109,10 @@ Blog:
 		- additional images at end of post
 		- similar to events, and other modules
 		- publish_date, for future publishing
+		- have gallery include main image
+		- have images tagged with location in blog post, add extra field to ciniki_blog_images table for this.  
+			- The blog post text can contain search/replace or something that will be image placeholders that
+			are replaces from ciniki_blog_images list.
 	- complex **future**
 		- paragraphs each with option image
 		- include markup in entry to define sections
