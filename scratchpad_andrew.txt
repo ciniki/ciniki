@@ -18,6 +18,7 @@ Next Presentation:
 
 TODO:
 - Event/Course online registration
+- Tutorial for event/course registration in Ciniki (Same as artcatalog setup)
 - add artcatalog add/update/change photo to process cached versions after finished.
 - Red dot on sold items in PDF (option)
 
