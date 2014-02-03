@@ -21,6 +21,7 @@ TODO:
 - Tutorial for event/course registration in Ciniki (Same as artcatalog setup)
 - add artcatalog add/update/change photo to process cached versions after finished.
 - Red dot on sold items in PDF (option)
+- course previous offerings should only be last 10 courses with option for list by year same as invoices
 
 - Artcatalog, certificate of authenticity (http://www.gallerywebfineart.com/portal/policie/certificate-of-authenticity/)
 - Marketing 4x6 index card
