@@ -10,15 +10,13 @@ Products:
 
 Winemaker:
 - history of customer names for wine order when edit existing order
-- similar product history for product_id (fkid)
-- add similar products to website.
 
 Next Presentation:
 - quick start guide
 - business cards
 
 TODO:
-- Event/Course online registration
+- Change checkAccess to include & for $ciniki variable for module list
 - Tutorial for event/course registration in Ciniki (Same as artcatalog setup)
 - add artcatalog add/update/change photo to process cached versions after finished.
 - Red dot on sold items in PDF (option)
