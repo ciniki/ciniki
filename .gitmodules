@@ -112,3 +112,6 @@
 [submodule "site/ciniki-mods/workshops"]
 	path = site/ciniki-mods/workshops
 	url = git://github.com/ciniki/workshops.git
+[submodule "site/ciniki-mods/blog"]
+	path = site/ciniki-mods/blog
+	url = git://github.com/ciniki/blog.git

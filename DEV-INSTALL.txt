@@ -75,9 +75,9 @@ Then, add submodule to the local ciniki project directory.  The module should be
 added using the public URL so the master ciniki git repo can pull it without permissions.
 
 - cd ciniki/
-- git submodule add git://github.com/ciniki/api-<modulename>.git site/ciniki-api/<modulename>
-- cd site/ciniki-api/<modulename>
-- git remote add push git@github.com:ciniki/api-<modulename>.git 
+- git submodule add git://github.com/ciniki/<modulename>.git site/ciniki-mods/<modulename>
+- cd site/ciniki-mods/<modulename>
+- git remote add push git@github.com:ciniki/<modulename>.git 
 
 Once the module has been added, it should be added to initialization script for the project.
 Edit dev-tools/dev-init.sh and add the project.
