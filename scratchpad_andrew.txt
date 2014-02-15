@@ -16,8 +16,7 @@ Next Presentation:
 - business cards
 
 TODO:
-- blog tag add button instead of text field
-- add links to blog post edit
+- Convert permalink to ciniki_core_makePermalink
 - Change checkAccess to include & for $ciniki variable for module list
 - Tutorial for event/course registration in Ciniki (Same as artcatalog setup)
 - add artcatalog add/update/change photo to process cached versions after finished.
