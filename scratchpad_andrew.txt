@@ -16,6 +16,7 @@ Next Presentation:
 - business cards
 
 TODO:
+- add internal comments thread to recipes
 - Convert permalink's to ciniki_core_makePermalink
 - Change checkAccess to include & for $ciniki variable for module list
 - Tutorial for event/course registration in Ciniki (Same as artcatalog setup)
