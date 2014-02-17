@@ -4,10 +4,6 @@ Top Priority:
 - Sync
 - customer automerge
 
-Products:
-- related products
-- recipes
-
 Winemaker:
 - history of customer names for wine order when edit existing order
 
