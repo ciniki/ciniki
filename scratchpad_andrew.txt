@@ -12,8 +12,8 @@ Next Presentation:
 - business cards
 
 TODO:
-- Remove delete button from add course panel
-- email not showing up upon add customer.
+- Remove delete button from add course panel (done)
+- email not showing up upon add customer. (done)
 - add course panel should open course when added (done)
 - add internal comments thread to recipes
 - Convert permalink's to ciniki_core_makePermalink
