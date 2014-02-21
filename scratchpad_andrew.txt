@@ -11,10 +11,52 @@ Next Presentation:
 - quick start guide
 - business cards
 
+
+Multi Gallery Menu
+- Separate the galleries for Painting, Sculpture, jewelry, etc into their own menu items,
+	have an option in website to turn this on
+	- URL /gallery/paintings/category
+
+Member->Customer Merge:
+- Update customer db
+	- bio's
+	- ciniki_customers fields:
+		- type:
+			- 0x01 - Customer (default, everybody is customer, 
+								field is incase need to have non-customers in future)
+			- 0x02 - Member
+		- member_status tinyint not null
+			- 0x01 - active member
+		- primary_image_id
+		- member_webflags
+			0x01 - Hidden
+	- ciniki_customer_images
+	- ciniki_customer_links
+- Update objects.php
+- Add flags to ciniki.customers module
+	- 0x01 - Customers
+	- 0x02 - Members
+- set module flags to 0x01 for ciniki.customers module for all businesses
+- Set all existing customers type (0x01).
+- write script to copy artclub.members into customers
+- Copy member UI to customers/ui
+- Add check for business menu to display customer/members or both menu items
+- Update web code for members
+
+Blog Update for Membership blog
+- add ciniki.blog flags for customer blog and members blog
+- Update blog to have field for ciniki_blog_posts.visibility
+	- 0x01 - public
+	- 0x02 - customers
+	- 0x04 - members
+- Allow customer login if member blogs enabled
+- Add menu item "Member News" if member blogs enabled
+
+
+
 TODO:
-- Remove delete button from add course panel (done)
-- email not showing up upon add customer. (done)
-- add course panel should open course when added (done)
+- Turn off latest work on home page
+- Add members page to Homesteading Technopeasants (HTP).
 - add internal comments thread to recipes
 - Convert permalink's to ciniki_core_makePermalink
 - Change checkAccess to include & for $ciniki variable for module list
