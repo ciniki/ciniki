@@ -1,23 +1,28 @@
-Top Priority:
+Top Priority
+------------
 - Event/Course registration/invoicing
+- online course signups
 - Transactions report
 - Sync
 - customer automerge
 
-Winemaker:
+Winemaker
+---------
 - history of customer names for wine order when edit existing order
 
-Next Presentation:
+Next Presentation
+-----------------
 - quick start guide
 - business cards
 
-
 Multi Gallery Menu
+------------------
 - Separate the galleries for Painting, Sculpture, jewelry, etc into their own menu items,
 	have an option in website to turn this on
 	- URL /gallery/paintings/category
 
-Member->Customer Merge:
+Member->Customer Merge
+----------------------
 - Update customer db
 	- bio's
 	- ciniki_customers fields:
@@ -44,6 +49,7 @@ Member->Customer Merge:
 - Update web code for members
 
 Blog Update for Membership blog
+-------------------------------
 - add ciniki.blog flags for customer blog and members blog
 - Update blog to have field for ciniki_blog_posts.visibility
 	- 0x01 - public
@@ -52,15 +58,26 @@ Blog Update for Membership blog
 - Allow customer login if member blogs enabled
 - Add menu item "Member News" if member blogs enabled
 
+Backups
+-------
+- Have nightly job to export each module information
+- store in /ciniki-exports/a/business-uuid/module/record/ciniki.xml
+	- record directory should be unique name of record
+	- xml file should contain complete record, all images, history, etc everything needed to recreate
+	- contain a pdf/doc/txt file with data, human readable format
+	- should contain image originals used with record
+- simple modules (ciniki.links) should contain spreadsheet with data
+- complex modules should contain spreadsheet and addition directories for each record with data
+- everything should be available as human readable and xml format
+- zip business export into date stamped file.zip, record in database
 
-
-TODO:
-- Turn off latest work on home page
+TODO
+----
+- Remove Quick Invoices from settings if not enabled.
 - Add members page to Homesteading Technopeasants (HTP).
 - add internal comments thread to recipes
 - Convert permalink's to ciniki_core_makePermalink
 - Change checkAccess to include & for $ciniki variable for module list
-- Tutorial for event/course registration in Ciniki (Same as artcatalog setup)
 - add artcatalog add/update/change photo to process cached versions after finished.
 - Red dot on sold items in PDF (option)
 - course previous offerings should only be last 10 courses with option for list by year same as invoices
@@ -81,7 +98,8 @@ TODO:
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 - setup sequence for sorting gallery images (requested by Lucina).
 
-Quick Tasks:
+Quick Tasks
+-----------
 - Check all modules with permalink have unique index like artcatalog
 - Date format for excel report of surveys
 - convert if/else for visible sections to ? conditional 
@@ -144,16 +162,10 @@ Marketing:
 		- track your customers and purchases
 
 Blog:
-- Similar to events
 - database blog entry has a format specified 
 	- simple 
 		- paragraphs
 		- 1 main image
-		- files at end of post
-		- additional images at end of post
-		- similar to events, and other modules
-		- publish_date, for future publishing
-		- have gallery include main image
 		- have images tagged with location in blog post, add extra field to ciniki_blog_images table for this.  
 			- The blog post text can contain search/replace or something that will be image placeholders that
 			are replaces from ciniki_blog_images list.
