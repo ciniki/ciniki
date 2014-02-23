@@ -73,7 +73,7 @@ Backups
 
 TODO
 ----
-- Remove Quick Invoices from settings if not enabled.
+- Update google code to new analytics
 - Add members page to Homesteading Technopeasants (HTP).
 - add internal comments thread to recipes
 - Convert permalink's to ciniki_core_makePermalink
