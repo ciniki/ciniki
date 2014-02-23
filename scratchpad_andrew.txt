@@ -15,12 +15,6 @@ Next Presentation
 - quick start guide
 - business cards
 
-Multi Gallery Menu
-------------------
-- Separate the galleries for Painting, Sculpture, jewelry, etc into their own menu items,
-	have an option in website to turn this on
-	- URL /gallery/paintings/category
-
 Member->Customer Merge
 ----------------------
 - Update customer db
