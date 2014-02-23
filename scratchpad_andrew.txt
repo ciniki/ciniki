@@ -67,6 +67,7 @@ Backups
 
 TODO
 ----
+- Download original in artcatalog
 - Update google code to new analytics
 - Add members page to Homesteading Technopeasants (HTP).
 - add internal comments thread to recipes
