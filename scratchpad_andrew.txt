@@ -38,10 +38,26 @@ Backups
 - everything should be available as human readable and xml format
 - zip business export into date stamped file.zip, record in database
 
+Features Page
+-------------
+- flag like Custom Page in ciniki.web
+- database of features, organized by page (Artists, Clubs, Winemakers, Small Business)
+	- each page can have multiple plans with their features
+- Each feature list which plans it is a part of
+- feature brief description
+- feature images
+- feature page, click on to get more information, pictures/screen shots
+- order now button if linked to plans
+- Organize website by plan, checkboxes with which feature works with which plans
+- If no plans for business, don't show that option
+
+
 TODO
 ----
+- Add module flags to plan signups
 - Gallery descriptions/primary image
 - Update google code to new analytics
+	https://developers.google.com/analytics/devguides/collection/upgrade/guide
 - add internal comments thread to recipes
 - Convert permalink's to ciniki_core_makePermalink
 - Change checkAccess to include & for $ciniki variable for module list
@@ -64,6 +80,11 @@ TODO
 - Convert modules to objectAdd/Update/Delete
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
 - setup sequence for sorting gallery images (requested by Lucina).
+- facebook highlight image
+	http://stackoverflow.com/questions/2846381/what-does-ogimage-meta-data-do-with-the-facebook-like-iframe
+- domain transfer from yahoo
+	https://help.yahoo.com/kb/yahoo-domains/transfer-domain-provider-sln17711.html
+
 
 Quick Tasks
 -----------
