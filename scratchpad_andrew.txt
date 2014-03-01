@@ -13,11 +13,11 @@ SSAC
 Winemaker
 ---------
 - history of customer names for wine order when edit existing order
-- Add project name to edit project form
-- delete button for projects
-- status for projects
-- change order for project name/category in edit form
-- subject in task edit to task title
+- Add project name to edit project form (done)
+- delete button for projects (done)
+- status for projects (done)
+- change order for project name/category in edit form (done)
+- subject in task edit to task title (done)
 
 Next Presentation
 -----------------
