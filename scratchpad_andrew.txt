@@ -1,5 +1,13 @@
 Top Priority
 ------------
+- SSAC Members List Import
+	- Add categories (tags) for members
+
+- Member News - Parkway Artists Guild
+- Facilities page for Niagara Pumphouse
+- Board of Directors module for Website
+- Sponsors module
+
 - Event/Course registration/invoicing
 - online course signups
 - Transactions report
@@ -9,6 +17,12 @@ Top Priority
 SSAC
 ----
 - Setup ssacmembers site
+- Build sponsors module, switch artclubs to module
+- Categories for sponsors
+- List of sponsors by category
+- default category sequence is 99
+- displays lowest to highest
+- store in settings for sponsors modules
 
 Winemaker
 ---------
@@ -113,12 +127,14 @@ Paypal integration:
 	- client-id: ARlpBBDNQEJG3CdY-iqNXmEdAKVaSDlHMJ8wwDE7Gs2mwCCPX0tHpsL512Lg
 	- secret: EFBwSBC03shWszeD_jWRT30RZH1WSoIRtySoqCkDAXXP3gjBXnLA8uI3kLdC
 
-Maintence:
+Maintence
+---------
 - Database Documentation
 - Method descriptions/args documentation
 - Update prepareArgs to add validlist
 
-Events:
+Events
+------
 - event payment through paypal for niagara pumphouse for events/courses (events first)
 	- When listing events, display sold/num_tickets
 	- have section for registration information
@@ -133,6 +149,7 @@ Meeting with Lisa in Barrie:
 
 
 Art Gallery
+-----------
 	- Add the ability to have multiple headings in the menu bar, and decide
 	  which galleries belong in each Major Category.  This will be done in the 
 	  website manage section.
@@ -142,7 +159,8 @@ Art Gallery
 	  the artgallery module simple.
 	- Each Major Category could pull from multiple sources, artgallery, artclub, gallery, etc.
 
-Marketing:
+Marketing
+---------
 - 4x6 Index cards
 	- UI screenshots
 	- Website screenshots
@@ -158,7 +176,8 @@ Marketing:
 		- manage your event listings
 		- track your customers and purchases
 
-Blog:
+Blog
+----
 - database blog entry has a format specified 
 	- simple 
 		- paragraphs
