@@ -5,8 +5,7 @@ Customer Status
 - SSAC - Import members
 - Alliston Tennis Club - Andrew K has to start
 
-- add nested to queryidtree
-- add public flags for member phones, links, emails
+- (done) add public flags for member phones, links, emails
 - display format for businesses (business, person - business, business - person )
 - add website flag to determine what info about member should be displayed in list
 	- needs to rebuild short_description for everybody
