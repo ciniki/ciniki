@@ -1,8 +1,23 @@
+Customer Status
+---------------
+- David Aspenlieder, (SSAC, Everett) got chrome, needs onsite help
+- Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
+- SSAC - Import members
+- Alliston Tennis Club - Andrew K has to start
+
+- add nested to queryidtree
+- add public flags for member phones, links, emails
+- display format for businesses (business, person - business, business - person )
+- add website flag to determine what info about member should be displayed in list
+	- needs to rebuild short_description for everybody
+
 Top Priority
 ------------
+- FIX Gallery Bug with Cache not checking module last_change
 - SSAC Members List Import
 	- Add categories (tags) for members
-
+	- Move phone numbers to own table
+		
 - Member News - Parkway Artists Guild
 - Facilities page for Niagara Pumphouse
 - Board of Directors module for Website
@@ -77,6 +92,8 @@ Features Page
 
 TODO
 ----
+- Update customer merge to include sapos module
+- Add tags to links module
 - Add module flags to plan signups
 - Gallery descriptions/primary image
 - Update google code to new analytics
@@ -190,3 +207,14 @@ Blog
 		- include markup in entry to define sections
 		- additional images at bottom
 		- gallery option to view each image in post
+
+SSAC Volunteer Hours March
+--------------------------
+2 - 2, parsing of member list
+3 - 4, development of member directory
+4 - 6, development of member directory
+5 - 0.5, meeting 
+  - 1, development of member directory
+6 - 4, development of member directory
+
+
