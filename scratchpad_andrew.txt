@@ -7,15 +7,15 @@ Customer Status
 
 - (done) add public flags for member phones, links, emails
 - display format for businesses (business, person - business, business - person )
-- add website flag to determine what info about member should be displayed in list
+- (done) add website flag to determine what info about member should be displayed in list
 	- needs to rebuild short_description for everybody
 
 Top Priority
 ------------
-- FIX Gallery Bug with Cache not checking module last_change
+- (done) FIX Gallery Bug with Cache not checking module last_change
 - SSAC Members List Import
-	- Add categories (tags) for members
-	- Move phone numbers to own table
+	- (done) Add categories (tags) for members
+	- (done) Move phone numbers to own table
 		
 - Member News - Parkway Artists Guild
 - Facilities page for Niagara Pumphouse
@@ -214,6 +214,6 @@ SSAC Volunteer Hours March
 4 - 6, development of member directory
 5 - 0.5, meeting 
   - 1, development of member directory
-6 - 4, development of member directory
+6 - 6, development of member directory
 
 
