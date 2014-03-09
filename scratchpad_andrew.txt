@@ -3,12 +3,13 @@ Customer Status
 - David Aspenlieder, (SSAC, Everett) got chrome, needs onsite help
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
 - SSAC - Import members
-- Alliston Tennis Club - Andrew K has to start
+- Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
 
 - (done) add public flags for member phones, links, emails
-- display format for businesses (business, person - business, business - person )
+- (done) display format for businesses (business, person - business, business - person )
 - (done) add website flag to determine what info about member should be displayed in list
-	- needs to rebuild short_description for everybody
+	- (done) needs to rebuild short_description for everybody
+- create conversion script for excel->xml for ciniki import
 
 Top Priority
 ------------
