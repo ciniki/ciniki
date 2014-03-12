@@ -1,6 +1,6 @@
 Customer Status
 ---------------
-- David Aspenlieder, (SSAC, Everett) got chrome, needs onsite help
+- David Aspenlieder, (SSAC, Everett) needs change
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
 - SSAC 
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
@@ -38,6 +38,14 @@ SSAC
 - default category sequence is 99
 - displays lowest to highest
 - store in settings for sponsors modules
+
+David Aspenlieder
+-----------------
+- add ability for about page to be list of sections like events page
+	- each section has a name and thumbnail (icon) and paragraph
+	- could have link for more to lead elsewhere in site
+
+- add ability for gallery page to be a list of categories
 
 Winemaker
 ---------
@@ -208,6 +216,13 @@ Blog
 		- additional images at bottom
 		- gallery option to view each image in post
 
+Farming
+-------
+- ciniki_farm_plantings
+	- seed_type, variety
+	- supplier
+	- plant_date, sprout_date, first_pick_date, last_pick_date
+
 SSAC Volunteer Hours March
 --------------------------
 2 - 2, parsing of member list
@@ -216,5 +231,12 @@ SSAC Volunteer Hours March
 5 - 0.5, meeting 
   - 1, development of member directory
 6 - 6, development of member directory
-
+7 - 6, import of member directory from excel
+8 - 6, development of member categories, website member list
+9 - 8, development of member directory download to word
+10 - 0
+11 -
+12 - 
+13 - 
+14 -
 
