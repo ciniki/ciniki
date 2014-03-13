@@ -17,8 +17,11 @@ Top Priority
 	- (done) Add categories (tags) for members
 	- (done) Move phone numbers to own table
 	- (done) Member list to Word
-		
-- Member News - Parkway Artists Guild
+- SSAC Premium Member Setup
+- SSAC Member website Setup, logo, home page, etc.
+- Setup BWG Studio Tour Site
+- Member News - Parkway Artists Guild (Email Yimlei)
+
 - Facilities page for Niagara Pumphouse
 - Board of Directors module for Website, Niagara Pumphouse
 - Sponsors module
@@ -236,7 +239,7 @@ SSAC Volunteer Hours March
 9 - 8, development of member directory download to word
 10 - 0
 11 -
-12 - 
+12 - 2, import of member directory, meetings
 13 - 
 14 -
 
