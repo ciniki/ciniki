@@ -5,11 +5,6 @@ Customer Status
 - SSAC 
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
 
-- (done) add public flags for member phones, links, emails
-- (done) display format for businesses (business, person - business, business - person )
-- (done) add website flag to determine what info about member should be displayed in list
-	- (done) needs to rebuild short_description for everybody
-
 Top Priority
 ------------
 - (done) FIX Gallery Bug with Cache not checking module last_change
@@ -42,6 +37,35 @@ SSAC
 - default category sequence is 99
 - displays lowest to highest
 - store in settings for sponsors modules
+
+E-Cart
+------
+- create generatePageCart
+- Check security for https for customer sites
+	- wildcard SSL?
+- only one open shopping cart at a time
+- can view old invoices
+- have files in /ciniki.sapos/web/
+	- cartCreate - Create a new shopping cart (invoice with shopping cart status)
+	- cartItemAdd - Add a new item to a cart
+		- check cart status to verify if possible to add items
+		- from url /cart/cartid/add?o=ciniki.courses.course&i=permalink/id&q=1
+			- object&identifier&quantity
+		- use redirect after submit to go to cart, stops reload issue adding multiple items
+		- object (ciniki.courses.course.courseidentifier), args(quantity, etc)
+		- function will then ciniki.courses/sapos/cartItemDetails or maybe itemDetails
+	- cartDetails - pull the details for the shopping cart (invoiceLoad)
+		- doesn't matter status of invoice, if it's attached to logged in customer then show it
+		- url /cart/cartid
+	- cartCheckout
+		- redirect to paypal for collection of payment
+		- redirect back to here if payment cancelled
+		
+	- cartPaid 
+		- redirect from paypal after payment been made
+		- Update invoide to paid, record transaction
+
+	
 
 David Aspenlieder
 -----------------
