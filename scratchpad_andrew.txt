@@ -14,9 +14,9 @@ Top Priority
 	- (done) Member list to Word
 - SSAC Premium Member Setup
 - SSAC Member website Setup, logo, home page, etc.
-- Setup BWG Studio Tour Site
-- Fixed BWG multi artists at one site
-- Member News - Parkway Artists Guild (Email Yimlei)
+- (done) Setup BWG Studio Tour Site
+- (done) Fixed BWG multi artists at one site
+- (done) Member News - Parkway Artists Guild (Email Yimlei)
 
 - Facilities page for Niagara Pumphouse
 - Board of Directors module for Website, Niagara Pumphouse
@@ -266,5 +266,5 @@ SSAC Volunteer Hours March
 11 -
 12 - 2, import of member directory, meetings
 13 - 5, BWG Import
-14 -
+14 - 2, BWG Website
 
