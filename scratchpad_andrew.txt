@@ -13,6 +13,7 @@ Top Priority
 	- (done) Move phone numbers to own table
 	- (done) Member list to Word
 - SSAC Premium Member Setup
+- SSAC Membership Information and download
 - SSAC Member website Setup, logo, home page, etc.
 - (done) Setup BWG Studio Tour Site
 - (done) Fixed BWG multi artists at one site
@@ -21,6 +22,8 @@ Top Priority
 - Facilities page for Niagara Pumphouse
 - Board of Directors module for Website, Niagara Pumphouse
 - Sponsors module
+- Easier member login procedure
+	- maybe a click to gain access with url containing 2 week code?
 
 - Event/Course registration/invoicing
 - online course signups
@@ -267,4 +270,5 @@ SSAC Volunteer Hours March
 12 - 2, import of member directory, meetings
 13 - 5, BWG Import
 14 - 2, BWG Website
+16 - 2, cleanup of member directory, typos/spelling
 
