@@ -49,7 +49,6 @@ Business Info
 	- board of directors
 	- membership info
 	- facilities
-	- 
 
 E-Cart
 ------
