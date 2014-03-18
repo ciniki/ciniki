@@ -282,7 +282,7 @@ SSAC Volunteer Hours March
 15 -
 16 - 3, cleanup of member directory, typos/spelling, export to excel
 17 -
-18 -
+18 - 1, fixing bug with links not opening in new window
 19 - 
 20 -
 21 -
