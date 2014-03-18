@@ -2,6 +2,7 @@ Customer Status
 ---------------
 - David Aspenlieder, (SSAC, Everett) needs change
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
+- Art in the Barn (Stella) sign up, no artwork yet
 - SSAC 
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
 
@@ -270,5 +271,21 @@ SSAC Volunteer Hours March
 12 - 2, import of member directory, meetings
 13 - 5, BWG Import
 14 - 2, BWG Website
-16 - 2, cleanup of member directory, typos/spelling
+15 -
+16 - 3, cleanup of member directory, typos/spelling, export to excel
+17 -
+18 -
+19 - 
+20 -
+21 -
+22 - 
+23 - 
+24 -
+25 - 
+26 -
+27 - 
+28 -
+29 -
+30 -
+31 -
 
