@@ -42,6 +42,15 @@ SSAC
 - displays lowest to highest
 - store in settings for sponsors modules
 
+Business Info
+-------------
+- module to store general business information
+	- history
+	- board of directors
+	- membership info
+	- facilities
+	- 
+
 E-Cart
 ------
 - create generatePageCart
