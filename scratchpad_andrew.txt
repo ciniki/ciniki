@@ -20,8 +20,6 @@ Top Priority
 - (done) Fixed BWG multi artists at one site
 - (done) Member News - Parkway Artists Guild (Email Yimlei)
 
-- Facilities page for Niagara Pumphouse
-- Board of Directors module for Website, Niagara Pumphouse
 - Sponsors module
 - Easier member login procedure
 	- maybe a click to gain access with url containing 2 week code?
@@ -31,6 +29,16 @@ Top Priority
 - Transactions report
 - Sync
 - customer automerge
+- customer auth logging so business owners can check
+
+Info Module
+-----------
+	- About page
+	- Facilities page for Niagara Pumphouse
+	- Board of Directors module for Website, Niagara Pumphouse
+	- History
+	- Donations
+	- Membership
 
 SSAC
 ----
