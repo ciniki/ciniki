@@ -295,7 +295,7 @@ SSAC Volunteer Hours March
 17 -
 18 - 1, fixing bug with links not opening in new window
 19 - 1.5 membership directory, premium members
-20 -
+20 - 3 - membership directory
 21 -
 22 - 
 23 - 
