@@ -187,6 +187,9 @@ TODO
 
 Quick Tasks
 -----------
+- Load more quotes to twitter
+	- http://www.artpromotivate.com/2012/09/famous-inspirational-art-quotes.html (last may 28, #10)
+	- http://artquotes.robertgenn.com/getquotes.php?catid=20&numcats=372#.Uy8xfq1dVCM (none yet)
 - Check all modules with permalink have unique index like artcatalog
 - Date format for excel report of surveys
 - convert if/else for visible sections to ? conditional 
