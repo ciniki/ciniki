@@ -1,3 +1,9 @@
+** Removed Club Info menu item
+** Move gallery info into ciniki.info
+** Remove about page information
+** pull membership infomation from ciniki.info for members page.
+
+
 Customer Status
 ---------------
 - David Aspenlieder, (SSAC, Everett) needs change
