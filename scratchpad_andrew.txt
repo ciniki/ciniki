@@ -2,7 +2,8 @@
 ** Move artgallery info into ciniki.info
 ** Remove about page information (done)
 ** pull membership infomation from ciniki.info for members page.
-** Remove artclub module
+** Remove artclub module.
+** Setup new board of directors page.
 
 
 Customer Status
