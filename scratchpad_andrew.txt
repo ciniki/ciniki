@@ -1,3 +1,5 @@
+** Sign up page to include ciniki.info
+** Sign up page to include module flags
 ** Removed Club Info menu item (done)
 ** Move artgallery info into ciniki.info
 ** Remove about page information (done)
