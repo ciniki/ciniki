@@ -1,7 +1,8 @@
-** Removed Club Info menu item
-** Move gallery info into ciniki.info
-** Remove about page information
+** Removed Club Info menu item (done)
+** Move artgallery info into ciniki.info
+** Remove about page information (done)
 ** pull membership infomation from ciniki.info for members page.
+** Remove artclub module
 
 
 Customer Status
