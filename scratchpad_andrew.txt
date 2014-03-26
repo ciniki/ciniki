@@ -313,7 +313,7 @@ SSAC Volunteer Hours March
 22 - 
 23 - 
 24 - 2 membership information for members page
-25 - 
+25 - 8 membership directory, print version
 26 -
 27 - 
 28 -
