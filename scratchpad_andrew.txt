@@ -42,18 +42,6 @@ Top Priority
 - customer automerge
 - customer auth logging so business owners can check
 
-Info Module
------------
-	- About page
-	- Artist Statement
-	- CV
-	- Awards
-	- Facilities page for Niagara Pumphouse
-	- Board of Directors module for Website, Niagara Pumphouse
-	- History
-	- Donations
-	- Membership
-
 SSAC
 ----
 - Setup ssacmembers site
@@ -63,14 +51,6 @@ SSAC
 - default category sequence is 99
 - displays lowest to highest
 - store in settings for sponsors modules
-
-Business Info
--------------
-- module to store general business information
-	- history
-	- board of directors
-	- membership info
-	- facilities
 
 E-Cart
 ------
@@ -162,6 +142,7 @@ Features Page
 
 TODO
 ----
+- Add options to include course catalog, membership etc on main page. (suggested to Cheryl)
 - Update customer merge to include sapos module
 - Add tags to links module
 - Add module flags to plan signups
