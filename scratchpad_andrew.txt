@@ -1,10 +1,10 @@
-** Sign up page to include ciniki.info
-** Sign up page to include module flags
+** Sign up page to include ciniki.info (done)
+** Sign up page to include module flags (done)
 ** Removed Club Info menu item (done)
 ** Move artgallery info into ciniki.info
 ** Remove about page information (done)
 ** pull membership infomation from ciniki.info for members page. (done)
-** Remove artclub module.
+** Remove artclub module. (done)
 ** Setup new board of directors page. (done)
 ** fix permalink for new board of directors, when new page added
 
@@ -19,18 +19,6 @@ Customer Status
 
 Top Priority
 ------------
-- (done) FIX Gallery Bug with Cache not checking module last_change
-- (done) SSAC Members List Import
-	- (done) Add categories (tags) for members
-	- (done) Move phone numbers to own table
-	- (done) Member list to Word
-- (done) SSAC Premium Member Setup
-- (done) SSAC Membership Information and download
-- (done) SSAC Member website Setup, logo, home page, etc.
-- (done) Setup BWG Studio Tour Site
-- (done) Fixed BWG multi artists at one site
-- (done) Member News - Parkway Artists Guild (Email Yimlei)
-
 - Sponsors module
 - Easier member login procedure
 	- maybe a click to gain access with url containing 2 week code?
