@@ -24,9 +24,9 @@ Top Priority
 	- (done) Add categories (tags) for members
 	- (done) Move phone numbers to own table
 	- (done) Member list to Word
-- SSAC Premium Member Setup
-- SSAC Membership Information and download
-- SSAC Member website Setup, logo, home page, etc.
+- (done) SSAC Premium Member Setup
+- (done) SSAC Membership Information and download
+- (done) SSAC Member website Setup, logo, home page, etc.
 - (done) Setup BWG Studio Tour Site
 - (done) Fixed BWG multi artists at one site
 - (done) Member News - Parkway Artists Guild (Email Yimlei)
