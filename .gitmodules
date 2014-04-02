@@ -118,3 +118,6 @@
 [submodule "site/ciniki-mods/info"]
 	path = site/ciniki-mods/info
 	url = git://github.com/ciniki/info.git
+[submodule "site/ciniki-mods/sponsors"]
+	path = site/ciniki-mods/sponsors
+	url = git://github.com/ciniki/sponsors.git

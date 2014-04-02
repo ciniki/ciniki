@@ -1,12 +1,12 @@
 ** Sign up page to include ciniki.info (done)
 ** Sign up page to include module flags (done)
 ** Removed Club Info menu item (done)
-** Move artgallery info into ciniki.info
+** Move artgallery info into ciniki.info (done)
 ** Remove about page information (done)
 ** pull membership infomation from ciniki.info for members page. (done)
 ** Remove artclub module. (done)
 ** Setup new board of directors page. (done)
-** fix permalink for new board of directors, when new page added
+** fix permalink for new board of directors, when new page added (done)
 
 
 Customer Status
@@ -14,7 +14,6 @@ Customer Status
 - David Aspenlieder, (SSAC, Everett) needs change
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
 - Art in the Barn (Stella) sign up, no artwork yet
-- SSAC 
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
 
 Top Priority
@@ -32,7 +31,6 @@ Top Priority
 
 SSAC
 ----
-- Setup ssacmembers site
 - Build sponsors module, switch artclubs to module
 - Categories for sponsors
 - List of sponsors by category
@@ -44,7 +42,7 @@ E-Cart
 ------
 - create generatePageCart
 - Check security for https for customer sites
-	- wildcard SSL?
+	- wildcard SSL?, wildcard only for subdomains
 - only one open shopping cart at a time
 - can view old invoices
 - have files in /ciniki.sapos/web/
@@ -90,16 +88,6 @@ Next Presentation
 -----------------
 - quick start guide
 - business cards
-
-Blog Update for Membership blog
--------------------------------
-- add ciniki.blog flags for customer blog and members blog
-- Update blog to have field for ciniki_blog_posts.visibility
-	- 0x01 - public
-	- 0x02 - customers
-	- 0x04 - members
-- Allow customer login if member blogs enabled
-- Add menu item "Member News" if member blogs enabled
 
 Backups
 -------
@@ -289,5 +277,5 @@ SSAC Volunteer Hours March
 28 -
 29 -
 30 -
-31 -
+31 - 5 membership directory, print version
 
