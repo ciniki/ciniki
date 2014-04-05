@@ -1,14 +1,3 @@
-** Sign up page to include ciniki.info (done)
-** Sign up page to include module flags (done)
-** Removed Club Info menu item (done)
-** Move artgallery info into ciniki.info (done)
-** Remove about page information (done)
-** pull membership infomation from ciniki.info for members page. (done)
-** Remove artclub module. (done)
-** Setup new board of directors page. (done)
-** fix permalink for new board of directors, when new page added (done)
-
-
 Customer Status
 ---------------
 - David Aspenlieder, (SSAC, Everett) needs change
@@ -245,37 +234,6 @@ Farming
 	- supplier
 	- plant_date, sprout_date, first_pick_date, last_pick_date
 
-SSAC Volunteer Hours March
+SSAC Volunteer Hours April
 --------------------------
-2 - 2, parsing of member list
-3 - 4, development of member directory
-4 - 6, development of member directory
-5 - 0.5, meeting 
-  - 1, development of member directory
-6 - 6, development of member directory
-7 - 6, import of member directory from excel
-8 - 6, development of member categories, website member list
-9 - 8, development of member directory download to word
-10 - 0
-11 -
-12 - 2, import of member directory, meetings
-13 - 5, BWG Import
-14 - 2, BWG Website
-15 -
-16 - 3, cleanup of member directory, typos/spelling, export to excel
-17 -
-18 - 1, fixing bug with links not opening in new window
-19 - 1.5 membership directory, premium members
-20 - 3 - membership directory
-21 -
-22 - 
-23 - 
-24 - 2 membership information for members page
-25 - 8 membership directory, print version
-26 - 6 membership directory, print version
-27 - 
-28 -
-29 -
-30 -
-31 - 5 membership directory, print version
 
