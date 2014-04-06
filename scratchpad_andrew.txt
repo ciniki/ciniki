@@ -7,10 +7,10 @@ Customer Status
 
 Top Priority
 ------------
+- Check for gallery in members for displaying full details (leesburg art)
 - Sponsors module
-- Easier member login procedure
-	- maybe a click to gain access with url containing 2 week code?
-
+- print envelope (for Eric K)
+- print pdf from iPad (currently pulls up in window and no buttons to print)
 - Event/Course registration/invoicing
 - online course signups
 - Transactions report
@@ -107,6 +107,8 @@ Features Page
 
 TODO
 ----
+- Easier member login procedure
+	- maybe a click to gain access with url containing 2 week code?
 - Add options to include course catalog, membership etc on main page. (suggested to Cheryl)
 - Update customer merge to include sapos module
 - Add tags to links module
