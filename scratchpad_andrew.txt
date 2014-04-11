@@ -24,7 +24,7 @@ Arts on Main
 
 Lisa Brunetta
 -------------
-- event time
+- event time (done)
 - Add PO number spot on invoice (purchase order)
 - Inventory attached to products
 - min/max time to manufacture products
