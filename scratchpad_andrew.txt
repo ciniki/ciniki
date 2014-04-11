@@ -18,6 +18,19 @@ Top Priority
 - customer automerge
 - customer auth logging so business owners can check
 
+Arts on Main
+------------
+- logo, include ssac logo
+
+Lisa Brunetta
+-------------
+- event time
+- Add PO number spot on invoice (purchase order)
+- Inventory attached to products
+- min/max time to manufacture products
+- order system as part of SAPOS
+- Enter order, keep track of what is available, how long to fufill order based on min/max times.
+
 SSAC
 ----
 - Build sponsors module, switch artclubs to module
