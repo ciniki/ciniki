@@ -25,7 +25,7 @@ Arts on Main
 Lisa Brunetta
 -------------
 - event time (done)
-- Add PO number spot on invoice (purchase order)
+- Add PO number spot on invoice (done)
 - Inventory attached to products (added, need reporting)
 - min/max time to manufacture products (done)
 - order system as part of SAPOS
