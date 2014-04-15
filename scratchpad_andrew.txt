@@ -26,7 +26,7 @@ Lisa Brunetta
 -------------
 - event time (done)
 - Add PO number spot on invoice (done)
-- Inventory attached to products (added, need reporting)
+- Inventory attached to products (done)
 - min/max time to manufacture products (done)
 - order system as part of SAPOS
 - Enter order, keep track of what is available, how long to fufill order based on min/max times.
