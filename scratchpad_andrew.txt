@@ -20,7 +20,6 @@ Top Priority
 
 Arts on Main
 ------------
-- logo, include ssac logo
 
 Lisa Brunetta
 -------------
@@ -30,15 +29,11 @@ Lisa Brunetta
 - min/max time to manufacture products (done)
 - order system as part of SAPOS
 - Enter order, keep track of what is available, how long to fufill order based on min/max times.
-
-SSAC
-----
-- Build sponsors module, switch artclubs to module
-- Categories for sponsors
-- List of sponsors by category
-- default category sequence is 99
-- displays lowest to highest
-- store in settings for sponsors modules
+- Need way to track sales at shows
+- need way to track media (where has my work been mentioned)
+	- Talk to her about this next time, get samples
+- need to have social media integration
+- Product/Inventory manager (done)
 
 E-Cart
 ------
@@ -191,14 +186,6 @@ Events
 	- have section for registration information
 	- combine events.add into events.edit form
 
-Meeting with Lisa in Barrie:
-- Need way to track sales at shows
-- need way to track media (where has my work been mentioned)
-	- Talk to her about this next time, get samples
-- need to have social media integration
-- Product/Inventory manager
-
-
 Art Gallery
 -----------
 	- Add the ability to have multiple headings in the menu bar, and decide
@@ -251,4 +238,4 @@ Farming
 
 SSAC Volunteer Hours April
 --------------------------
-
+10 - 4 Arts on Main website
