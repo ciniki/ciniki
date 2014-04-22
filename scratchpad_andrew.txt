@@ -41,7 +41,7 @@ E-Cart
 - Check security for https for customer sites
 	- wildcard SSL?, wildcard only for subdomains
 - only one open shopping cart at a time
-- can view old invoices
+- can view old invoices (no, need https for this)
 - have files in /ciniki.sapos/web/
 	- cartCreate - Create a new shopping cart (invoice with shopping cart status)
 	- cartItemAdd - Add a new item to a cart
@@ -229,6 +229,66 @@ Blog
 		- additional images at bottom
 		- gallery option to view each image in post
 
+Costing
+-------
+- custom work, non-repurposed $80/hour, $3200/week, $12800/month
+- repurposeable work, $40/hour, $1600/week, $6400/month
+- repurposeable work, $30/hour, $1200/week, $4800/month
+- repurposeable work, $20/hour, $800/week, $3200/month
+
+SSAC Volunteer Hours April
+--------------------------
+10 - 4 Arts on Main website
+
+
+New Modules
+===========
+
+Cert Tracker
+------------
+- ciniki_certtrack_certs
+	- id, uuid, business_id
+	- name, permalink
+	- excerpt, long desc
+	- valid_length (month)
+	- status (active, discontinued)
+
+- ciniki_certtrack_customers
+	- customer_id
+	- cert_id
+	- cert_date
+	- expiry_date
+	- reference_number (??)
+	- accreditation_company
+	- notes
+	- track instructors??
+
+- ciniki_certtrack_companies
+	- id, uuid, business_id
+	- company
+
+- Reports by individual, or company
+	- pull customers based on company name in customers database
+
+Device Tracker
+--------------
+- ciniki_devicetrack_types
+	- id, uuid, business_id
+	- name
+	- validate_frequency (months)
+	- lifespan (months)
+
+- ciniki_devicetrack_devices
+	- id, uuid, business_id
+	- type_id
+	- customer_id (attached to a business)
+	- location
+
+- ciniki_devicetrack_device_checks
+	- id, uuid, business_id
+	- device_id
+	- check_date
+
 Farming
 -------
 - ciniki_farm_plantings
@@ -236,6 +296,15 @@ Farming
 	- supplier
 	- plant_date, sprout_date, first_pick_date, last_pick_date
 
-SSAC Volunteer Hours April
---------------------------
-10 - 4 Arts on Main website
+Donations
+---------
+- Keep track of donations for a non-profit
+- ciniki_donations
+	- id, uuid, business_id
+	- customer_id
+	- flags
+		0x01 - receipt given
+	- donation_amount
+	- date_received
+
+
