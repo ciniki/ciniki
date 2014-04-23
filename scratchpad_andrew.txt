@@ -69,8 +69,9 @@ David Aspenlieder
 - add ability for about page to be list of sections like events page
 	- each section has a name and thumbnail (icon) and paragraph
 	- could have link for more to lead elsewhere in site
-
 - add ability for gallery page to be a list of categories
+- ability for category descriptions
+
 
 Winemaker
 ---------
@@ -213,13 +214,15 @@ Marketing
 		- free trial
 		- manage your event listings
 		- track your customers and purchases
+- Rack Card
+	- Combine 4x6 cart information to top side of card
+	- add 6 screenshots from the quick start guide to show how easy it is.
+
 
 Blog
 ----
 - database blog entry has a format specified 
 	- simple 
-		- paragraphs
-		- 1 main image
 		- have images tagged with location in blog post, add extra field to ciniki_blog_images table for this.  
 			- The blog post text can contain search/replace or something that will be image placeholders that
 			are replaces from ciniki_blog_images list.
