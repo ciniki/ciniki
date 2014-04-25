@@ -5,6 +5,12 @@ Customer Status
 - Art in the Barn (Stella) sign up, no artwork yet
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
 
+*** Gallery Updates ***
+- update script to move album names, make permalink and setup album_id
+- update web code
+
+- quick search for entering expenses.
+
 Top Priority
 ------------
 - Check for gallery in members for displaying full details (leesburg art)
@@ -20,6 +26,7 @@ Top Priority
 
 Arts on Main
 ------------
+- Lynda to review
 
 Lisa Brunetta
 -------------
