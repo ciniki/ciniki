@@ -16,7 +16,6 @@ Lisa Brunetta
 Top Priority
 ------------
 - Check for gallery in members for displaying full details (leesburg art)
-- Sponsors module
 - print envelope (for Eric K)
 - print pdf from iPad (currently pulls up in window and no buttons to print)
 - Event/Course registration/invoicing
@@ -29,6 +28,10 @@ Top Priority
 Arts on Main
 ------------
 - Lynda to review
+
+Marvyn Rivett
+-------------
+- Add price list to pdf output
 
 Lisa Brunetta
 -------------
@@ -43,6 +46,9 @@ Lisa Brunetta
 	- Talk to her about this next time, get samples
 - need to have social media integration
 - Product/Inventory manager (done)
+- Keep track of consignments, where what is located and inventory of that place
+- add shipment tracker to sapos
+
 
 E-Cart
 ------
