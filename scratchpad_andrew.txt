@@ -31,7 +31,6 @@ Arts on Main
 
 Marvyn Rivett
 -------------
-- Add price list to pdf output
 
 Lisa Brunetta
 -------------
