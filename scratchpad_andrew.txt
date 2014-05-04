@@ -34,6 +34,8 @@ Marvyn Rivett
 
 Lisa Brunetta
 -------------
+- event tag for invoices, to be able to better report on income
+- POS interface for events/walk in sales
 - event time (done)
 - Add PO number spot on invoice (done)
 - Inventory attached to products (done)
