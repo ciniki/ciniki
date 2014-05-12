@@ -182,6 +182,7 @@ Quick Tasks
 
 Paypal integration:
 - Step 1: Create App in paypal
+	https://developer.paypal.com/webapps/developer/applications/myapps
 - Step 2: Copy credentials into Ciniki
 	(should copy both test and live credentials so both can be used)
 	(this information should be captured automatically in the future)
@@ -258,6 +259,11 @@ Costing
 SSAC Volunteer Hours April
 --------------------------
 10 - 4 Arts on Main website
+
+May
+5 - 4 Arts on Main website
+8 - 5 Arts on Main website/brochure
+9 - 2 Arts on Main
 
 
 New Modules
