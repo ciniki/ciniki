@@ -5,19 +5,9 @@ Customer Status
 - Art in the Barn (Stella) sign up, no artwork yet
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
 
-*** Gallery Updates ***
-- update script to move album names, make permalink and setup album_id
-- update web code
-
-Lisa Brunetta
--------------
-- convert buttons to be inputs so tab works to get to them
-
 Top Priority
 ------------
 - Check for gallery in members for displaying full details (leesburg art)
-- print envelope (for Eric K)
-- print pdf from iPad (currently pulls up in window and no buttons to print)
 - Event/Course registration/invoicing
 - online course signups
 - Transactions report
@@ -25,15 +15,12 @@ Top Priority
 - customer automerge
 - customer auth logging so business owners can check
 
-Arts on Main
-------------
-- Lynda to review
-
 Marvyn Rivett
 -------------
 
 Lisa Brunetta
 -------------
+- convert buttons to be inputs so tab works to get to them
 - event tag for invoices, to be able to better report on income
 - POS interface for events/walk in sales
 - event time (done)
@@ -92,11 +79,6 @@ David Aspenlieder
 Winemaker
 ---------
 - history of customer names for wine order when edit existing order
-- Add project name to edit project form (done)
-- delete button for projects (done)
-- status for projects (done)
-- change order for project name/category in edit form (done)
-- subject in task edit to task title (done)
 
 Next Presentation
 -----------------
@@ -129,6 +111,9 @@ Features Page
 - Organize website by plan, checkboxes with which feature works with which plans
 - If no plans for business, don't show that option
 
+- Add plan_extras table, to store optional add-ons for plans.  
+	- should include price, modules, etc
+	- turn on extra modules/options for modules
 
 TODO
 ----
@@ -264,7 +249,7 @@ May
 5 - 4 Arts on Main website
 8 - 5 Arts on Main website/brochure
 9 - 2 Arts on Main
-12 - 1 Arts on Main
+12 - 2 Arts on Main
 	 1 BWG
 
 
