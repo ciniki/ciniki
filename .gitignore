@@ -11,6 +11,7 @@ site/phpinfo.php
 site/index.php
 site/ciniki-code
 site/ciniki-cache
+site/ciniki-backups
 logs/
 dev-tools
 run.sh

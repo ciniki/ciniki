@@ -1729,6 +1729,8 @@ function install($ciniki_root, $modules_dir) {
 	$config['ciniki.core']['root_dir'] = $ciniki_root;
 	$config['ciniki.core']['modules_dir'] = $ciniki_root . '/ciniki-mods';
 	$config['ciniki.core']['lib_dir'] = $ciniki_root . '/ciniki-lib';
+	$config['ciniki.core']['cache_dir'] = $ciniki_root . '/ciniki-cache';
+	$config['ciniki.core']['backup_dir'] = $ciniki_root . '/ciniki-backups';
 
 	// Default session timeout to 30 minutes
 	$config['ciniki.core']['session_timeout'] = 1800;
