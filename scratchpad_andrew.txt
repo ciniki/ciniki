@@ -3,7 +3,7 @@ Customer Status
 - David Aspenlieder, (SSAC, Everett) needs change
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
 - Art in the Barn (Stella) sign up, no artwork yet
-- Alliston Tennis Club - Andrew K, logged in, hasn't changed anything
+- Alliston Tennis Club - Andrew K, logged in, hasn't changed anything, wants calendar on home page
 
 Top Priority
 ------------
@@ -28,7 +28,7 @@ Lisa Brunetta
 - Inventory attached to products (done)
 - min/max time to manufacture products (done)
 - order system as part of SAPOS
-- Enter order, keep track of what is available, how long to fufill order based on min/max times.
+- Enter order, keep track of what is available, how long to fulfill order based on min/max times.
 - Need way to track sales at shows
 - need way to track media (where has my work been mentioned)
 	- Talk to her about this next time, get samples
@@ -84,19 +84,6 @@ Next Presentation
 -----------------
 - quick start guide
 - business cards
-
-Backups
--------
-- Have nightly job to export each module information
-- store in /ciniki-exports/a/business-uuid/module/record/ciniki.xml
-	- record directory should be unique name of record
-	- xml file should contain complete record, all images, history, etc everything needed to recreate
-	- contain a pdf/doc/txt file with data, human readable format
-	- should contain image originals used with record
-- simple modules (ciniki.links) should contain spreadsheet with data
-- complex modules should contain spreadsheet and addition directories for each record with data
-- everything should be available as human readable and xml format
-- zip business export into date stamped file.zip, record in database
 
 Features Page
 -------------
