@@ -1968,14 +1968,14 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 
-		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
-			. "VALUES ('1', 'ciniki', 'questions', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
-		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
-		if( $rc['stat'] != 'ok' ) {
-			ciniki_core_dbTransactionRollback($ciniki, 'core');
-			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
-			exit();
-		}
+//		$strsql = "INSERT INTO ciniki_business_modules (business_id, package, module, status, ruleset, date_added, last_updated) "
+//			. "VALUES ('1', 'ciniki', 'questions', 1, 'all_customers', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+//		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'businesses');
+//		if( $rc['stat'] != 'ok' ) {
+//			ciniki_core_dbTransactionRollback($ciniki, 'core');
+//			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
+//			exit();
+//		}
 
 		//
 		// Setup notification settings
@@ -1989,14 +1989,14 @@ function install($ciniki_root, $modules_dir) {
 			exit();
 		}
 
-		$strsql = "INSERT INTO ciniki_question_settings (business_id, detail_key, detail_value, date_added, last_updated) "
-			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
-		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'questions');
-		if( $rc['stat'] != 'ok' ) {
-			ciniki_core_dbTransactionRollback($ciniki, 'core');
-			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
-			exit();
-		}
+//		$strsql = "INSERT INTO ciniki_question_settings (business_id, detail_key, detail_value, date_added, last_updated) "
+//			. "VALUES ('1', 'add.notify.owners', 'yes', UTC_TIMESTAMP(), UTC_TIMESTAMP())";
+//		$rc = ciniki_core_dbInsert($ciniki, $strsql, 'questions');
+//		if( $rc['stat'] != 'ok' ) {
+//			ciniki_core_dbTransactionRollback($ciniki, 'core');
+//			print_page('yes', 'ciniki.' . $rc['err']['code'], "Failed to setup database<br/><br/>" . $rc['err']['msg']);
+//			exit();
+//		}
 
 		//
 		// Add the api key for the UI
