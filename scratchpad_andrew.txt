@@ -1,6 +1,6 @@
 Customer Status
 ---------------
-- David Aspenlieder, (SSAC, Everett) needs change
+- David Aspenlieder, (SSAC, Everett) needs changes
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
 - Art in the Barn (Stella) sign up, no artwork yet
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything, wants calendar on home page
@@ -102,6 +102,40 @@ Features Page
 	- should include price, modules, etc
 	- turn on extra modules/options for modules
 
+Plans
+-----
+	Artists
+		- Basic: artcatalog, events, links, info, website ($10/month)
+		- Addons:
+			- blog (free)
+			- filedepot ($2/month)
+			- accounting (sales/invoices/expenses/mileage) ($10/month)
+			- products/inventory ($20/month)
+			- ecommerce ($10/month)
+
+		- Advanced: +blog, +basic accounting(invoicing, expenses, mileage)
+		- Pro: +advanced accounting
+
+
+	Clubs
+		- Basic: gallery, events, links, info, website ($5/month)
+		- Addons:
+			- blog (free)
+			- workshops (free)
+			- sponsors (free)
+			- members ($5/month)
+			- member blog (free with members)
+
+	Small Business
+		- Basic: gallery, events, links, info, website ($10/month)
+		- Addons:
+			- filedepot ($2/month)
+			- 
+		- Advanced: +accounting, +products ($40/month)
+		- Pro: +shopping cart, ($60/month)
+	
+
+
 TODO
 ----
 - Easier member login procedure
@@ -189,20 +223,6 @@ Art Gallery
 
 Marketing
 ---------
-- 4x6 Index cards
-	- UI screenshots
-	- Website screenshots
-	- screenshots on iPad/iPhone/Laptop/Desktop
-	- Features:
-		- automatically prepares images for website, no cropping/resizing necessary
-		- add an new piece of art, automatically added to your website
-		- track where your art has been displayed
-		- websites scales automatically for smartphones and tablets
-		- no html or coding experience required
-		- add to your inventory from your phone or tablet, no computer required
-		- free trial
-		- manage your event listings
-		- track your customers and purchases
 - Rack Card
 	- Combine 4x6 cart information to top side of card
 	- add 6 screenshots from the quick start guide to show how easy it is.
