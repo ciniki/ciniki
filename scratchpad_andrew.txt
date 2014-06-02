@@ -102,6 +102,69 @@ Features Page
 	- should include price, modules, etc
 	- turn on extra modules/options for modules
 
+Artist Features
+	Art Catalog
+		Keep track of everything you have created in one spot, complete
+		with images, inspiration, awards and much more.
+	Catalog/Price Lists
+		Download a print ready catalog of your work in PDF format, choose from
+		4 different layouts.
+	Unlimited Images
+		There is no limit to the number of items you can add to your art catalog.
+	Locations
+		Keep track of where your artwork is currently located.  Know if it's at your studio,
+		home, sold or anywhere else you want.
+	Exhibited Tracking
+		Know where your work has been displayed and when.  Plan for upcoming exhibitions
+		or sales events and know what you are taking.
+	Device Independant
+		Ciniki works on any computer, tablet or smartphone.  You can update
+		your catalog from your studio, home or on the road.
+	Backups
+		Nightly backups are available for you to download and store on your computer. 
+		Each backup contains spreadsheets of your catalog and all your images
+		in original format and size.
+	Website
+		Your custom website is created automatically from your art catalog.  Add a
+		new creation and it's automatically on your website.
+	SEO Optimized
+		Your website will be automatically optimized for Google to help customers find your artwork.
+	Smartphone Ready
+		Your website automatically scales to fit any device from the small screen
+		of a smartphone to the large monitor on a desktop.
+	Image Scaling
+		All your images are automatically scaled to fit on the website, and thumbnails are 
+		created.  No work required from you.
+	Social Sharing
+		Visitors to your website can help promote your work by easily sharing on 
+		Facebook, Twitter, Pinterest and Google+.
+	Event Management
+		Keep track of where you are going to be so customers can find you.  Events
+		automatically expire from your website, no updating required.
+	Blogging/News
+		Add latest news to your site so your customers can keep track of what you're doing.
+
+Artist Addons:
+	Custom Domain ($2/month)
+		We can help you register a custom domain, or help transfer an existing one to your website.
+	Sales
+		Keep track of your customes and what they purchases.  
+	Mailing Lists
+		Send emails to your customer directly from Ciniki, no need for third part software.
+
+Club/Organization Features
+	Gallery
+
+	Events
+
+	Sponsors
+		
+	Membership List
+		Keep track of your membership, export your membership list to excel.
+
+	Member Profiles
+		Each member can have a profile page on the website.  Each profile page has a member bio and multiple images.
+
 Plans
 -----
 	Artists
@@ -112,6 +175,7 @@ Plans
 			- accounting (sales/invoices/expenses/mileage) ($10/month)
 			- products/inventory ($20/month)
 			- ecommerce ($10/month)
+			- mailing list ($10/month)
 
 		- Advanced: +blog, +basic accounting(invoicing, expenses, mileage)
 		- Pro: +advanced accounting
