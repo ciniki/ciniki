@@ -154,16 +154,28 @@ Artist Addons:
 
 Club/Organization Features
 	Gallery
-
-	Events
-
+		A simple way to manage an online photo album for your organization.  Drag and drop photos
+		and they will be automatically scaled for the website and thumbnails created.
+	Event Management
+		Add all the events your club will be a part of or hosting. Events
+		automatically expire from your website, no updating required.
+	Multi-User
+		You can have multiple people from your group managing the website all at the same time, no need
+		to have only one person dedicated to the website.
 	Sponsors
-		
-	Membership List
-		Keep track of your membership, export your membership list to excel.
-
+		Add sponsors of your organization, including a logo, description and url to their website.
+	Newsletters
+		Easily manage a repository of club newsletters.  They will be displayed automatically on your 
+		website for download.
+	Blogging/News Updates
+		A simple blog/news interface to let you update your members with the latest news from the club.
+	Membership
+		Keep track of your membership, export your membership list to excel.  The basic package is limited 
+		to 100 members, if you require more, email us at help@ciniki.com.
 	Member Profiles
-		Each member can have a profile page on the website.  Each profile page has a member bio and multiple images.
+		Each member can have a profile page on the website.  Each profile page has a member bio and 
+		multiple images.
+	
 
 Plans
 -----
