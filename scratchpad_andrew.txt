@@ -175,7 +175,17 @@ Club/Organization Features
 	Member Profiles
 		Each member can have a profile page on the website.  Each profile page has a member bio and 
 		multiple images.
-	
+
+Studio Tour
+	Participant List
+		Enter a list of
+	Participant Profiles
+		Each participant in the studio tour can have their own
+	Google Map
+		Ciniki will automatically produce a google map of the tour on your website.
+	Sponsors
+		
+
 
 Plans
 -----
