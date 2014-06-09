@@ -346,6 +346,10 @@ May
 	 1 BWG
 20 - 2 YABR poster
 
+Jun
+5 - 4 Arts on main, YABR photos
+7 - 5 Arts on main
+
 
 New Modules
 ===========
@@ -413,4 +417,44 @@ Donations
 	- donation_amount
 	- date_received
 
+Property Management
+-------------------
+ciniki_properties
+	- id, uuid, business_id
+	- address
+	- lat/long
+
+ciniki_property_files
+	- flags
+		- 0x01 - visible on website
+		- 0x02 - visible to owners
+		- 0x04 - visible to tenants
+	
+ciniki_property_images
+	- store photos of the property for viewing on website
+
+ciniki_property_owners
+	- property_id
+	- customer_id
+
+ciniki_property_tenants
+	- property_id
+	- customer_id
+	- start_date
+	- end_date
+
+ciniki_property_applications
+	- property_id
+	- customer_id
+	- application_info
+
+ciniki_property_maintence 
+	- id, uuid, business_id
+	- propery_id
+	- customer_id - who requested
+	- user_id - who requested
+	- assigned_to 
+	- work_required
+	- status
+		10 - entered, 20 - pending, 60 - completed
 
