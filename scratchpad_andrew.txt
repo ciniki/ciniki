@@ -7,6 +7,8 @@ Customer Status
 
 Top Priority
 ------------
+- Theme screenshots selectable
+- Aspenlieder layout
 - Check for gallery in members for displaying full details (leesburg art)
 - Event/Course registration/invoicing
 - online course signups
@@ -350,6 +352,9 @@ Jun
 5 - 4 Arts on main, YABR photos
 7 - 5 Arts on main
 9 - 2 Arts on main, battle of the brushes photos
+11 - 3 Arts on Main, Spotlight on Arts
+12 - 2 Photos for website
+
 
 
 New Modules
