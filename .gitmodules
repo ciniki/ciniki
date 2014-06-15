@@ -127,3 +127,6 @@
 [submodule "site/ciniki-mods/marketing"]
 	path = site/ciniki-mods/marketing
 	url = git://github.com/ciniki/marketing.git
+[submodule "site/ciniki-mods/tutorials"]
+	path = site/ciniki-mods/tutorials
+	url = git://github.com/ciniki/tutorials.git
