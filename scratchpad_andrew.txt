@@ -465,3 +465,19 @@ ciniki_property_maintence
 	- status
 		10 - entered, 20 - pending, 60 - completed
 
+
+Requirements:
+- tenant portal
+	- Maintence request
+		- turn into work order, apply vender
+		- comments
+		- notes
+	- property photos/videos
+	- lease documents
+	- owner request for management quote
+	- tenant apply for lease
+
+	- 
+
+
+
