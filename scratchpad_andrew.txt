@@ -424,60 +424,60 @@ Donations
 	- donation_amount
 	- date_received
 
-Property Management
--------------------
-ciniki_properties
-	- id, uuid, business_id
-	- address
-	- lat/long
+Music Catalog
+-------------
+ciniki_musiccatalog.schema
 
-ciniki_property_files
-	- flags
-		- 0x01 - visible on website
-		- 0x02 - visible to owners
-		- 0x04 - visible to tenants
+- For each artcatalog item:
+# type:			The type of entry in the catalog
+#				
+#				0 - unknown
+#				1 - Album
+#				2 - Single
+#				3 - 
+#
+# category:		The category for the entry.
+# genre:		The genre for the entry.
+	- Type (Album, Single, ??)
+	- Files
+		- video or music
+	- Images
+	- Flags
+		- For Sale
 	
-ciniki_property_images
-	- store photos of the property for viewing on website
-
-ciniki_property_owners
-	- property_id
-	- customer_id
-
-ciniki_property_tenants
-	- property_id
-	- customer_id
-	- start_date
-	- end_date
-
-ciniki_property_applications
-	- property_id
-	- customer_id
-	- application_info
-
-ciniki_property_maintence 
-	- id, uuid, business_id
-	- propery_id
-	- customer_id - who requested
-	- user_id - who requested
-	- assigned_to 
-	- work_required
-	- status
-		10 - entered, 20 - pending, 60 - completed
+	- Webflags
+		0x01 - Private (do not show on the website)
+		0x10 - Category Highlight
 
 
-Requirements:
-- tenant portal
-	- Maintence request
-		- turn into work order, apply vender
-		- comments
-		- notes
-	- property photos/videos
-	- lease documents
-	- owner request for management quote
-	- tenant apply for lease
+ciniki_musiccatalog_tags
+# tag_type:			The type of tag, which is how it will be used.  This allows
+#					these tags to be used for multiple purposes.
+# 
+#					0 - unknown
+#					10 - Category
+#					20 - Genre
+#					30 - Tags
+#
+# tag_name:			The name of the category, genre or tag.
 
-	- 
+- find genre's from mp3 inclusive, also check cddb
 
+- not public,
+- listing only
+- streaming samples
+- streaming full
+- upload flac/wav
+- convert to mp3/flac/etc
 
+Club Bass on queensway.
 
+ciniki_musiccatalog_images
+
+ciniki_musiccatalog_files
+# type:				The type of file
+#
+#					0 - unknown
+#					10 - Music
+#					20 - Video
+#
