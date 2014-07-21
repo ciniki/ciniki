@@ -58,8 +58,9 @@ Here is a sample grant statement for the required privileges in MySQL.
 
 GRANT alter, create, create temporary tables, delete, index, insert, lock tables, select, update ON <instancename>.\* to 'ciniki'@'localhost' IDENTIFIED BY '<min32randomcharacterpassword>';
 
-Setup the proper character set so tables have enough room
-alter database dreamcymbals CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+Setup the proper character set so tables have enough room:
+
+ALTER DATABASE dreamcymbals CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 
 
 Setup Email Robot
