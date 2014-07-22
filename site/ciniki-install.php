@@ -1729,6 +1729,7 @@ function install($ciniki_root, $modules_dir) {
 	$config['ciniki.core']['root_dir'] = $ciniki_root;
 	$config['ciniki.core']['modules_dir'] = $ciniki_root . '/ciniki-mods';
 	$config['ciniki.core']['lib_dir'] = $ciniki_root . '/ciniki-lib';
+	$config['ciniki.core']['storage_dir'] = $ciniki_root . '/ciniki-storage';
 	$config['ciniki.core']['cache_dir'] = $ciniki_root . '/ciniki-cache';
 	$config['ciniki.core']['backup_dir'] = $ciniki_root . '/ciniki-backups';
 
@@ -1800,6 +1801,9 @@ function install($ciniki_root, $modules_dir) {
 		}
 		if( !file_exists($ciniki_root . "/ciniki-cache") ) {
 			mkdir($ciniki_root . "/ciniki-cache");
+		}
+		if( !file_exists($ciniki_root . "/ciniki-backups") ) {
+			mkdir($ciniki_root . "/ciniki-backups");
 		}
 		if( !file_exists($ciniki_root . "/ciniki-storage") ) {
 			mkdir($ciniki_root . "/ciniki-storage");
