@@ -1606,9 +1606,9 @@ table.list td div.calendar {
 <div id='m_container' class="s-normal">
 	<table id="mc_header" class="headerbar" cellpadding="0" cellspacing="0">
 		<tr>
-		<td id="mc_home_button" style="display:none;"><img src="ciniki-manage-themes/default/img/home_button.png"/></td>
+		<td id="mc_home_button" style="display:none;"><img src="ciniki-mods/core/ui/themes/default/img/home_button.png"/></td>
 		<td id="mc_title" class="title">Ciniki Installer</td>
-		<td id="mc_help_button" style="display:none;"><img src="ciniki-manage-themes/default/img/help_button.png"/></td>
+		<td id="mc_help_button" style="display:none;"><img src="ciniki-mods/core/ui/themes/default/img/help_button.png"/></td>
 		</tr>
 	</table>
 	<div id="mc_content">
@@ -1813,9 +1813,6 @@ function install($ciniki_root, $modules_dir) {
 		}
 		if( !file_exists($ciniki_root . "/ciniki-lib") ) {
 			mkdir($ciniki_root . "/ciniki-lib");
-		}
-		if( !file_exists($ciniki_root . "/ciniki-manage-themes") ) {
-			mkdir($ciniki_root . "/ciniki-manage-themes");
 		}
 
 		# This code also exists in ciniki-mods/core/private/syncUpgradeSystem
@@ -2041,7 +2038,7 @@ function install($ciniki_root, $modules_dir) {
 	$manage_config = ""
 		. "[ciniki.core]\n"
 		. "manage_root_url = /ciniki-mods\n"
-		. "themes_root_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-manage-themes\n"
+		. "themes_root_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-mods/core/ui/themes\n"
 		. "json_url = " . preg_replace('/^\/$/', '', dirname($_SERVER['REQUEST_URI'])) . "/ciniki-json.php\n"
 		. "api_key = $manage_api_key\n"
 		. "site_title = '" . $master_name . "'\n"
@@ -2094,7 +2091,7 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^manage/(.*)$ ciniki-manage.php [L]                                            # allow all ciniki-manage\n"
 		. "RewriteRule ^(manage)$ ciniki-manage.php [L]                                             # allow all ciniki-manage\n"
 		. "RewriteRule ^(ciniki-mods/[^\/]*/ui/.*)$ $1 [L]                                                  # Allow manage content\n"
-		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
+//		. "RewriteRule ^(ciniki-manage-themes/.*)$ $1 [L]                                           # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-web-themes/.*)$ $1 [L]                                              # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-mods/web/layouts/.*)$ $1 [L]                                    # Allow web-layouts content\n"
 		. "RewriteRule ^(ciniki-mods/web/themes/.*)$ $1 [L]                                     # Allow web-themes content\n"
