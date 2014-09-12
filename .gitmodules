@@ -136,3 +136,6 @@
 [submodule "site/ciniki-mods/audio"]
 	path = site/ciniki-mods/audio
 	url = git://github.com/ciniki/audio.git
+[submodule "site/ciniki-mods/library"]
+	path = site/ciniki-mods/library
+	url = git://github.com/ciniki/library.git
