@@ -1,3 +1,52 @@
+Dream Cymbals - Oct 15
+- Add ponumber and customer at the same time
+- status should appear on customer screen
+- account on hold/suspended, remove add order in UI
+- on hold customers, should they be able to login?
+	- on  hold logins should have ON HOLD displayed to them.
+	- should they be able to place orders when ON Hold??
+- recent orders by who last touched the order
+- recent orders set defaults for each user
+- packing required change to mediumflex
+- rep login missing logout
+- backorder reports
+- factory order tracking to know what's coming up
+- include ship to address in invoice display UI
+- put ship to first for invoice display
+- when change shipping address, include message for drop ship fee
+	- should trigger a drop ship fee to be included in the invoice
+	- drop ship fee should be line item on invoice/order
+	- should not be able to be removed from invoice/order
+- small order fee < $200 add line item small order fee $5.
+	- cannot be removed by salesrep (small item fee or drop ship fee)
+- possible add free freight check for adding more items (future item)
+- orders over $2000, generate message that will check credit limit
+	- should appear in manager and website
+	- should change status to pending review
+	
+- discounts/coupons for future use
+	- 10% off all dark matter products for 3 months after trade show
+
+- weekly script from MW to Ciniki
+	- update status, tier level, sales to date, hold status, address changes
+
+- salesrep to restrict pricing
+	- should not be able to certain pricepoints
+
+- salesrep login only sees billing address, can't change shipping address
+
+- salesrep should speculative inventory
+- employees/owners should see actual and speculative inventory
+
+- (done) add second backup each day (EST, midnight, 6am)
+- (done) setup twitter business name
+	- allow to use standard name or override
+- customer_notes history not working in shipment
+
+
+
+
+
 Customer Status
 ---------------
 - David Aspenlieder, (SSAC, Everett) needs changes
