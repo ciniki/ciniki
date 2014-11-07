@@ -1,7 +1,16 @@
+Iceland Trip
+------------
+- Cleanup error codes
+- Database documentation
+- API documentation
+- API Examples
+
+
+
 Dream Cymbals - Oct 15
 -- (taken care of by starting at customers)Add ponumber and customer at the same time
 -- (done) status should appear on customer screen
--- account on hold/suspended, remove add order in UI
+-- (done) account on hold/suspended, remove add order in UI
 -- on hold customers, should they be able to login?
 	- on  hold logins should have ON HOLD displayed to them.
 	- should they be able to place orders when ON Hold??
@@ -153,7 +162,7 @@ Artist Features
 	Art Catalog
 		Keep track of everything you have created in one spot, complete
 		with images, inspiration, awards and much more.
-	Catalog/Price Lists
+	Catalog/Price lists
 		Download a print ready catalog of your work in PDF format, choose from
 		4 different layouts.
 	Unlimited Images
