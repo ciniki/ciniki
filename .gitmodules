@@ -145,3 +145,6 @@
 [submodule "site/ciniki-mods/donations"]
 	path = site/ciniki-mods/donations
 	url = git://github.com/ciniki/donations.git
+[submodule "site/ciniki-mods/membersonly"]
+	path = site/ciniki-mods/membersonly
+	url = git://github.com/ciniki/membersonly
