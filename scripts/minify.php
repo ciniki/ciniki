@@ -206,8 +206,10 @@ function file_put_min_cssjs($device, $engine, $size) {
 	global $all_browser_js;
 	global $style_css;
 
-	file_put_contents("$ciniki_root/site/ciniki-mods/core/ui/$device-$engine.min.js",
-		$all_browser_js . "\n" . ${"s_${size}_js"} . "\n" . ${"e_${engine}_js"});
+	if( $engine != 'trident' ) {
+		file_put_contents("$ciniki_root/site/ciniki-mods/core/ui/$device-$engine.min.js",
+			$all_browser_js . "\n" . ${"s_${size}_js"} . "\n" . ${"e_${engine}_js"});
+	}
 
 //	if( $engine == 'trident' ) {
 //		file_put_contents("$ciniki_root/site/cinikii/themes/default/$device-$engine.min.css",
