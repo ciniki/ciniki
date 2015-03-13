@@ -5,12 +5,12 @@ Iceland Trip
 - API documentation
 - API Examples
 
-
+Geja
+----
+Android Version 4.2.1
+ASUS Transformer Pad TF300T
 
 Dream Cymbals - Oct 15
--- (taken care of by starting at customers)Add ponumber and customer at the same time
--- (done) status should appear on customer screen
--- (done) account on hold/suspended, remove add order in UI
 -- on hold customers, should they be able to login?
 	- on  hold logins should have ON HOLD displayed to them.
 	- should they be able to place orders when ON Hold??
@@ -19,7 +19,6 @@ Dream Cymbals - Oct 15
 -- (done)recent orders sortable
 -- (done)packing required change to mediumflex
 -- rep login missing logout
--- backorder reports
 -- factory order tracking to know what's coming up
 -- include ship to address in invoice display UI
 -- put ship to first for invoice display
@@ -60,30 +59,13 @@ Customer Status
 ---------------
 - David Aspenlieder, (SSAC, Everett) needs changes
 - Created By Ceala, (HomesteadTech, Facebook), signed up, hasn't added art
-- Art in the Barn (Stella) sign up, no artwork yet
 - Alliston Tennis Club - Andrew K, logged in, hasn't changed anything, wants calendar on home page
-
-Top Priority
-------------
-- Theme screenshots selectable
-- Aspenlieder layout
-- Check for gallery in members for displaying full details (leesburg art)
-- Event/Course registration/invoicing
-- online course signups
-- Transactions report
-- Sync
-- customer automerge
-- customer auth logging so business owners can check
-
-Marvyn Rivett
--------------
 
 Lisa Brunetta
 -------------
 - convert buttons to be inputs so tab works to get to them
 - event tag for invoices, to be able to better report on income
 - POS interface for events/walk in sales
-- order system as part of SAPOS
 - Enter order, keep track of what is available, how long to fulfill order based on min/max times.
 - Need way to track sales at shows
 - need way to track media (where has my work been mentioned)
@@ -141,97 +123,6 @@ Next Presentation
 - quick start guide
 - business cards
 
-Features Page
--------------
-- flag like Custom Page in ciniki.web
-- database of features, organized by page (Artists, Clubs, Winemakers, Small Business)
-	- each page can have multiple plans with their features
-- Each feature list which plans it is a part of
-- feature brief description
-- feature images
-- feature page, click on to get more information, pictures/screen shots
-- order now button if linked to plans
-- Organize website by plan, checkboxes with which feature works with which plans
-- If no plans for business, don't show that option
-
-- Add plan_extras table, to store optional add-ons for plans.  
-	- should include price, modules, etc
-	- turn on extra modules/options for modules
-
-Artist Features
-	Art Catalog
-		Keep track of everything you have created in one spot, complete
-		with images, inspiration, awards and much more.
-	Catalog/Price lists
-		Download a print ready catalog of your work in PDF format, choose from
-		4 different layouts.
-	Unlimited Images
-		There is no limit to the number of items you can add to your art catalog.
-	Locations
-		Keep track of where your artwork is currently located.  Know if it's at your studio,
-		home, sold or anywhere else you want.
-	Exhibited Tracking
-		Know where your work has been displayed and when.  Plan for upcoming exhibitions
-		or sales events and know what you are taking.
-	Device Independant
-		Ciniki works on any computer, tablet or smartphone.  You can update
-		your catalog from your studio, home or on the road.
-	Backups
-		Nightly backups are available for you to download and store on your computer. 
-		Each backup contains spreadsheets of your catalog and all your images
-		in original format and size.
-	Website
-		Your custom website is created automatically from your art catalog.  Add a
-		new creation and it's automatically on your website.
-	SEO Optimized
-		Your website will be automatically optimized for Google to help customers find your artwork.
-	Smartphone Ready
-		Your website automatically scales to fit any device from the small screen
-		of a smartphone to the large monitor on a desktop.
-	Image Scaling
-		All your images are automatically scaled to fit on the website, and thumbnails are 
-		created.  No work required from you.
-	Social Sharing
-		Visitors to your website can help promote your work by easily sharing on 
-		Facebook, Twitter, Pinterest and Google+.
-	Event Management
-		Keep track of where you are going to be so customers can find you.  Events
-		automatically expire from your website, no updating required.
-	Blogging/News
-		Add latest news to your site so your customers can keep track of what you're doing.
-
-Artist Addons:
-	Custom Domain ($2/month)
-		We can help you register a custom domain, or help transfer an existing one to your website.
-	Sales
-		Keep track of your customes and what they purchases.  
-	Mailing Lists
-		Send emails to your customer directly from Ciniki, no need for third part software.
-
-Club/Organization Features
-	Gallery
-		A simple way to manage an online photo album for your organization.  Drag and drop photos
-		and they will be automatically scaled for the website and thumbnails created.
-	Event Management
-		Add all the events your club will be a part of or hosting. Events
-		automatically expire from your website, no updating required.
-	Multi-User
-		You can have multiple people from your group managing the website all at the same time, no need
-		to have only one person dedicated to the website.
-	Sponsors
-		Add sponsors of your organization, including a logo, description and url to their website.
-	Newsletters
-		Easily manage a repository of club newsletters.  They will be displayed automatically on your 
-		website for download.
-	Blogging/News Updates
-		A simple blog/news interface to let you update your members with the latest news from the club.
-	Membership
-		Keep track of your membership, export your membership list to excel.  The basic package is limited 
-		to 100 members, if you require more, email us at help@ciniki.com.
-	Member Profiles
-		Each member can have a profile page on the website.  Each profile page has a member bio and 
-		multiple images.
-
 Studio Tour
 	Participant List
 		Enter a list of
@@ -240,8 +131,6 @@ Studio Tour
 	Google Map
 		Ciniki will automatically produce a google map of the tour on your website.
 	Sponsors
-		
-
 
 Plans
 -----
