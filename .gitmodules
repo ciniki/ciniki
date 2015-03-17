@@ -151,3 +151,6 @@
 [submodule "site/ciniki-mods/fatt"]
 	path = site/ciniki-mods/fatt
 	url = git://github.com/ciniki/fatt.git
+[submodule "site/ciniki-lib/dropbox"]
+	path = site/ciniki-lib/dropbox
+	url = git://github.com/dropbox/dropbox-sdk-php

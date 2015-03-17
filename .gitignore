@@ -5,6 +5,7 @@ site/ciniki-json.php
 site/ciniki-manage.php
 site/ciniki-login.php
 site/paypal-ipn.php
+site/ciniki-apis.php
 site/ciniki-api.ini
 site/ciniki-manage.ini
 site/phpinfo.php
