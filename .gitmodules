@@ -154,3 +154,6 @@
 [submodule "site/ciniki-lib/dropbox"]
 	path = site/ciniki-lib/dropbox
 	url = git://github.com/dropbox/dropbox-sdk-php
+[submodule "site/ciniki-mods/restaurants"]
+	path = site/ciniki-mods/restaurants
+	url = git://github.com/ciniki/restaurants.git
