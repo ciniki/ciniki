@@ -157,3 +157,6 @@
 [submodule "site/ciniki-mods/restaurants"]
 	path = site/ciniki-mods/restaurants
 	url = git://github.com/ciniki/restaurants.git
+[submodule "site/ciniki-mods/reseller"]
+	path = site/ciniki-mods/reseller
+	url = git://github.com/ciniki/reseller.git
