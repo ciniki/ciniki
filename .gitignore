@@ -17,5 +17,6 @@ logs/
 dev-tools
 run.sh
 /marketing
+/tmp
 _version.ini
 site/_versions.ini
