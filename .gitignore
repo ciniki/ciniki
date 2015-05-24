@@ -18,5 +18,6 @@ dev-tools
 run.sh
 /marketing
 /tmp
+/ssl
 _version.ini
 site/_versions.ini
