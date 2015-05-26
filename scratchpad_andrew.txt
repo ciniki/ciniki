@@ -186,8 +186,6 @@ TODO
 - course previous offerings should only be last 10 courses with option for list by year same as invoices
 
 - Artcatalog, certificate of authenticity (http://www.gallerywebfineart.com/portal/policie/certificate-of-authenticity/)
-- Marketing 4x6 index card
-- share buttons for artgallery
 - when send test mail for mailing list, have it prompt for email address
 - press tracker module, used to track mentions in the media/press, needs to also have a link checker.
 	- example http://bnguffey.com/other1
@@ -199,7 +197,6 @@ TODO
 - API documentation page on website
 - Convert modules to objectAdd/Update/Delete
 	- Remove ciniki.images.refClear/refAdd/etc when no longer used
-- setup sequence for sorting gallery images (requested by Lucina).
 - facebook highlight image
 	http://stackoverflow.com/questions/2846381/what-does-ogimage-meta-data-do-with-the-facebook-like-iframe
 - domain transfer from yahoo
@@ -355,17 +352,6 @@ Farming
 	- seed_type, variety
 	- supplier
 	- plant_date, sprout_date, first_pick_date, last_pick_date
-
-Donations
----------
-- Keep track of donations for a non-profit
-- ciniki_donations
-	- id, uuid, business_id
-	- customer_id
-	- flags
-		0x01 - receipt given
-	- donation_amount
-	- date_received
 
 Music Catalog
 -------------
