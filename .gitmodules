@@ -163,3 +163,6 @@
 [submodule "site/ciniki-mods/propertyrentals"]
 	path = site/ciniki-mods/propertyrentals
 	url = git://github.com/ciniki/propertyrentals.git
+[submodule "site/ciniki-mods/writingcatalog"]
+	path = site/ciniki-mods/writingcatalog
+	url = git://github.com/ciniki/writingcatalog.git
