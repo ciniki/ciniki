@@ -2080,7 +2080,7 @@ function install($ciniki_root, $modules_dir) {
 		. "# Allow access to artweb themes and cache, everything is considered public\n"
 		. "RewriteRule ^ciniki-web-layouts/(.*\.)(css|js|png|eot|ttf|woff|svg)$ ciniki-mods/web/layouts/$1$2 [L]\n"
 		. "RewriteRule ^ciniki-web-themes/(.*\.)(css|js|html|png|jpg)$ ciniki-mods/web/themes/$1$2 [L]\n"
-		. "RewriteRule ^ciniki-web-cache/(.*\.)(js|jpg|png|mp3|ogg|wav)$ ciniki-mods/web/cache/$1$2 [L]\n"
+		. "RewriteRule ^ciniki-web-cache/(.*\.)(css|js|gif|jpg|png|mp3|ogg|wav)$ ciniki-mods/web/cache/$1$2 [L]\n"
 		. "RewriteRule ^ciniki-code/(.*\.)(zip|ini)$ ciniki-code/$1$2 [L]\n"
 		. "RewriteBase /\n"
 		. "\n"
