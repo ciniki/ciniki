@@ -169,3 +169,6 @@
 [submodule "site/ciniki-mods/filmschedule"]
 	path = site/ciniki-mods/filmschedule
 	url = git://github.com/ciniki/filmschedule.git
+[submodule "site/ciniki-mods/campaigns"]
+	path = site/ciniki-mods/campaigns
+	url = git://github.com/ciniki/campaigns.git
