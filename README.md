@@ -53,8 +53,10 @@ FIXME: Add instructions for SSL cert generation
 Restart Apache
 --------------
 Before restarting apache, makes sure to run configtest and validate the site config.
+```
 sudo apache2ctl configtest
 sudo apache2ctl restart
+```
 
 Setup database
 ==============
@@ -63,11 +65,15 @@ specific to this database.
 
 Here is a sample grant statement for the required privileges in MySQL.
 
+```
 GRANT alter, create, create temporary tables, delete, index, insert, lock tables, select, update ON <instancename>.\* to 'ciniki'@'localhost' IDENTIFIED BY '<min32randomcharacterpassword>';
+```
 
 Setup the proper character set so tables have enough room:
 
+```
 ALTER DATABASE dreamcymbals CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+```
 
 
 Setup Email Robot
@@ -86,21 +92,26 @@ Run the installer
 =================
 Open your browser and go to the domain you installed ciniki to, and run the install script.
 
-http://<hostname>/ciniki-install.php
+http://localhost/ciniki-install.php
 
 
 
 Manual Configuration
 ====================
+
+```
 cd site
 ln -s ciniki-api/core/scripts/rest.php ciniki-rest.php
 ln -s ciniki-api/core/scripts/json.php ciniki-json.php
 ln -s ciniki-manage/core/scripts/manage.php ciniki-manage.php
 ln -s ciniki-manage/core/scripts/login.php ciniki-login.php
+```
 
 Setup config files
+```
 cp ciniki-api/core/docs/ciniki.ini.default ciniki-api.ini
 cp ciniki-manage/core/docs/ciniki.ini.default ciniki-manage.ini
+```
 
 Don't forget to setup the address in the system.email and system.email.name config variables in ciniki-api.ini
 
@@ -111,12 +122,16 @@ MAC OS X
 When running this on mac with the native PHP5, the follow macports need to be installed:
 
 1. php5-imagick
+```
 	sudo port install php5-mysql (don't know if needed???)
 		- this will install apache2 in /opt/local/
 	sudo port install php5-imagick
+```
 
 2. Setup /etc/php.ini file to include the line:
+```
 	extension=/opt/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so
+```
 
 
 Development

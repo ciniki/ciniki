@@ -11,12 +11,13 @@ will allow you to download and contribute back to the code.
 
 Setup Ciniki
 ------------
-Follow the instruction in README.txt to setup Ciniki, with webserver and mail server.
+Follow the instruction in README.md to setup Ciniki, with webserver and mail server.
 
 SSL for dev/test
 ----------------
 The following command can be used to generate a SSL key for apache, but is not
 signed and should not be used in production.
+```
 	cd /ciniki/<instance>/
 	mkdir ssl
 	cd ssl/
@@ -26,19 +27,26 @@ signed and should not be used in production.
 		-- Common name MUST be <instance>.ciniki.ca
 		-- Blank for password and company name
 	sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+```
 
 Clone dev-tools helper scripts
 ------------------------------
 Checkout the dev-tools module from the github to aid in managing the development.
 
+```
 git clone git@github.com:ciniki/dev-tools.git
+```
 
 If you want to update the tool set:
+```
 cd dev-tools
 git remote add push git@github.com:ciniki/dev-tools.git 
+```
 
 Run the init script which will checkout all masters and setup the remote git repo for checkin.
+```
 ./dev-tools/dev-init.sh
+```
 
 
 Commit, Push, Pull
@@ -74,10 +82,12 @@ First, create the repo on github under ciniki.
 Then, add submodule to the local ciniki project directory.  The module should be
 added using the public URL so the master ciniki git repo can pull it without permissions.
 
-- cd ciniki/
-- git submodule add git://github.com/ciniki/<modulename>.git site/ciniki-mods/<modulename>
-- cd site/ciniki-mods/<modulename>
-- git remote add push git@github.com:ciniki/<modulename>.git 
+```
+cd ciniki/
+git submodule add git://github.com/ciniki/<modulename>.git site/ciniki-mods/<modulename>
+cd site/ciniki-mods/<modulename>
+git remote add push git@github.com:ciniki/<modulename>.git 
+```
 
 Once the module has been added, it should be added to initialization script for the project.
 Edit dev-tools/dev-init.sh and add the project.
