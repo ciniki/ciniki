@@ -101,10 +101,12 @@ Manual Configuration
 
 ```
 cd site
-ln -s ciniki-api/core/scripts/rest.php ciniki-rest.php
-ln -s ciniki-api/core/scripts/json.php ciniki-json.php
-ln -s ciniki-manage/core/scripts/manage.php ciniki-manage.php
-ln -s ciniki-manage/core/scripts/login.php ciniki-login.php
+ln -s ciniki-mods/core/scripts/rest.php ciniki-rest.php
+ln -s ciniki-mods/core/scripts/json.php ciniki-json.php
+ln -s ciniki-mods/core/scripts/manage.php ciniki-manage.php
+ln -s ciniki-mods/core/scripts/login.php ciniki-login.php
+mkdir ciniki-cache
+mkdir ciniki-storage
 ```
 
 Setup config files
