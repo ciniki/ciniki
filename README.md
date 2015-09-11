@@ -1,22 +1,23 @@
-Ciniki - Small Business Management Platform
-
-FIXME: Need description
-
+Ciniki is a modular platform for managing small business information.
 
 Install
 =======
 Ciniki is released as a set of modules which can be reused individually or as a package.
 To pull down all the code, run the following command:
 
+```
 git clone git://github.com/ciniki/ciniki.git
 cd ciniki
 git submodule update --init
+```
 
 If this is running locally, then the ssl and logs directories should be created, and
 the site directory needs to be writable by www-data to enable the install script.
+```
 mkdir logs
 mkdir ssl
 sudo chown www-data site
+```
 
 
 Setup Web Server
@@ -25,19 +26,25 @@ Setup your web server with a new site, which has the root of the site folder ins
 
 Ubuntu with Apache2
 -------------------
+```
 cd /etc/apache2/sites-available
+```
 
 Copy the default site conf from site/ciniki-api/core/docs/apache2.virtualhost.ssl
 
 Edit the file for the settings on your server.
 
-No link the file into sites-enabled
+Now link the file into sites-enabled
+```
 cd /etc/apache2/sites-enabled
 sudo ln -s ../sites-available/instance.mydomain.com
+```
 
 Setup the rewrite module
+```
 cd /etc/apache2/mods-enabled
 sudo ln -s ../mods-available/rewrite.load
+```
 
 Setup SSL
 ---------
