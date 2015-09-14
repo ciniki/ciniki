@@ -21,3 +21,4 @@ run.sh
 /ssl
 _version.ini
 site/_versions.ini
+commit.sh
