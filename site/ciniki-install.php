@@ -17,7 +17,7 @@ $modules_dir = $ciniki_root . '/ciniki-mods';
 // Verify no ciniki-api.ini file
 //
 if( file_exists($ciniki_root . '/ciniki-api.ini') ) {
-	print_page('no', 'ciniki.installer.15', 'Already installed.</p><p><a href="/manage/">Login</a>');
+	print_page('no', 'ciniki.installer.15', 'Already installed.</p><p><a href="/manager/">Login</a>');
 	exit();
 }
 
@@ -25,7 +25,7 @@ if( file_exists($ciniki_root . '/ciniki-api.ini') ) {
 // Verify no .htaccess file exists.
 //
 if( file_exists($ciniki_root . '/.htaccess') ) {
-	print_page('no', 'ciniki.installer.14', 'Already installed.</p><p><a href="/manage/">Login</a>');
+	print_page('no', 'ciniki.installer.14', 'Already installed.</p><p><a href="/manager/">Login</a>');
 	exit();
 }
 
@@ -1619,7 +1619,7 @@ table.list td div.calendar {
 				<div class="medium">
 				<?php
 					if( $err_code == 'installed' ) {
-						print "<h2 class=''>Installed</h2><div class='bordered error'><p>Ciniki installed and configured, you can now login and finished installing the database.  </p><p><a href='/manage'>Login</a></p></div>";
+						print "<h2 class=''>Installed</h2><div class='bordered error'><p>Ciniki installed and configured, you can now login and finished installing the database.  </p><p><a href='/manager'>Login</a></p></div>";
 
 					}
 					elseif( $err_code != '' ) {
@@ -1763,7 +1763,7 @@ function install($ciniki_root, $modules_dir) {
 	$config['ciniki.core']['sync.log_lvl'] = 0;
 	$config['ciniki.core']['sync.log_dir'] = dirname($ciniki_root) . "/logs";
 	$config['ciniki.core']['sync.lock_dir'] = dirname($ciniki_root) . "/logs";
-	$config['ciniki.core']['manage.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\//', '', dirname($_SERVER['REQUEST_URI']) . "manage");
+	$config['ciniki.core']['manage.url'] = "https://" . $_SERVER['SERVER_NAME'] . "/" . preg_replace('/^\//', '', dirname($_SERVER['REQUEST_URI']) . "manager");
 
 	// Configure users module settings for password recovery
 	$config['ciniki.users']['password.forgot.notify'] = $admin_email;
