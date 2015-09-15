@@ -1,9 +1,29 @@
-Iceland Trip
-------------
-- Cleanup error codes
-- Database documentation
-- API documentation
-- API Examples
+Web Module Redesign
+-------------------
+- Add code to index to default to generateModulePage.php when not a predefined generatePageModule.php file exists
+- generateModulePage will hand off request to module/web/generate.php
+- module/web/processRequest.php will:
+	- parse request
+	- decide what information should be displayed
+	- hand back a sequence of objects to be display, objects are generic and displayed by generateModulePage.php
+	- hand back a submenu array
+
+- generateModulePage.php valid objects
+	objects (in order of appearance on page)
+		- cilist (display a categorized list with images)
+		- clist (display a categorized list)
+		- gallery (display an image gallery)
+		- tags (display a tag cloud)
+		- content (display an image and content block)
+	special objects
+		- download (download the file (pdf))
+		- submenu (will display submenu)
+
+
+
+
+
+
 
 Geja
 ----
