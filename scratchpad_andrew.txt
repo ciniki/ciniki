@@ -1,3 +1,27 @@
+Mail
+----
+
+add table for ciniki_mail_accounts
+	- ui to have test button to send a test message through account to the logged in user
+
+add table for ciniki_mail_themes 
+	id,
+	body style
+	header style,
+	etc.
+	all the pieces for a mail theme the mailer requires
+
+ui to contain drafts, sent, failures, mailings, etc...
+
+ui to have edit message in draft, change status
+ui draft message list to have quick button to send email, will push into queue to be sent
+
+flags -- add accounts and themes
+	- if not accounts set, use default account in settings
+	
+
+
+
 Web Module Redesign
 -------------------
 - Add code to index to default to generateModulePage.php when not a predefined generatePageModule.php file exists
