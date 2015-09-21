@@ -1,3 +1,12 @@
+Marcy - Hill Top Acres
+----------------------
+
+- add roast time to recipes
+- switch domain to ciniki
+- different images on header
+- switch menus
+
+
 Mail
 ----
 
