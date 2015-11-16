@@ -181,3 +181,6 @@
 [submodule "site/ciniki-mods/citations"]
 	path = site/ciniki-mods/citations
 	url = git://github.com/ciniki/citations.git
+[submodule "site/ciniki-mods/tradealerts"]
+	path = site/ciniki-mods/tradealerts
+	url = git://github.com/ciniki/tradealerts.git
