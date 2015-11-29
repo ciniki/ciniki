@@ -43,38 +43,6 @@ cd dev-tools
 git remote add push git@github.com:ciniki/dev-tools.git 
 ```
 
-Run the init script which will checkout all masters and setup the remote git repo for checkin.
-```
-./dev-tools/dev-init.sh
-```
-
-
-Commit, Push, Pull
-==================
-To commit all changes in all modules with one commit msg:
-./dev-tools/commit.sh 'msg'
-
-To push all changes up to github:
-./dev-tools/push.sh
-
-To pull the recent code for all modules:
-./dev-tools/pull.sh
-
-
-Workflow
-========
-The following workflow is recommended while working on the code
-
-Update the code to the latest from the repo.
-./dev-tools/pull.sh
-
-Make changes to code, then commit and push. It's a good idea to pull
-after the push to update all the submodules.
-./dev-tools/commit.sh 'commit msg'
-./dev-tools/push.sh
-./dev-tools/pull.sh
-
-
 Adding a new submodule
 ======================
 First, create the repo on github under ciniki.
