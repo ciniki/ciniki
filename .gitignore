@@ -22,3 +22,6 @@ run.sh
 _version.ini
 site/_versions.ini
 commit.sh
+
+# Modules in development
+site/ciniki-mods/tradealerts
