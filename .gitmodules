@@ -184,3 +184,6 @@
 [submodule "site/ciniki-mods/sms"]
 	path = site/ciniki-mods/sms
 	url = git://github.com/ciniki/sms.git
+[submodule "site/ciniki-mods/conferences"]
+	path = site/ciniki-mods/conferences
+	url = git://github.com/ciniki/conferences.git
