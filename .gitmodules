@@ -187,3 +187,6 @@
 [submodule "site/ciniki-mods/conferences"]
 	path = site/ciniki-mods/conferences
 	url = git://github.com/ciniki/conferences.git
+[submodule "site/ciniki-mods/artistprofiles"]
+	path = site/ciniki-mods/artistprofiles
+	url = git://github.com/ciniki/artistprofiles.git
