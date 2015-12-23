@@ -13,6 +13,7 @@ site/index.php
 site/ciniki-code
 site/ciniki-cache
 site/ciniki-backups
+site/ciniki-storage
 logs/
 dev-tools
 run.sh
