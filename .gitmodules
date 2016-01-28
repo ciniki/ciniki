@@ -190,3 +190,6 @@
 [submodule "site/ciniki-mods/artistprofiles"]
 	path = site/ciniki-mods/artistprofiles
 	url = git://github.com/ciniki/artistprofiles.git
+[submodule "site/ciniki-mods/merchandise"]
+	path = site/ciniki-mods/merchandise
+	url = git://github.com/ciniki/merchandise.git
