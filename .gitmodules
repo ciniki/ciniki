@@ -193,3 +193,6 @@
 [submodule "site/ciniki-mods/merchandise"]
 	path = site/ciniki-mods/merchandise
 	url = git://github.com/ciniki/merchandise.git
+[submodule "site/ciniki-mods/patents"]
+	path = site/ciniki-mods/patents
+	url = git://github.com/ciniki/patents.git
