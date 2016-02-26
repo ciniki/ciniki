@@ -14,6 +14,7 @@ site/ciniki-code
 site/ciniki-cache
 site/ciniki-backups
 site/ciniki-storage
+site/customer-mods
 logs/
 dev-tools
 run.sh
