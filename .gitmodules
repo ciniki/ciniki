@@ -196,3 +196,6 @@
 [submodule "site/ciniki-mods/patents"]
 	path = site/ciniki-mods/patents
 	url = git://github.com/ciniki/patents.git
+[submodule "site/ciniki-mods/herbalist"]
+	path = site/ciniki-mods/herbalist
+	url = git://github.com/ciniki/herbalist
