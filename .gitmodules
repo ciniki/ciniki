@@ -94,9 +94,6 @@
 [submodule "site/ciniki-mods/wineproduction"]
 	path = site/ciniki-mods/wineproduction
 	url = git://github.com/ciniki/wineproduction.git
-[submodule "site/ciniki-manage-themes/default"]
-	path = site/ciniki-manage-themes/default
-	url = git://github.com/ciniki/manage-theme-default.git
 [submodule "site/ciniki-mods/sysadmin"]
 	path = site/ciniki-mods/sysadmin
 	url = git://github.com/ciniki/sysadmin
