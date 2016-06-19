@@ -73,9 +73,6 @@
 [submodule "site/ciniki-mods/sapos"]
 	path = site/ciniki-mods/sapos
 	url = git://github.com/ciniki/sapos.git
-[submodule "site/ciniki-mods/services"]
-	path = site/ciniki-mods/services
-	url = git://github.com/ciniki/services.git
 [submodule "site/ciniki-mods/subscriptions"]
 	path = site/ciniki-mods/subscriptions
 	url = git://github.com/ciniki/subscriptions.git
@@ -196,6 +193,3 @@
 [submodule "site/ciniki-mods/patents"]
 	path = site/ciniki-mods/patents
 	url = git://github.com/ciniki/patents.git
-[submodule "site/ciniki-mods/herbalist"]
-	path = site/ciniki-mods/herbalist
-	url = git://github.com/ciniki/herbalist
