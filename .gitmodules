@@ -190,3 +190,6 @@
 [submodule "site/ciniki-mods/jiji"]
 	path = site/ciniki-mods/jiji
 	url = git://github.com/ciniki/jiji.git
+[submodule "site/ciniki-mods/foodmarket"]
+	path = site/ciniki-mods/foodmarket
+	url = git://github.com/ciniki/foodmarket.git
