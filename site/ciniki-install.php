@@ -2098,6 +2098,7 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^(ciniki-mods/web/cache/.*\.(json|jpg|png|mp3|ogg|wav))$ $1 [L]                                      # Allow web-cache content\n"
 		. "RewriteRule ^(paypal-ipn|ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
 		. "RewriteRule ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
+		. "RewriteRule ^$ index.php [L]                                                              # Redirect all other requests to index\n"
 		. "RewriteRule . index.php [L]                                                              # Redirect all other requests to index\n"
 		. "\n"
 		. "php_value post_max_size 20M\n"
