@@ -193,3 +193,6 @@
 [submodule "site/ciniki-mods/foodmarket"]
 	path = site/ciniki-mods/foodmarket
 	url = git://github.com/ciniki/foodmarket.git
+[submodule "site/ciniki-lib/Stripe"]
+	path = site/ciniki-lib/Stripe
+	url = https://github.com/stripe/stripe-php
