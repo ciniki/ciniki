@@ -196,3 +196,6 @@
 [submodule "site/ciniki-lib/Stripe"]
 	path = site/ciniki-lib/Stripe
 	url = https://github.com/stripe/stripe-php
+[submodule "site/ciniki-mods/musicfestivals"]
+	path = site/ciniki-mods/musicfestivals
+	url = https://github.com/ciniki/musicfestivals.git
