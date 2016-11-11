@@ -199,3 +199,6 @@
 [submodule "site/ciniki-mods/musicfestivals"]
 	path = site/ciniki-mods/musicfestivals
 	url = https://github.com/ciniki/musicfestivals.git
+[submodule "site/ciniki-lib/mailgun"]
+	path = site/ciniki-lib/mailgun
+	url = https://github.com/mailgun/mailgun-php
