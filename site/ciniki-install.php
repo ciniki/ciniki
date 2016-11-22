@@ -2095,7 +2095,7 @@ function install($ciniki_root, $modules_dir) {
 		. "RewriteRule ^(ciniki-web-themes/.*)$ $1 [L]                                              # Allow manage-theme content\n"
 		. "RewriteRule ^(ciniki-mods/web/layouts/.*)$ $1 [L]                                    # Allow web-layouts content\n"
 		. "RewriteRule ^(ciniki-mods/web/themes/.*)$ $1 [L]                                     # Allow web-themes content\n"
-		. "RewriteRule ^(ciniki-mods/web/cache/.*\.(json|jpg|png|mp3|ogg|wav))$ $1 [L]                                      # Allow web-cache content\n"
+		. "RewriteRule ^(ciniki-mods/web/cache/.*\.(css|js|jpg|png|mp3|ogg|wav))$ $1 [L]                                      # Allow web-cache content\n"
 		. "RewriteRule ^(paypal-ipn|ciniki-login|ciniki-sync|ciniki-json|ciniki-rest|index|ciniki-manage).php$ $1.php [L]  # allow entrance php files\n"
 		. "RewriteRule ^([_0-9a-zA-Z-]+/)(.*\.php)$ index.php [L]                                  # Redirect all other php requests to index\n"
 		. "RewriteRule ^$ index.php [L]                                                              # Redirect all other requests to index\n"
