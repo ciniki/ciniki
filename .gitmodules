@@ -199,3 +199,6 @@
 [submodule "site/ciniki-mods/musicfestivals"]
 	path = site/ciniki-mods/musicfestivals
 	url = https://github.com/ciniki/musicfestivals.git
+[submodule "site/ciniki-mods/poma"]
+	path = site/ciniki-mods/poma
+	url = https://github.com/ciniki/poma
