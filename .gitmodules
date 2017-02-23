@@ -202,3 +202,6 @@
 [submodule "site/ciniki-mods/poma"]
 	path = site/ciniki-mods/poma
 	url = https://github.com/ciniki/poma
+[submodule "site/ciniki-mods/herbalist"]
+	path = site/ciniki-mods/herbalist
+	url = https://github.com/ciniki/herbalist.git
