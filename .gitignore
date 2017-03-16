@@ -17,6 +17,7 @@ site/ciniki-backups
 site/ciniki-storage
 site/customer-mods
 site/loginactions.js
+site/ciniki-lib/PHPWord
 logs/
 dev-tools
 run.sh
