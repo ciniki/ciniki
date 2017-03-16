@@ -106,9 +106,6 @@
 [submodule "site/ciniki-mods/blog"]
 	path = site/ciniki-mods/blog
 	url = https://github.com/ciniki/blog.git
-[submodule "site/ciniki-lib/PHPWord"]
-	path = site/ciniki-lib/PHPWord
-	url = https://github.com/PHPOffice/PHPWord.git
 [submodule "site/ciniki-mods/info"]
 	path = site/ciniki-mods/info
 	url = https://github.com/ciniki/info.git
