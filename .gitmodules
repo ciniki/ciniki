@@ -204,4 +204,4 @@
 	url = https://github.com/ciniki/herbalist.git
 [submodule "site/ciniki-mods/petadoptions"]
 	path = site/ciniki-mods/petadoptions
-	url = git://github.com/ciniki/petadoptions
+	url = https://github.com/ciniki/petadoptions
