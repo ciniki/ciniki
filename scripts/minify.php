@@ -150,7 +150,7 @@ function load_minify_js($filename) {
             ),
         $file_contents);
     $post_count = strlen($file_contents);
-//    printf("%6d %6d (%2.2f%%) - $filename\n", $pre_count, $post_count, (($pre_count-$post_count)/$pre_count)*100);
+    printf("%6d %6d (%2.2f%%) - $filename\n", $pre_count, $post_count, (($pre_count-$post_count)/$pre_count)*100);
     return $file_contents;
 }
 
@@ -170,7 +170,7 @@ function load_minify_css($filename) {
             ),
         $file_contents);
     $post_count = strlen($file_contents);
-//    printf("%6d %6d (%2.2f%%) - $filename\n", $pre_count, $post_count, (($pre_count-$post_count)/$pre_count)*100);
+    printf("%6d %6d (%2.2f%%) - $filename\n", $pre_count, $post_count, (($pre_count-$post_count)/$pre_count)*100);
     return $file_contents;  
 }
 
