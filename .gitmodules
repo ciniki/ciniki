@@ -205,3 +205,6 @@
 [submodule "site/ciniki-mods/petadoptions"]
 	path = site/ciniki-mods/petadoptions
 	url = https://github.com/ciniki/petadoptions
+[submodule "site/ciniki-mods/tenants"]
+	path = site/ciniki-mods/tenants
+	url = https://github.com/ciniki/tenants
