@@ -13,9 +13,6 @@
 [submodule "site/ciniki-mods/bugs"]
 	path = site/ciniki-mods/bugs
 	url = https://github.com/ciniki/bugs.git
-[submodule "site/ciniki-mods/businesses"]
-	path = site/ciniki-mods/businesses
-	url = https://github.com/ciniki/businesses.git
 [submodule "site/ciniki-mods/calendars"]
 	path = site/ciniki-mods/calendars
 	url = https://github.com/ciniki/calendars.git
