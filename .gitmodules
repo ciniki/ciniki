@@ -205,3 +205,6 @@
 [submodule "site/ciniki-mods/tenants"]
 	path = site/ciniki-mods/tenants
 	url = https://github.com/ciniki/tenants
+[submodule "site/ciniki-mods/reporting"]
+	path = site/ciniki-mods/reporting
+	url = https://github.com/ciniki/reporting
