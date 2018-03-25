@@ -199,3 +199,6 @@
 [submodule "site/ciniki-mods/reporting"]
 	path = site/ciniki-mods/reporting
 	url = https://github.com/ciniki/reporting
+[submodule "site/ciniki-mods/lapt"]
+	path = site/ciniki-mods/lapt
+	url = https://github.com/ciniki/lapt
