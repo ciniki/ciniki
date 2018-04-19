@@ -202,3 +202,6 @@
 [submodule "site/ciniki-mods/lapt"]
 	path = site/ciniki-mods/lapt
 	url = https://github.com/ciniki/lapt
+[submodule "site/ciniki-mods/ags"]
+	path = site/ciniki-mods/ags
+	url = https://github.com/ciniki/ags
