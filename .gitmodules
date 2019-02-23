@@ -205,3 +205,6 @@
 [submodule "site/ciniki-mods/ags"]
 	path = site/ciniki-mods/ags
 	url = https://github.com/ciniki/ags
+[submodule "site/ciniki-mods/writingfestivals"]
+	path = site/ciniki-mods/writingfestivals
+	url = https://github.com/ciniki/writingfestivals
