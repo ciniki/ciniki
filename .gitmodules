@@ -208,3 +208,6 @@
 [submodule "site/ciniki-mods/writingfestivals"]
 	path = site/ciniki-mods/writingfestivals
 	url = https://github.com/ciniki/writingfestivals
+[submodule "site/ciniki-mods/timetracker"]
+	path = site/ciniki-mods/timetracker
+	url = https://github.com/ciniki/timetracker
