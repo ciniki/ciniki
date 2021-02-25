@@ -211,3 +211,6 @@
 [submodule "site/ciniki-mods/timetracker"]
 	path = site/ciniki-mods/timetracker
 	url = https://github.com/ciniki/timetracker
+[submodule "site/ciniki-mods/news"]
+	path = site/ciniki-mods/news
+	url = https://github.com/ciniki/news
