@@ -142,9 +142,6 @@
 [submodule "site/ciniki-mods/reseller"]
 	path = site/ciniki-mods/reseller
 	url = https://github.com/ciniki/reseller.git
-[submodule "site/ciniki-mods/propertyrentals"]
-	path = site/ciniki-mods/propertyrentals
-	url = https://github.com/ciniki/propertyrentals.git
 [submodule "site/ciniki-mods/writingcatalog"]
 	path = site/ciniki-mods/writingcatalog
 	url = https://github.com/ciniki/writingcatalog.git
