@@ -151,9 +151,6 @@
 [submodule "site/ciniki-mods/landingpages"]
 	path = site/ciniki-mods/landingpages
 	url = https://github.com/ciniki/landingpages.git
-[submodule "site/ciniki-mods/citations"]
-	path = site/ciniki-mods/citations
-	url = https://github.com/ciniki/citations.git
 [submodule "site/ciniki-mods/sms"]
 	path = site/ciniki-mods/sms
 	url = https://github.com/ciniki/sms.git
