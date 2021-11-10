@@ -145,9 +145,6 @@
 [submodule "site/ciniki-mods/filmschedule"]
 	path = site/ciniki-mods/filmschedule
 	url = https://github.com/ciniki/filmschedule.git
-[submodule "site/ciniki-mods/materiamedica"]
-	path = site/ciniki-mods/materiamedica
-	url = https://github.com/ciniki/materiamedica.git
 [submodule "site/ciniki-mods/landingpages"]
 	path = site/ciniki-mods/landingpages
 	url = https://github.com/ciniki/landingpages.git
