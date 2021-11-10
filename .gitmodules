@@ -49,9 +49,6 @@
 [submodule "site/ciniki-mods/mail"]
 	path = site/ciniki-mods/mail
 	url = https://github.com/ciniki/mail.git
-[submodule "site/ciniki-mods/newsaggregator"]
-	path = site/ciniki-mods/newsaggregator
-	url = https://github.com/ciniki/newsaggregator.git
 [submodule "site/ciniki-mods/newsletters"]
 	path = site/ciniki-mods/newsletters
 	url = https://github.com/ciniki/newsletters.git
