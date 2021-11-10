@@ -154,9 +154,6 @@
 [submodule "site/ciniki-mods/conferences"]
 	path = site/ciniki-mods/conferences
 	url = https://github.com/ciniki/conferences.git
-[submodule "site/ciniki-mods/artistprofiles"]
-	path = site/ciniki-mods/artistprofiles
-	url = https://github.com/ciniki/artistprofiles.git
 [submodule "site/ciniki-mods/merchandise"]
 	path = site/ciniki-mods/merchandise
 	url = https://github.com/ciniki/merchandise.git
