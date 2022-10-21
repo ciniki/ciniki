@@ -103,9 +103,6 @@
 [submodule "site/ciniki-mods/sponsors"]
 	path = site/ciniki-mods/sponsors
 	url = https://github.com/ciniki/sponsors.git
-[submodule "site/ciniki-mods/directory"]
-	path = site/ciniki-mods/directory
-	url = https://github.com/ciniki/directory.git
 [submodule "site/ciniki-mods/marketing"]
 	path = site/ciniki-mods/marketing
 	url = https://github.com/ciniki/marketing.git
