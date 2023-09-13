@@ -139,9 +139,6 @@
 [submodule "site/ciniki-mods/writingcatalog"]
 	path = site/ciniki-mods/writingcatalog
 	url = https://github.com/ciniki/writingcatalog.git
-[submodule "site/ciniki-mods/landingpages"]
-	path = site/ciniki-mods/landingpages
-	url = https://github.com/ciniki/landingpages.git
 [submodule "site/ciniki-mods/sms"]
 	path = site/ciniki-mods/sms
 	url = https://github.com/ciniki/sms.git
