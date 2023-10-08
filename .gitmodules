@@ -181,3 +181,6 @@
 [submodule "site/ciniki-mods/timetracker"]
 	path = site/ciniki-mods/timetracker
 	url = https://github.com/ciniki/timetracker
+[submodule "site/ciniki-mods/files"]
+	path = site/ciniki-mods/files
+	url = https://github.com/ciniki/files
