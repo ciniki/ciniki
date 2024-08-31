@@ -73,9 +73,6 @@
 [submodule "site/ciniki-mods/taxes"]
 	path = site/ciniki-mods/taxes
 	url = https://github.com/ciniki/taxes.git
-[submodule "site/ciniki-mods/toolbox"]
-	path = site/ciniki-mods/toolbox
-	url = https://github.com/ciniki/toolbox.git
 [submodule "site/ciniki-mods/users"]
 	path = site/ciniki-mods/users
 	url = https://github.com/ciniki/users.git
