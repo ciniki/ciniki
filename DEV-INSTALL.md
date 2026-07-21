@@ -53,8 +53,6 @@ added using the public URL so the master ciniki git repo can pull it without per
 ```
 cd ciniki/
 git submodule add git://github.com/ciniki/<modulename>.git site/ciniki-mods/<modulename>
-cd site/ciniki-mods/<modulename>
-git remote add push git@github.com:ciniki/<modulename>.git 
 ```
 
 Once the module has been added, it should be added to initialization script for the project.

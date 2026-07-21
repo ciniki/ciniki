@@ -172,3 +172,6 @@
 [submodule "site/ciniki-mods/files"]
 	path = site/ciniki-mods/files
 	url = https://github.com/ciniki/files
+[submodule "site/ciniki-mods/reslib"]
+	path = site/ciniki-mods/reslib
+	url = https://github.com/ciniki/reslib
